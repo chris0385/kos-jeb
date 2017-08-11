@@ -1,0 +1,3 @@
+[submodule "kos-examples"]
+	path = kos-examples
+	url = git@bitbucket.org:Gobannitio/kos-examples.git

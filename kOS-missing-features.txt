@@ -1,0 +1,12 @@
+(known issue) It is not possible to use quotes (") in a string. No way to escape them.
+
+
+continue keyword in for loops
+
+CHEATS:setorbit(...) -> permit unittesting scripts.
+
+list:replace(x, index) (can only be done by remove+insert)
+
+list:sort({parameter a. parameter b. return a:eta < b:eta. }). // list sorting using a callback
+
+heap data structure. (priority queue)
