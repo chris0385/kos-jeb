@@ -1,0 +1,132 @@
+{
+    "entries": [
+        "attr",
+        {
+            "entries": [
+                "name",
+                "noseConeAdapter",
+                "module",
+                "Part",
+                "author",
+                "C. Jenkins, Porkjet",
+                "rescaleFactor",
+                1,
+                "node_stack_top",
+                "0.0, 1.125, 0.0, 0.0, 1.0, 0.0, 0",
+                "node_stack_bottom01",
+                "0.0, -0.75, 0.0, 0.0, -1.0, 0.0, 1",
+                "node_attach",
+                "0, 0, -0.313, 0.0, 0.0, 1.0",
+                "CenterOfDisplacement",
+                "0.0, -0.2, 0.0",
+                "TechRequired",
+                "aerodynamicSystems",
+                "entryCost",
+                6500,
+                "cost",
+                320,
+                "category",
+                "Propulsion",
+                "subcategory",
+                0,
+                "title",
+                "NCS Adapter",
+                "manufacturer",
+                "C7 Aerospace Division",
+                "description",
+                "The base of C7 Aerospace's Nose Cone system (NCS)",
+                "attachRules",
+                "1,1,1,1,0",
+                "mass",
+                0.1,
+                "dragModelType",
+                "default",
+                "maximum_drag",
+                0.1,
+                "minimum_drag",
+                0.1,
+                "angularDrag",
+                1,
+                "crashTolerance",
+                10,
+                "maxTemp",
+                2400,
+                "thermalMassModifier",
+                6,
+                "emissiveConstant",
+                0.95,
+                "tags",
+                "aero aircraft booster )cap cone drag fligh nose plane rocket stab stream tail",
+                "fuelCrossFeed",
+                true,
+                "bulkheadProfiles",
+                "size0, size1"
+            ],
+            "$type": "kOS.Safe.Encapsulation.Lexicon"
+        },
+        "MODEL",
+        {
+            "items": [
+                {
+                    "entries": [
+                        "attr",
+                        {
+                            "entries": [
+                                "model",
+                                "Squad/Parts/Aero/cones/NCS"
+                            ],
+                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                        }
+                    ],
+                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                }
+            ],
+            "$type": "kOS.Safe.Encapsulation.ListValue"
+        },
+        "RESOURCE",
+        {
+            "items": [
+                {
+                    "entries": [
+                        "attr",
+                        {
+                            "entries": [
+                                "name",
+                                "LiquidFuel",
+                                "amount",
+                                80,
+                                "maxAmount",
+                                80
+                            ],
+                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                        }
+                    ],
+                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                }
+            ],
+            "$type": "kOS.Safe.Encapsulation.ListValue"
+        },
+        "MODULE",
+        {
+            "items": [
+                {
+                    "entries": [
+                        "attr",
+                        {
+                            "entries": [
+                                "name",
+                                "ModuleAnimateHeat",
+                                "ThermalAnim",
+                                "Cone_Heat"
+                            ],
+                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                        }
+                    ],
+                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                }
+            ],
+            "$type": "kOS.Safe.Encapsulation.ListValue"
+        }
+    ],
+    "$type": "kOS.Safe.Encapsulation.Lexicon"
+}

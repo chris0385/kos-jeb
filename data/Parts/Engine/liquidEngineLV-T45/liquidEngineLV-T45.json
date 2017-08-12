@@ -1,0 +1,795 @@
+{
+    "entries": [
+        "attr",
+        {
+            "entries": [
+                "name",
+                "liquidEngine2",
+                "module",
+                "Part",
+                "author",
+                "NovaSilisko",
+                "mesh",
+                "model.mu",
+                "scale",
+                0.1,
+                "node_stack_top",
+                "0.0, 7.21461, 0.0, 0.0, 1.0, 0.0",
+                "node_stack_bottom",
+                "0.0, -5.74338, 0.0, 0.0, -1.0, 0.0",
+                "fx_exhaustFlame_blue",
+                "0.0, -5.74338, 0.0, 0.0, 1.0, 0.0, running",
+                "fx_exhaustLight_blue",
+                "0.0, -5.74338, 0.0, 0.0, 0.0, 1.0, running",
+                "fx_smokeTrail_light",
+                "0.0, -5.74338, 0.0, 0.0, 1.0, 0.0, running",
+                "fx_exhaustSparks_flameout",
+                "0.0, -5.74338, 0.0, 0.0, 1.0, 0.0, flameout",
+                "sound_vent_medium",
+                "engage",
+                "sound_rocket_hard",
+                "running",
+                "sound_vent_soft",
+                "disengage",
+                "sound_explosion_low",
+                "flameout",
+                "TechRequired",
+                "basicRocketry",
+                "entryCost",
+                3500,
+                "cost",
+                1200,
+                "category",
+                "Engine",
+                "subcategory",
+                0,
+                "title",
+                "LV-T45 \"Swivel\" Liquid Fuel Engine",
+                "manufacturer",
+                "Jebediah Kerman's Junkyard and Spacecraft Parts Co",
+                "description",
+                "The LV-T45 engine was considered a breakthrough in the LV-T series due to its Thrust Vectoring feature. The LV-T45 can deflect its thrust to aid in craft control. All these added mechanics however, make for a slightly smaller and heavier engine in comparison with other LV-T models.",
+                "attachRules",
+                "1,0,1,0,0",
+                "mass",
+                1.5,
+                "heatConductivity",
+                0.06,
+                "skinInternalConductionMult",
+                4,
+                "emissiveConstant",
+                0.8,
+                "dragModelType",
+                "default",
+                "maximum_drag",
+                0.2,
+                "minimum_drag",
+                0.2,
+                "angularDrag",
+                2,
+                "crashTolerance",
+                7,
+                "maxTemp",
+                2000,
+                "bulkheadProfiles",
+                "size1",
+                "tags",
+                "launch propuls rocket sustain (swivel"
+            ],
+            "$type": "kOS.Safe.Encapsulation.Lexicon"
+        },
+        "MODULE",
+        {
+            "items": [
+                {
+                    "entries": [
+                        "attr",
+                        {
+                            "entries": [
+                                "name",
+                                "ModuleEngines",
+                                "thrustVectorTransformName",
+                                "thrustTransform",
+                                "exhaustDamage",
+                                true,
+                                "ignitionThreshold",
+                                0.1,
+                                "minThrust",
+                                0,
+                                "maxThrust",
+                                215,
+                                "heatProduction",
+                                200,
+                                "fxOffset",
+                                "0, 0, 0.574338",
+                                "EngineType",
+                                "LiquidFuel",
+                                "exhaustDamageDistanceOffset",
+                                0.79
+                            ],
+                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                        },
+                        "PROPELLANT",
+                        {
+                            "items": [
+                                {
+                                    "entries": [
+                                        "attr",
+                                        {
+                                            "entries": [
+                                                "name",
+                                                "LiquidFuel",
+                                                "ratio",
+                                                0.9,
+                                                "DrawGauge",
+                                                true
+                                            ],
+                                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                                        }
+                                    ],
+                                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                                },
+                                {
+                                    "entries": [
+                                        "attr",
+                                        {
+                                            "entries": [
+                                                "name",
+                                                "Oxidizer",
+                                                "ratio",
+                                                1.1
+                                            ],
+                                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                                        }
+                                    ],
+                                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                                }
+                            ],
+                            "$type": "kOS.Safe.Encapsulation.ListValue"
+                        },
+                        "atmosphereCurve",
+                        {
+                            "items": [
+                                {
+                                    "entries": [
+                                        "attr",
+                                        {
+                                            "entries": [
+                                                "key",
+                                                {
+                                                    "items": [
+                                                        "0 320",
+                                                        "1 250",
+                                                        "6 0.001"
+                                                    ],
+                                                    "$type": "kOS.Safe.Encapsulation.ListValue"
+                                                }
+                                            ],
+                                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                                        }
+                                    ],
+                                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                                }
+                            ],
+                            "$type": "kOS.Safe.Encapsulation.ListValue"
+                        }
+                    ],
+                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                },
+                {
+                    "entries": [
+                        "attr",
+                        {
+                            "entries": [
+                                "name",
+                                "ModuleJettison",
+                                "jettisonName",
+                                "fairing",
+                                "bottomNodeName",
+                                "bottom",
+                                "isFairing",
+                                true,
+                                "jettisonedObjectMass",
+                                0.1,
+                                "jettisonForce",
+                                5,
+                                "jettisonDirection",
+                                "0 0 1"
+                            ],
+                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                        }
+                    ],
+                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                },
+                {
+                    "entries": [
+                        "attr",
+                        {
+                            "entries": [
+                                "name",
+                                "ModuleGimbal",
+                                "gimbalTransformName",
+                                "thrustTransform",
+                                "gimbalRange",
+                                3
+                            ],
+                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                        }
+                    ],
+                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                },
+                {
+                    "entries": [
+                        "attr",
+                        {
+                            "entries": [
+                                "name",
+                                "FXModuleAnimateThrottle",
+                                "animationName",
+                                "HeatEmissiveAnimation",
+                                "responseSpeed",
+                                0.001,
+                                "dependOnEngineState",
+                                true,
+                                "dependOnThrottle",
+                                true
+                            ],
+                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                        }
+                    ],
+                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                },
+                {
+                    "entries": [
+                        "attr",
+                        {
+                            "entries": [
+                                "name",
+                                "ModuleAlternator"
+                            ],
+                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                        },
+                        "RESOURCE",
+                        {
+                            "items": [
+                                {
+                                    "entries": [
+                                        "attr",
+                                        {
+                                            "entries": [
+                                                "name",
+                                                "ElectricCharge",
+                                                "rate",
+                                                6
+                                            ],
+                                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                                        }
+                                    ],
+                                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                                }
+                            ],
+                            "$type": "kOS.Safe.Encapsulation.ListValue"
+                        }
+                    ],
+                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                },
+                {
+                    "entries": [
+                        "attr",
+                        {
+                            "entries": [
+                                "name",
+                                "ModuleSurfaceFX",
+                                "thrustProviderModuleIndex",
+                                0,
+                                "fxMax",
+                                0.5,
+                                "maxDistance",
+                                30,
+                                "falloff",
+                                1.7,
+                                "thrustTransformName",
+                                "thrustTransform"
+                            ],
+                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                        }
+                    ],
+                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                },
+                {
+                    "entries": [
+                        "attr",
+                        {
+                            "entries": [
+                                "name",
+                                "ModuleTestSubject",
+                                "useStaging",
+                                true,
+                                "useEvent",
+                                true,
+                                "situationMask",
+                                127
+                            ],
+                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                        },
+                        "CONSTRAINT",
+                        {
+                            "items": [
+                                {
+                                    "entries": [
+                                        "attr",
+                                        {
+                                            "entries": [
+                                                "type",
+                                                "REPEATABILITY",
+                                                "value",
+                                                "ALWAYS",
+                                                "prestige",
+                                                "Trivial"
+                                            ],
+                                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                                        }
+                                    ],
+                                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                                },
+                                {
+                                    "entries": [
+                                        "attr",
+                                        {
+                                            "entries": [
+                                                "type",
+                                                "REPEATABILITY",
+                                                "value",
+                                                "BODYANDSITUATION",
+                                                "prestige",
+                                                "Significant"
+                                            ],
+                                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                                        }
+                                    ],
+                                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                                },
+                                {
+                                    "entries": [
+                                        "attr",
+                                        {
+                                            "entries": [
+                                                "type",
+                                                "REPEATABILITY",
+                                                "value",
+                                                "ONCEPERPART",
+                                                "prestige",
+                                                "Exceptional"
+                                            ],
+                                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                                        }
+                                    ],
+                                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                                },
+                                {
+                                    "entries": [
+                                        "attr",
+                                        {
+                                            "entries": [
+                                                "type",
+                                                "ALTITUDEENV",
+                                                "test",
+                                                "GT",
+                                                "value",
+                                                4000,
+                                                "prestige",
+                                                "Trivial"
+                                            ],
+                                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                                        }
+                                    ],
+                                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                                },
+                                {
+                                    "entries": [
+                                        "attr",
+                                        {
+                                            "entries": [
+                                                "type",
+                                                "ALTITUDEENV",
+                                                "test",
+                                                "LT",
+                                                "value",
+                                                8000,
+                                                "prestige",
+                                                "Trivial"
+                                            ],
+                                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                                        }
+                                    ],
+                                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                                },
+                                {
+                                    "entries": [
+                                        "attr",
+                                        {
+                                            "entries": [
+                                                "type",
+                                                "ALTITUDEENV",
+                                                "test",
+                                                "GT",
+                                                "value",
+                                                2000,
+                                                "prestige",
+                                                "Significant"
+                                            ],
+                                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                                        }
+                                    ],
+                                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                                },
+                                {
+                                    "entries": [
+                                        "attr",
+                                        {
+                                            "entries": [
+                                                "type",
+                                                "ALTITUDEENV",
+                                                "test",
+                                                "LT",
+                                                "value",
+                                                4000,
+                                                "prestige",
+                                                "Significant"
+                                            ],
+                                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                                        }
+                                    ],
+                                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                                },
+                                {
+                                    "entries": [
+                                        "attr",
+                                        {
+                                            "entries": [
+                                                "type",
+                                                "ALTITUDEENV",
+                                                "test",
+                                                "GT",
+                                                "value",
+                                                1000,
+                                                "prestige",
+                                                "Exceptional"
+                                            ],
+                                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                                        }
+                                    ],
+                                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                                },
+                                {
+                                    "entries": [
+                                        "attr",
+                                        {
+                                            "entries": [
+                                                "type",
+                                                "ALTITUDEENV",
+                                                "test",
+                                                "LT",
+                                                "value",
+                                                2000,
+                                                "prestige",
+                                                "Exceptional"
+                                            ],
+                                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                                        }
+                                    ],
+                                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                                },
+                                {
+                                    "entries": [
+                                        "attr",
+                                        {
+                                            "entries": [
+                                                "type",
+                                                "ALTITUDE",
+                                                "test",
+                                                "GT",
+                                                "value",
+                                                0,
+                                                "situationMask",
+                                                8
+                                            ],
+                                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                                        }
+                                    ],
+                                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                                },
+                                {
+                                    "entries": [
+                                        "attr",
+                                        {
+                                            "entries": [
+                                                "type",
+                                                "ALTITUDE",
+                                                "test",
+                                                "LT",
+                                                "value",
+                                                300000,
+                                                "situationMask",
+                                                16,
+                                                "body",
+                                                "_NotSun"
+                                            ],
+                                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                                        }
+                                    ],
+                                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                                },
+                                {
+                                    "entries": [
+                                        "attr",
+                                        {
+                                            "entries": [
+                                                "type",
+                                                "ALTITUDE",
+                                                "test",
+                                                "LT",
+                                                "value",
+                                                600000,
+                                                "situationMask",
+                                                32,
+                                                "body",
+                                                "_NotSun"
+                                            ],
+                                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                                        }
+                                    ],
+                                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                                },
+                                {
+                                    "entries": [
+                                        "attr",
+                                        {
+                                            "entries": [
+                                                "type",
+                                                "SPEED",
+                                                "test",
+                                                "GT",
+                                                "value",
+                                                0,
+                                                "situationMask",
+                                                8,
+                                                "prestige",
+                                                "Trivial"
+                                            ],
+                                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                                        }
+                                    ],
+                                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                                },
+                                {
+                                    "entries": [
+                                        "attr",
+                                        {
+                                            "entries": [
+                                                "type",
+                                                "SPEED",
+                                                "test",
+                                                "LT",
+                                                "value",
+                                                600,
+                                                "situationMask",
+                                                8,
+                                                "prestige",
+                                                "Trivial"
+                                            ],
+                                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                                        }
+                                    ],
+                                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                                },
+                                {
+                                    "entries": [
+                                        "attr",
+                                        {
+                                            "entries": [
+                                                "type",
+                                                "SPEED",
+                                                "test",
+                                                "GT",
+                                                "value",
+                                                300,
+                                                "situationMask",
+                                                8,
+                                                "prestige",
+                                                "Significant"
+                                            ],
+                                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                                        }
+                                    ],
+                                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                                },
+                                {
+                                    "entries": [
+                                        "attr",
+                                        {
+                                            "entries": [
+                                                "type",
+                                                "SPEED",
+                                                "test",
+                                                "LT",
+                                                "value",
+                                                1200,
+                                                "situationMask",
+                                                8,
+                                                "prestige",
+                                                "Significant"
+                                            ],
+                                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                                        }
+                                    ],
+                                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                                },
+                                {
+                                    "entries": [
+                                        "attr",
+                                        {
+                                            "entries": [
+                                                "type",
+                                                "SPEED",
+                                                "test",
+                                                "GT",
+                                                "value",
+                                                600,
+                                                "situationMask",
+                                                8,
+                                                "prestige",
+                                                "Exceptional"
+                                            ],
+                                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                                        }
+                                    ],
+                                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                                },
+                                {
+                                    "entries": [
+                                        "attr",
+                                        {
+                                            "entries": [
+                                                "type",
+                                                "SPEED",
+                                                "test",
+                                                "LT",
+                                                "value",
+                                                2500,
+                                                "situationMask",
+                                                8,
+                                                "prestige",
+                                                "Exceptional"
+                                            ],
+                                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                                        }
+                                    ],
+                                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                                },
+                                {
+                                    "entries": [
+                                        "attr",
+                                        {
+                                            "entries": [
+                                                "type",
+                                                "SPEEDENV",
+                                                "test",
+                                                "LT",
+                                                "value",
+                                                200,
+                                                "prestige",
+                                                "Trivial"
+                                            ],
+                                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                                        }
+                                    ],
+                                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                                },
+                                {
+                                    "entries": [
+                                        "attr",
+                                        {
+                                            "entries": [
+                                                "type",
+                                                "SPEEDENV",
+                                                "test",
+                                                "GT",
+                                                "value",
+                                                100,
+                                                "prestige",
+                                                "Trivial"
+                                            ],
+                                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                                        }
+                                    ],
+                                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                                },
+                                {
+                                    "entries": [
+                                        "attr",
+                                        {
+                                            "entries": [
+                                                "type",
+                                                "SPEEDENV",
+                                                "test",
+                                                "LT",
+                                                "value",
+                                                100,
+                                                "prestige",
+                                                "Significant"
+                                            ],
+                                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                                        }
+                                    ],
+                                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                                },
+                                {
+                                    "entries": [
+                                        "attr",
+                                        {
+                                            "entries": [
+                                                "type",
+                                                "SPEEDENV",
+                                                "test",
+                                                "GT",
+                                                "value",
+                                                50,
+                                                "prestige",
+                                                "Significant"
+                                            ],
+                                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                                        }
+                                    ],
+                                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                                },
+                                {
+                                    "entries": [
+                                        "attr",
+                                        {
+                                            "entries": [
+                                                "type",
+                                                "SPEEDENV",
+                                                "test",
+                                                "LT",
+                                                "value",
+                                                50,
+                                                "prestige",
+                                                "Exceptional"
+                                            ],
+                                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                                        }
+                                    ],
+                                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                                },
+                                {
+                                    "entries": [
+                                        "attr",
+                                        {
+                                            "entries": [
+                                                "type",
+                                                "SPEEDENV",
+                                                "test",
+                                                "GT",
+                                                "value",
+                                                20,
+                                                "prestige",
+                                                "Exceptional"
+                                            ],
+                                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                                        }
+                                    ],
+                                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                                }
+                            ],
+                            "$type": "kOS.Safe.Encapsulation.ListValue"
+                        }
+                    ],
+                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                }
+            ],
+            "$type": "kOS.Safe.Encapsulation.ListValue"
+        }
+    ],
+    "$type": "kOS.Safe.Encapsulation.Lexicon"
+}

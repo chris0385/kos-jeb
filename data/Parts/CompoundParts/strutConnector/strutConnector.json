@@ -1,0 +1,138 @@
+{
+    "entries": [
+        "attr",
+        {
+            "entries": [
+                "name",
+                "strutConnector",
+                "module",
+                "CompoundPart",
+                "author",
+                "HarvesteR",
+                "mesh",
+                "strutConnector.DAE",
+                "scale",
+                0.1,
+                "specPower",
+                0.1,
+                "rimFalloff",
+                3,
+                "alphaCutoff",
+                0,
+                "iconCenter",
+                "-4.69147, 2.64656, 0.0",
+                "TechRequired",
+                "generalConstruction",
+                "entryCost",
+                2800,
+                "cost",
+                42,
+                "category",
+                "Structural",
+                "subcategory",
+                0,
+                "title",
+                "EAS-4 Strut Connector",
+                "manufacturer",
+                "Kerlington Model Rockets and Paper Products Inc",
+                "description",
+                "The Strut Connector is highly regarded by many spacecraft engineers as they help in constructing more stable spacecraft. Once both sides are connected, a structural beam is created to link both ends, allowing for sturdier (and heavier) construction.",
+                "attachRules",
+                "0,1,0,0,1",
+                "node_attach",
+                "0.0, 0.0, 0.0, 1.0, 0.0, 0.0",
+                "mass",
+                0.05,
+                "dragModelType",
+                "none",
+                "maximum_drag",
+                0.02,
+                "minimum_drag",
+                0.02,
+                "angularDrag",
+                1,
+                "crashTolerance",
+                12,
+                "maxTemp",
+                2000,
+                "heatConductivity",
+                20,
+                "skinMassPerArea",
+                20,
+                "explosionPotential",
+                0,
+                "fuelCrossFeed",
+                false,
+                "PhysicsSignificance",
+                1,
+                "maxLength",
+                10,
+                "bulkheadProfiles",
+                "srf",
+                "tags",
+                "bind connect join line moar (more pin rigid shake strength strong stru support tie wobble"
+            ],
+            "$type": "kOS.Safe.Encapsulation.Lexicon"
+        },
+        "MODULE",
+        {
+            "items": [
+                {
+                    "entries": [
+                        "attr",
+                        {
+                            "entries": [
+                                "name",
+                                "CModuleLinkedMesh",
+                                "lineObjName",
+                                "obj_strut",
+                                "targetAnchorName",
+                                "obj_targetAnchor"
+                            ],
+                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                        }
+                    ],
+                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                },
+                {
+                    "entries": [
+                        "attr",
+                        {
+                            "entries": [
+                                "name",
+                                "CModuleStrut",
+                                "linearStrength",
+                                150,
+                                "angularStrength",
+                                150
+                            ],
+                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                        }
+                    ],
+                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                }
+            ],
+            "$type": "kOS.Safe.Encapsulation.ListValue"
+        },
+        "DRAG_CUBE",
+        {
+            "items": [
+                {
+                    "entries": [
+                        "attr",
+                        {
+                            "entries": [
+                                "none",
+                                true
+                            ],
+                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                        }
+                    ],
+                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                }
+            ],
+            "$type": "kOS.Safe.Encapsulation.ListValue"
+        }
+    ],
+    "$type": "kOS.Safe.Encapsulation.Lexicon"
+}

@@ -1,0 +1,121 @@
+{
+    "entries": [
+        "attr",
+        {
+            "entries": [
+                "name",
+                "sensorBarometer",
+                "module",
+                "Part",
+                "author",
+                "NovaSilisko",
+                "mesh",
+                "model.mu",
+                "rescaleFactor",
+                1,
+                "node_attach",
+                "0.0, 0.0, 0.0, 0.0, 0.0, -1.0",
+                "TechRequired",
+                "survivability",
+                "entryCost",
+                2200,
+                "cost",
+                880,
+                "category",
+                "Science",
+                "subcategory",
+                0,
+                "title",
+                "PresMat Barometer",
+                "manufacturer",
+                "Probodobodyne Inc",
+                "description",
+                "A device for measuring the local atmospheric pressure. Warranty void if exposed to air.",
+                "attachRules",
+                "0,1,0,0,1",
+                "mass",
+                0.005,
+                "dragModelType",
+                "default",
+                "maximum_drag",
+                0.2,
+                "minimum_drag",
+                0.2,
+                "angularDrag",
+                1,
+                "crashTolerance",
+                8,
+                "maxTemp",
+                1200,
+                "PhysicsSignificance",
+                1,
+                "bulkheadProfiles",
+                "srf",
+                "tags",
+                "atmospher experiment pressure research rerun re-run reus re-us redo re-do reset re-set science sensor"
+            ],
+            "$type": "kOS.Safe.Encapsulation.Lexicon"
+        },
+        "MODULE",
+        {
+            "items": [
+                {
+                    "entries": [
+                        "attr",
+                        {
+                            "entries": [
+                                "name",
+                                "ModuleEnviroSensor",
+                                "sensorType",
+                                "PRES"
+                            ],
+                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                        }
+                    ],
+                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                },
+                {
+                    "entries": [
+                        "attr",
+                        {
+                            "entries": [
+                                "name",
+                                "ModuleScienceExperiment",
+                                "experimentID",
+                                "barometerScan",
+                                "experimentActionName",
+                                "Log Pressure Data",
+                                "resetActionName",
+                                "Delete Data",
+                                "useStaging",
+                                false,
+                                "useActionGroups",
+                                true,
+                                "hideUIwhenUnavailable",
+                                false,
+                                "xmitDataScalar",
+                                0.5,
+                                "dataIsCollectable",
+                                true,
+                                "collectActionName",
+                                "Take Data",
+                                "interactionRange",
+                                1.5,
+                                "rerunnable",
+                                true,
+                                "usageReqMaskInternal",
+                                1,
+                                "usageReqMaskExternal",
+                                8
+                            ],
+                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                        }
+                    ],
+                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                }
+            ],
+            "$type": "kOS.Safe.Encapsulation.ListValue"
+        }
+    ],
+    "$type": "kOS.Safe.Encapsulation.Lexicon"
+}

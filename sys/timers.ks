@@ -12,38 +12,20 @@ function afterXSeconds {
 function everyXSeconds {
 	parameter delay.
 	local later is TIME:SECONDS + delay.
+	local val is false.
 	return { 
 		if TIME:SECONDS > later {
 			set later to TIME:SECONDS + delay.
-			return true.
+			set val to not val.
 		}
-		return false.
+		return val.
 	}.
 }
 
-function registerCallback {
-	parameter callback.
-	parameter cond is { return true. }.
-	local active is true.
-	
-	when cond() then {
-		if active {
-			callback().
-			preserve.
-		}
-	}
-	return { set active to false. }.
-}
-
-function registerCallback_deac {
-	parameter callback.
-	parameter cond is { return true. }.
-	parameter active is { return true. }.
-	
-	when cond() then {
-		if active() {
-			callback().
-			preserve.
-		}
+if false {
+	local tick is everyXSeconds(0.5).
+	on tick() {
+		dosmth().
+		if not done { preserve. }.
 	}
 }

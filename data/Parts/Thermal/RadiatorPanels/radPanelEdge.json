@@ -1,0 +1,134 @@
+{
+    "entries": [
+        "attr",
+        {
+            "entries": [
+                "name",
+                "radPanelEdge",
+                "module",
+                "Part",
+                "author",
+                "RoverDude",
+                "rescaleFactor",
+                1,
+                "node_attach",
+                "0.0, 0.0, -0.0, 0.0, 0.0, -1.0",
+                "TechRequired",
+                "basicScience",
+                "entryCost",
+                2200,
+                "cost",
+                450,
+                "category",
+                "Thermal",
+                "manufacturer",
+                "Probodobodyne Inc",
+                "subcategory",
+                0,
+                "title",
+                "Radiator Panel (edge)",
+                "description",
+                "A radially attachable radiator panel to help dissipate heat into space.",
+                "attachRules",
+                "0,1,0,1,1",
+                "mass",
+                0.03,
+                "dragModelType",
+                "default",
+                "maximum_drag",
+                0.2,
+                "minimum_drag",
+                0.2,
+                "angularDrag",
+                2,
+                "crashTolerance",
+                12,
+                "maxTemp",
+                2500,
+                "bulkheadProfiles",
+                "srf",
+                "tags",
+                "cool fixed heat moderat radiat static temperat therm",
+                "emissiveConstant",
+                0.9,
+                "heatConductivity",
+                0.001,
+                "thermalMassModifier",
+                5,
+                "radiatorHeadroom",
+                0.75,
+                "skinInternalConductionMult",
+                2000
+            ],
+            "$type": "kOS.Safe.Encapsulation.Lexicon"
+        },
+        "MODEL",
+        {
+            "items": [
+                {
+                    "entries": [
+                        "attr",
+                        {
+                            "entries": [
+                                "model",
+                                "Squad/Parts/Thermal/RadiatorPanels/radPanelEdge"
+                            ],
+                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                        }
+                    ],
+                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                }
+            ],
+            "$type": "kOS.Safe.Encapsulation.ListValue"
+        },
+        "MODULE",
+        {
+            "items": [
+                {
+                    "entries": [
+                        "attr",
+                        {
+                            "entries": [
+                                "name",
+                                "ModuleActiveRadiator",
+                                "maxEnergyTransfer",
+                                7500,
+                                "overcoolFactor",
+                                0.25,
+                                "isCoreRadiator",
+                                true,
+                                "parentCoolingOnly",
+                                true
+                            ],
+                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                        },
+                        "RESOURCE",
+                        {
+                            "items": [
+                                {
+                                    "entries": [
+                                        "attr",
+                                        {
+                                            "entries": [
+                                                "name",
+                                                "ElectricCharge",
+                                                "rate",
+                                                0.025
+                                            ],
+                                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                                        }
+                                    ],
+                                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                                }
+                            ],
+                            "$type": "kOS.Safe.Encapsulation.ListValue"
+                        }
+                    ],
+                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                }
+            ],
+            "$type": "kOS.Safe.Encapsulation.ListValue"
+        }
+    ],
+    "$type": "kOS.Safe.Encapsulation.Lexicon"
+}

@@ -1,0 +1,294 @@
+{
+    "entries": [
+        "attr",
+        {
+            "entries": [
+                "name",
+                "GrapplingDevice",
+                "module",
+                "Part",
+                "author",
+                "Squad",
+                "mesh",
+                "model.mu",
+                "scale",
+                1,
+                "node_stack_top",
+                "0.0, -0.1126614, 0.00, 0.0, -1.0, 0.0, 1",
+                "node_attach",
+                "0.0, 0.0, 0.00, 0.0, -1.0, 0.0, 1",
+                "TechRequired",
+                "actuators",
+                "entryCost",
+                5200,
+                "cost",
+                450,
+                "category",
+                "Coupling",
+                "subcategory",
+                0,
+                "title",
+                "Advanced Grabbing Unit",
+                "manufacturer",
+                "Kerbal Motion LLC",
+                "description",
+                "Kerbal Motion engineers have long struggled with the problem of how to extract dropped tools from complicated machinery. After observing an intern cleaning out his shoes by turning them upside and shaking them inside the lab, our team was hit with a stroke of inspiration! Why not turn the rocket parts upside down and shake them? The grabbing arm perfectly filled this niche, and is quite capable of lifting heavy machinery. It has since found other uses, besides delicate tool extraction operations. AKA \"The Klaw!\"",
+                "attachRules",
+                "1,1,0,0,0",
+                "mass",
+                0.075,
+                "dragModelType",
+                "default",
+                "maximum_drag",
+                0.3,
+                "minimum_drag",
+                0.2,
+                "angularDrag",
+                1,
+                "crashTolerance",
+                {
+                    "items": [
+                        7,
+                        50
+                    ],
+                    "$type": "kOS.Safe.Encapsulation.ListValue"
+                },
+                "maxTemp",
+                2000,
+                "fuelCrossFeed",
+                false,
+                "breakingForce",
+                50,
+                "breakingTorque",
+                50,
+                "bulkheadProfiles",
+                "size1, srf",
+                "tags",
+                "a.r.m arm asteroid capture clam claw connect dock fasten grab join klaw nasa"
+            ],
+            "$type": "kOS.Safe.Encapsulation.Lexicon"
+        },
+        "MODULE",
+        {
+            "items": [
+                {
+                    "entries": [
+                        "attr",
+                        {
+                            "entries": [
+                                "name",
+                                "ModuleGrappleNode",
+                                "nodeTransformName",
+                                "ArticulatedCap",
+                                "deployAnimationController",
+                                1,
+                                "nodeType",
+                                "size1",
+                                "captureRange",
+                                0.06,
+                                "captureMinFwdDot",
+                                0.733,
+                                "captureMaxRvel",
+                                1
+                            ],
+                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                        }
+                    ],
+                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                },
+                {
+                    "entries": [
+                        "attr",
+                        {
+                            "entries": [
+                                "name",
+                                "ModuleAnimateGeneric",
+                                "animationName",
+                                "Deploy",
+                                "startEventGUIName",
+                                "Arm",
+                                "endEventGUIName",
+                                "Disarm",
+                                "actionGUIName",
+                                "Toggle Arming"
+                            ],
+                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                        }
+                    ],
+                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                },
+                {
+                    "entries": [
+                        "attr",
+                        {
+                            "entries": [
+                                "name",
+                                "FXModuleLookAtConstraint"
+                            ],
+                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                        },
+                        "CONSTRAINLOOKFX",
+                        {
+                            "items": [
+                                {
+                                    "entries": [
+                                        "attr",
+                                        {
+                                            "entries": [
+                                                "rotatorsName",
+                                                "Piston1",
+                                                "targetName",
+                                                "Sleeve1"
+                                            ],
+                                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                                        }
+                                    ],
+                                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                                },
+                                {
+                                    "entries": [
+                                        "attr",
+                                        {
+                                            "entries": [
+                                                "rotatorsName",
+                                                "Sleeve1",
+                                                "targetName",
+                                                "Mounting1"
+                                            ],
+                                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                                        }
+                                    ],
+                                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                                },
+                                {
+                                    "entries": [
+                                        "attr",
+                                        {
+                                            "entries": [
+                                                "rotatorsName",
+                                                "Piston2",
+                                                "targetName",
+                                                "Sleeve2"
+                                            ],
+                                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                                        }
+                                    ],
+                                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                                },
+                                {
+                                    "entries": [
+                                        "attr",
+                                        {
+                                            "entries": [
+                                                "rotatorsName",
+                                                "Sleeve2",
+                                                "targetName",
+                                                "Mounting2"
+                                            ],
+                                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                                        }
+                                    ],
+                                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                                },
+                                {
+                                    "entries": [
+                                        "attr",
+                                        {
+                                            "entries": [
+                                                "rotatorsName",
+                                                "Piston3",
+                                                "targetName",
+                                                "Sleeve3"
+                                            ],
+                                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                                        }
+                                    ],
+                                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                                },
+                                {
+                                    "entries": [
+                                        "attr",
+                                        {
+                                            "entries": [
+                                                "rotatorsName",
+                                                "Sleeve3",
+                                                "targetName",
+                                                "Mounting3"
+                                            ],
+                                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                                        }
+                                    ],
+                                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                                },
+                                {
+                                    "entries": [
+                                        "attr",
+                                        {
+                                            "entries": [
+                                                "rotatorsName",
+                                                "Piston4",
+                                                "targetName",
+                                                "Sleeve4"
+                                            ],
+                                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                                        }
+                                    ],
+                                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                                },
+                                {
+                                    "entries": [
+                                        "attr",
+                                        {
+                                            "entries": [
+                                                "rotatorsName",
+                                                "Sleeve4",
+                                                "targetName",
+                                                "Mounting4"
+                                            ],
+                                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                                        }
+                                    ],
+                                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                                },
+                                {
+                                    "entries": [
+                                        "attr",
+                                        {
+                                            "entries": [
+                                                "rotatorsName",
+                                                "BaseSleeve1",
+                                                "targetName",
+                                                "MainSleeveLookTarget"
+                                            ],
+                                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                                        }
+                                    ],
+                                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                                }
+                            ],
+                            "$type": "kOS.Safe.Encapsulation.ListValue"
+                        }
+                    ],
+                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                },
+                {
+                    "entries": [
+                        "attr",
+                        {
+                            "entries": [
+                                "name",
+                                "FlagDecal",
+                                "textureQuadName",
+                                "flagTransform"
+                            ],
+                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                        }
+                    ],
+                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                }
+            ],
+            "$type": "kOS.Safe.Encapsulation.ListValue"
+        }
+    ],
+    "$type": "kOS.Safe.Encapsulation.Lexicon"
+}

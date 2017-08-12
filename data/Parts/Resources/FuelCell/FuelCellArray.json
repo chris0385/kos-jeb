@@ -1,0 +1,197 @@
+{
+    "entries": [
+        "attr",
+        {
+            "entries": [
+                "name",
+                "FuelCellArray",
+                "module",
+                "Part",
+                "author",
+                "RoverDude",
+                "rescaleFactor",
+                1,
+                "node_attach",
+                ".05, 0, 0, 1, 0, 0, 0",
+                "TechRequired",
+                "specializedElectrics",
+                "entryCost",
+                13500,
+                "cost",
+                4500,
+                "category",
+                "Electrical",
+                "subcategory",
+                0,
+                "title",
+                "Fuel Cell Array",
+                "manufacturer",
+                "Zaltonic Electronics",
+                "description",
+                "Why have just one fuel cell when you can have six?  The fuel cell array is ideal for situations where you need a large source of reliable power.  Like the smaller fuel cells, this array operates by converting fuel and oxidizer into energy.",
+                "attachRules",
+                "0,1,0,0,0",
+                "mass",
+                0.24,
+                "dragModelType",
+                "default",
+                "maximum_drag",
+                0.2,
+                "minimum_drag",
+                0.2,
+                "angularDrag",
+                2,
+                "crashTolerance",
+                7,
+                "maxTemp",
+                2000,
+                "bulkheadProfiles",
+                "srf",
+                "tags",
+                "array bank charge convert e/c elect energ pack power volt watt"
+            ],
+            "$type": "kOS.Safe.Encapsulation.Lexicon"
+        },
+        "MODEL",
+        {
+            "items": [
+                {
+                    "entries": [
+                        "attr",
+                        {
+                            "entries": [
+                                "model",
+                                "Squad/Parts/Resources/FuelCell/FuelCellArray"
+                            ],
+                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                        }
+                    ],
+                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                }
+            ],
+            "$type": "kOS.Safe.Encapsulation.ListValue"
+        },
+        "MODULE",
+        {
+            "items": [
+                {
+                    "entries": [
+                        "attr",
+                        {
+                            "entries": [
+                                "name",
+                                "ModuleResourceConverter",
+                                "ConverterName",
+                                "Fuel Cell",
+                                "StartActionName",
+                                "Start Fuel Cell",
+                                "StopActionName",
+                                "Stop Fuel Cell",
+                                "ToggleActionName",
+                                "Toggle Fuel Cell",
+                                "FillAmount",
+                                0.95,
+                                "AutoShutdown",
+                                false,
+                                "GeneratesHeat",
+                                false,
+                                "UseSpecialistBonus",
+                                false
+                            ],
+                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                        },
+                        "INPUT_RESOURCE",
+                        {
+                            "items": [
+                                {
+                                    "entries": [
+                                        "attr",
+                                        {
+                                            "entries": [
+                                                "ResourceName",
+                                                "LiquidFuel",
+                                                "Ratio",
+                                                0.02025,
+                                                "FlowMode",
+                                                "STAGE_PRIORITY_FLOW"
+                                            ],
+                                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                                        }
+                                    ],
+                                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                                },
+                                {
+                                    "entries": [
+                                        "attr",
+                                        {
+                                            "entries": [
+                                                "ResourceName",
+                                                "Oxidizer",
+                                                "Ratio",
+                                                0.02475,
+                                                "FlowMode",
+                                                "STAGE_PRIORITY_FLOW"
+                                            ],
+                                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                                        }
+                                    ],
+                                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                                }
+                            ],
+                            "$type": "kOS.Safe.Encapsulation.ListValue"
+                        },
+                        "OUTPUT_RESOURCE",
+                        {
+                            "items": [
+                                {
+                                    "entries": [
+                                        "attr",
+                                        {
+                                            "entries": [
+                                                "ResourceName",
+                                                "ElectricCharge",
+                                                "Ratio",
+                                                18,
+                                                "DumpExcess",
+                                                false
+                                            ],
+                                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                                        }
+                                    ],
+                                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                                }
+                            ],
+                            "$type": "kOS.Safe.Encapsulation.ListValue"
+                        }
+                    ],
+                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                }
+            ],
+            "$type": "kOS.Safe.Encapsulation.ListValue"
+        },
+        "RESOURCE",
+        {
+            "items": [
+                {
+                    "entries": [
+                        "attr",
+                        {
+                            "entries": [
+                                "name",
+                                "ElectricCharge",
+                                "amount",
+                                300,
+                                "maxAmount",
+                                300
+                            ],
+                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                        }
+                    ],
+                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                }
+            ],
+            "$type": "kOS.Safe.Encapsulation.ListValue"
+        }
+    ],
+    "$type": "kOS.Safe.Encapsulation.Lexicon"
+}

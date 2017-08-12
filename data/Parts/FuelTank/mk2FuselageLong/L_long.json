@@ -1,0 +1,140 @@
+{
+    "entries": [
+        "attr",
+        {
+            "entries": [
+                "name",
+                "mk2Fuselage",
+                "module",
+                "Part",
+                "author",
+                "Porkjet",
+                "rescaleFactor",
+                1,
+                "node_stack_top",
+                "0.0, 1.875, 0.0, 0.0, 1.0, 0.0",
+                "node_stack_bottom",
+                "0.0, -1.875, 0.0, 0.0, -1.0, 0.0",
+                "node_attach",
+                "1.25, 0.0, 0.0, 1.0, 0.0, 0.0, 1",
+                "mirrorRefAxis",
+                "0, 0, -1",
+                "TechRequired",
+                "highAltitudeFlight",
+                "entryCost",
+                18500,
+                "cost",
+                1450,
+                "category",
+                "Propulsion",
+                "subcategory",
+                0,
+                "title",
+                "Mk2 Liquid Fuel Fuselage",
+                "manufacturer",
+                "C7 Aerospace Division",
+                "description",
+                "This airframe fuselage features the latest in lifting technology. Not only does it stay together during flight, it's sleek design makes your plane just that much speedier! Only carries Liquid Fuel.",
+                "attachRules",
+                "1,1,1,1,0",
+                "mass",
+                0.57,
+                "dragModelType",
+                "default",
+                "maximum_drag",
+                0.2,
+                "minimum_drag",
+                0.3,
+                "angularDrag",
+                1,
+                "crashTolerance",
+                50,
+                "breakingForce",
+                50,
+                "breakingTorque",
+                50,
+                "maxTemp",
+                2500,
+                "emissiveConstant",
+                0.8,
+                "fuelCrossFeed",
+                true,
+                "bulkheadProfiles",
+                "srf, mk2",
+                "tags",
+                "aircraft airplane fueltank jet ?lf only plane propellant tank"
+            ],
+            "$type": "kOS.Safe.Encapsulation.Lexicon"
+        },
+        "MODEL",
+        {
+            "items": [
+                {
+                    "entries": [
+                        "attr",
+                        {
+                            "entries": [
+                                "model",
+                                "Squad/Parts/FuelTank/mk2FuselageLong/FuselageLongLiquid"
+                            ],
+                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                        }
+                    ],
+                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                }
+            ],
+            "$type": "kOS.Safe.Encapsulation.ListValue"
+        },
+        "MODULE",
+        {
+            "items": [
+                {
+                    "entries": [
+                        "attr",
+                        {
+                            "entries": [
+                                "name",
+                                "ModuleLiftingSurface",
+                                "useInternalDragModel",
+                                false,
+                                "deflectionLiftCoeff",
+                                0.7,
+                                "dragAtMaxAoA",
+                                0.3,
+                                "dragAtMinAoA",
+                                0.1
+                            ],
+                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                        }
+                    ],
+                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                }
+            ],
+            "$type": "kOS.Safe.Encapsulation.ListValue"
+        },
+        "RESOURCE",
+        {
+            "items": [
+                {
+                    "entries": [
+                        "attr",
+                        {
+                            "entries": [
+                                "name",
+                                "LiquidFuel",
+                                "amount",
+                                800,
+                                "maxAmount",
+                                800
+                            ],
+                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                        }
+                    ],
+                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                }
+            ],
+            "$type": "kOS.Safe.Encapsulation.ListValue"
+        }
+    ],
+    "$type": "kOS.Safe.Encapsulation.Lexicon"
+}

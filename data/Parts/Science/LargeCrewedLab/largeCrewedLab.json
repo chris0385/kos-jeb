@@ -1,0 +1,434 @@
+{
+    "entries": [
+        "attr",
+        {
+            "entries": [
+                "name",
+                "Large_Crewed_Lab",
+                "module",
+                "Part",
+                "author",
+                "Squad",
+                "mesh",
+                "large_crewed_lab.mu",
+                "rescaleFactor",
+                1,
+                "node_stack_top",
+                "0.0, 1.825, 0.0, 0.0, 1.0, 0.0, 2",
+                "node_stack_bottom",
+                "0.0, -1.831, 0.0, 0.0, -1.0, 0.0, 2",
+                "CrewCapacity",
+                2,
+                "TechRequired",
+                "advExploration",
+                "entryCost",
+                10400,
+                "cost",
+                4000,
+                "category",
+                "Science",
+                "subcategory",
+                0,
+                "title",
+                "Mobile Processing Lab MPL-LG-2",
+                "manufacturer",
+                "Integrated Integrals",
+                "description",
+                "No longer are you limited to research facilities only on Kerbin!  With the Mobile Processing Lab, you can conduct long-term experiments and ongoing research with the data you collect in the field.  Be sure to check back on your scientists from time to time, and transmit the results of their research home! This model is guaranteed to spontaneously combust less than previous models, and also has the equipment necessary to clean out and restore functionality to inoperable experiments.",
+                "attachRules",
+                "1,0,1,1,0",
+                "mass",
+                3.5,
+                "dragModelType",
+                "default",
+                "maximum_drag",
+                0.2,
+                "minimum_drag",
+                0.3,
+                "angularDrag",
+                2,
+                "crashTolerance",
+                6,
+                "breakingForce",
+                200,
+                "breakingTorque",
+                200,
+                "maxTemp",
+                1000,
+                "skinMaxTemp",
+                2200,
+                "vesselType",
+                "Ship",
+                "bulkheadProfiles",
+                "size2",
+                "tags",
+                "experiment laboratory research science"
+            ],
+            "$type": "kOS.Safe.Encapsulation.Lexicon"
+        },
+        "INTERNAL",
+        {
+            "items": [
+                {
+                    "entries": [
+                        "attr",
+                        {
+                            "entries": [
+                                "name",
+                                "Mobile_Processing_Lab_Int"
+                            ],
+                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                        }
+                    ],
+                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                }
+            ],
+            "$type": "kOS.Safe.Encapsulation.ListValue"
+        },
+        "MODULE",
+        {
+            "items": [
+                {
+                    "entries": [
+                        "attr",
+                        {
+                            "entries": [
+                                "name",
+                                "ModuleScienceContainer",
+                                "reviewActionName",
+                                "Review Data",
+                                "storeActionName",
+                                "Store Experiments",
+                                "collectActionName",
+                                "Take Data",
+                                "evaOnlyStorage",
+                                true,
+                                "storageRange",
+                                2,
+                                "allowRepeatedSubjects",
+                                true
+                            ],
+                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                        }
+                    ],
+                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                },
+                {
+                    "entries": [
+                        "attr",
+                        {
+                            "entries": [
+                                "name",
+                                "ModuleScienceLab",
+                                "containerModuleIndex",
+                                0,
+                                "dataStorage",
+                                750,
+                                "crewsRequired",
+                                1,
+                                "canResetConnectedModules",
+                                true,
+                                "canResetNearbyModules",
+                                true,
+                                "interactionRange",
+                                5,
+                                "SurfaceBonus",
+                                0.1,
+                                "ContextBonus",
+                                0.25,
+                                "homeworldMultiplier",
+                                0.1
+                            ],
+                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                        },
+                        "RESOURCE_PROCESS",
+                        {
+                            "items": [
+                                {
+                                    "entries": [
+                                        "attr",
+                                        {
+                                            "entries": [
+                                                "name",
+                                                "ElectricCharge",
+                                                "amount",
+                                                10
+                                            ],
+                                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                                        }
+                                    ],
+                                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                                }
+                            ],
+                            "$type": "kOS.Safe.Encapsulation.ListValue"
+                        }
+                    ],
+                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                },
+                {
+                    "entries": [
+                        "attr",
+                        {
+                            "entries": [
+                                "name",
+                                "ModuleScienceConverter",
+                                "dataProcessingMultiplier",
+                                0.5,
+                                "scientistBonus",
+                                0.25,
+                                "researchTime",
+                                7,
+                                "scienceMultiplier",
+                                5,
+                                "scienceCap",
+                                500,
+                                "powerRequirement",
+                                5,
+                                "ConverterName",
+                                "Research",
+                                "StartActionName",
+                                "Start Research",
+                                "StopActionName",
+                                "Stop Research"
+                            ],
+                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                        }
+                    ],
+                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                },
+                {
+                    "entries": [
+                        "attr",
+                        {
+                            "entries": [
+                                "name",
+                                "ModuleKerbNetAccess",
+                                "MinimumFoV",
+                                17,
+                                "MaximumFoV",
+                                63,
+                                "AnomalyDetection",
+                                0
+                            ],
+                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                        },
+                        "DISPLAY_MODES",
+                        {
+                            "items": [
+                                {
+                                    "entries": [
+                                        "attr",
+                                        {
+                                            "entries": [
+                                                "Mode",
+                                                {
+                                                    "items": [
+                                                        "Terrain",
+                                                        "Biome"
+                                                    ],
+                                                    "$type": "kOS.Safe.Encapsulation.ListValue"
+                                                }
+                                            ],
+                                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                                        }
+                                    ],
+                                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                                }
+                            ],
+                            "$type": "kOS.Safe.Encapsulation.ListValue"
+                        },
+                        "REQUIRED_EFFECTS",
+                        {
+                            "items": [
+                                {
+                                    "entries": [
+                                        "attr",
+                                        {
+                                            "entries": [
+                                                "Effect",
+                                                "ScienceSkill"
+                                            ],
+                                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                                        }
+                                    ],
+                                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                                }
+                            ],
+                            "$type": "kOS.Safe.Encapsulation.ListValue"
+                        }
+                    ],
+                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                },
+                {
+                    "entries": [
+                        "attr",
+                        {
+                            "entries": [
+                                "name",
+                                "ModuleExperienceManagement",
+                                "costPerKerbal",
+                                0
+                            ],
+                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                        }
+                    ],
+                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                },
+                {
+                    "entries": [
+                        "attr",
+                        {
+                            "entries": [
+                                "name",
+                                "FlagDecal",
+                                "textureQuadName",
+                                "flagTransform"
+                            ],
+                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                        }
+                    ],
+                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                },
+                {
+                    "entries": [
+                        "attr",
+                        {
+                            "entries": [
+                                "name",
+                                "ModuleColorChanger",
+                                "shaderProperty",
+                                "_EmissiveColor",
+                                "animRate",
+                                0.8,
+                                "animState",
+                                false,
+                                "useRate",
+                                true,
+                                "toggleInEditor",
+                                true,
+                                "toggleInFlight",
+                                {
+                                    "items": [
+                                        true,
+                                        true
+                                    ],
+                                    "$type": "kOS.Safe.Encapsulation.ListValue"
+                                },
+                                "unfocusedRange",
+                                5,
+                                "toggleName",
+                                "Toggle Lights",
+                                "eventOnName",
+                                "Lights On",
+                                "eventOffName",
+                                "Lights Off",
+                                "toggleAction",
+                                true,
+                                "defaultActionGroup",
+                                "Light"
+                            ],
+                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                        },
+                        "redCurve",
+                        {
+                            "items": [
+                                {
+                                    "entries": [
+                                        "attr",
+                                        {
+                                            "entries": [
+                                                "key",
+                                                {
+                                                    "items": [
+                                                        "0 0 0 3",
+                                                        "1 1 0 0"
+                                                    ],
+                                                    "$type": "kOS.Safe.Encapsulation.ListValue"
+                                                }
+                                            ],
+                                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                                        }
+                                    ],
+                                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                                }
+                            ],
+                            "$type": "kOS.Safe.Encapsulation.ListValue"
+                        },
+                        "greenCurve",
+                        {
+                            "items": [
+                                {
+                                    "entries": [
+                                        "attr",
+                                        {
+                                            "entries": [
+                                                "key",
+                                                {
+                                                    "items": [
+                                                        "0 0 0 1",
+                                                        "1 1 1 0"
+                                                    ],
+                                                    "$type": "kOS.Safe.Encapsulation.ListValue"
+                                                }
+                                            ],
+                                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                                        }
+                                    ],
+                                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                                }
+                            ],
+                            "$type": "kOS.Safe.Encapsulation.ListValue"
+                        },
+                        "blueCurve",
+                        {
+                            "items": [
+                                {
+                                    "entries": [
+                                        "attr",
+                                        {
+                                            "entries": [
+                                                "key",
+                                                {
+                                                    "items": [
+                                                        "0 0 0 0",
+                                                        "1 0.7 1.5 0"
+                                                    ],
+                                                    "$type": "kOS.Safe.Encapsulation.ListValue"
+                                                }
+                                            ],
+                                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                                        }
+                                    ],
+                                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                                }
+                            ],
+                            "$type": "kOS.Safe.Encapsulation.ListValue"
+                        },
+                        "alphaCurve",
+                        {
+                            "items": [
+                                {
+                                    "entries": [
+                                        "attr",
+                                        {
+                                            "entries": [
+                                                "key",
+                                                "0 1"
+                                            ],
+                                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                                        }
+                                    ],
+                                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                                }
+                            ],
+                            "$type": "kOS.Safe.Encapsulation.ListValue"
+                        }
+                    ],
+                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                }
+            ],
+            "$type": "kOS.Safe.Encapsulation.ListValue"
+        }
+    ],
+    "$type": "kOS.Safe.Encapsulation.Lexicon"
+}

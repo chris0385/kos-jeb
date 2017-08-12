@@ -1,0 +1,216 @@
+{
+    "entries": [
+        "attr",
+        {
+            "entries": [
+                "name",
+                "GearFixed",
+                "module",
+                "Part",
+                "author",
+                "Porkjet",
+                "mesh",
+                "model.mu",
+                "scale",
+                1,
+                "rescaleFactor",
+                1,
+                "mirrorRefAxis",
+                "0, 0, 1",
+                "node_attach",
+                "0.00, 0.00, 0.00, 1.0, 90.0, 0.0, 1",
+                "TechRequired",
+                "aviation",
+                "entryCost",
+                500,
+                "cost",
+                100,
+                "category",
+                "Ground",
+                "subcategory",
+                0,
+                "title",
+                "LY-01 Fixed Landing Gear",
+                "manufacturer",
+                "LightYear Tire Company",
+                "description",
+                "Simple wheel-on-a-stick Landing Gear to bring your birds down safely. (That means your airplanes, LightYear Co. does not encourage attempting to attach landing gear to actual birds)",
+                "attachRules",
+                "1,1,1,1,1",
+                "mass",
+                0.022,
+                "thermalMassModifier",
+                4,
+                "emissiveConstant",
+                0.95,
+                "dragModelType",
+                "default",
+                "maximum_drag",
+                0.3,
+                "minimum_drag",
+                0.2,
+                "angularDrag",
+                1,
+                "maxTemp",
+                1000,
+                "crashTolerance",
+                125,
+                "breakingForce",
+                50,
+                "breakingTorque",
+                50,
+                "PhysicsSignificance",
+                0,
+                "bulkheadProfiles",
+                "srf",
+                "tags",
+                "aero (air aircraft ground plane roll takeoff taxi wheel",
+                "CoMOffset",
+                "0, -0.675, 0"
+            ],
+            "$type": "kOS.Safe.Encapsulation.Lexicon"
+        },
+        "MODEL",
+        {
+            "items": [
+                {
+                    "entries": [
+                        "attr",
+                        {
+                            "entries": [
+                                "model",
+                                "Squad/Parts/Wheel/LandingGear/GearFixed",
+                                "scale",
+                                "1, 1, 1"
+                            ],
+                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                        }
+                    ],
+                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                }
+            ],
+            "$type": "kOS.Safe.Encapsulation.ListValue"
+        },
+        "MODULE",
+        {
+            "items": [
+                {
+                    "entries": [
+                        "attr",
+                        {
+                            "entries": [
+                                "name",
+                                "ModuleWheelBase",
+                                "wheelColliderTransformName",
+                                "WheelCollider",
+                                "wheelTransformName",
+                                "WheelPivot",
+                                "wheelType",
+                                "FREE",
+                                "FitWheelColliderToMesh",
+                                false,
+                                "radius",
+                                0.2,
+                                "center",
+                                "0,0,0",
+                                "mass",
+                                0.018,
+                                "groundHeightOffset",
+                                1.11,
+                                "TooltipTitle",
+                                "Landing Gear",
+                                "TooltipPrimaryField",
+                                "Fixed, Unpowered",
+                                "frictionSharpness",
+                                50
+                            ],
+                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                        }
+                    ],
+                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                },
+                {
+                    "entries": [
+                        "attr",
+                        {
+                            "entries": [
+                                "name",
+                                "ModuleWheelSuspension",
+                                "baseModuleIndex",
+                                0,
+                                "suspensionDistance",
+                                0.2,
+                                "suspensionOffset",
+                                0,
+                                "targetPosition",
+                                0.6,
+                                "springRatio",
+                                15,
+                                "damperRatio",
+                                0.3,
+                                "boostRatio",
+                                0.75,
+                                "useAutoBoost",
+                                false,
+                                "suppressModuleInfo",
+                                true
+                            ],
+                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                        }
+                    ],
+                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                },
+                {
+                    "entries": [
+                        "attr",
+                        {
+                            "entries": [
+                                "name",
+                                "ModuleWheelBrakes",
+                                "baseModuleIndex",
+                                0,
+                                "maxBrakeTorque",
+                                2,
+                                "brakeResponse",
+                                1
+                            ],
+                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                        }
+                    ],
+                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                },
+                {
+                    "entries": [
+                        "attr",
+                        {
+                            "entries": [
+                                "name",
+                                "ModuleWheelDamage",
+                                "baseModuleIndex",
+                                0,
+                                "stressTolerance",
+                                2000,
+                                "impactTolerance",
+                                1000,
+                                "deflectionMagnitude",
+                                0.5,
+                                "deflectionSharpness",
+                                2,
+                                "slipMagnitude",
+                                1.5,
+                                "slipSharpness",
+                                2,
+                                "explodeMultiplier",
+                                1
+                            ],
+                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                        }
+                    ],
+                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                }
+            ],
+            "$type": "kOS.Safe.Encapsulation.ListValue"
+        }
+    ],
+    "$type": "kOS.Safe.Encapsulation.Lexicon"
+}

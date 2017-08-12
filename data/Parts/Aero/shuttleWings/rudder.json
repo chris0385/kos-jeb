@@ -1,0 +1,125 @@
+{
+    "entries": [
+        "attr",
+        {
+            "entries": [
+                "name",
+                "wingShuttleRudder",
+                "module",
+                "Part",
+                "author",
+                "Porkjet",
+                "rescaleFactor",
+                1,
+                "node_attach",
+                "0.0, 2.0, 0.0, 1.0, 0.0, 0.0, 1",
+                "CoLOffset",
+                "-2.0, 0.5, 0",
+                "CoPOffset",
+                "-2.0, 0.5, 0",
+                "CoMOffset",
+                "-2.0, 0.5, 0",
+                "TechRequired",
+                "experimentalAerodynamics",
+                "entryCost",
+                8000,
+                "cost",
+                2500,
+                "category",
+                "Aero",
+                "subcategory",
+                0,
+                "title",
+                "Big-S Spaceplane Tail Fin",
+                "manufacturer",
+                "C7 Aerospace Division",
+                "description",
+                "Large heat resistant spaceplane fin.",
+                "attachRules",
+                "0,1,0,1,1",
+                "mass",
+                0.45,
+                "thermalMassModifier",
+                8,
+                "heatConductivity",
+                0.06,
+                "emissiveConstant",
+                0.95,
+                "dragModelType",
+                "none",
+                "maximum_drag",
+                0.02,
+                "minimum_drag",
+                0.02,
+                "angularDrag",
+                2,
+                "crashTolerance",
+                15,
+                "maxTemp",
+                2400,
+                "explosionPotential",
+                0.1,
+                "fuelCrossFeed",
+                true,
+                "bulkheadProfiles",
+                "srf",
+                "tags",
+                "aero aircraft control (elev plane )rudder shuttle stab"
+            ],
+            "$type": "kOS.Safe.Encapsulation.Lexicon"
+        },
+        "MODEL",
+        {
+            "items": [
+                {
+                    "entries": [
+                        "attr",
+                        {
+                            "entries": [
+                                "model",
+                                "Squad/Parts/Aero/shuttleWings/ShuttleRudder"
+                            ],
+                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                        }
+                    ],
+                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                }
+            ],
+            "$type": "kOS.Safe.Encapsulation.ListValue"
+        },
+        "MODULE",
+        {
+            "items": [
+                {
+                    "entries": [
+                        "attr",
+                        {
+                            "entries": [
+                                "name",
+                                "ModuleControlSurface",
+                                "useInternalDragModel",
+                                true,
+                                "dragCoeff",
+                                0.6,
+                                "deflectionLiftCoeff",
+                                3.49,
+                                "ctrlSurfaceRange",
+                                25,
+                                "ctrlSurfaceArea",
+                                0.29,
+                                "actuatorSpeed",
+                                35,
+                                "transformName",
+                                "ControlSurface"
+                            ],
+                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                        }
+                    ],
+                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                }
+            ],
+            "$type": "kOS.Safe.Encapsulation.ListValue"
+        }
+    ],
+    "$type": "kOS.Safe.Encapsulation.Lexicon"
+}

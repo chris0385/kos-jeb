@@ -1,0 +1,137 @@
+{
+    "entries": [
+        "attr",
+        {
+            "entries": [
+                "name",
+                "SurveyScanner",
+                "module",
+                "Part",
+                "author",
+                "RoverDude",
+                "rescaleFactor",
+                1,
+                "node_stack_bottom",
+                "0.0, 0, 0.0, 0.0, -1.0, 0.0, 1",
+                "node_attach",
+                "0.0, 0, 0.0, 0.0, -1.0, 0.0, 1",
+                "TechRequired",
+                "scienceTech",
+                "entryCost",
+                4500,
+                "cost",
+                1500,
+                "category",
+                "Science",
+                "subcategory",
+                0,
+                "title",
+                "M700 Survey Scanner",
+                "manufacturer",
+                "Experimental Engineering Group",
+                "description",
+                "This orbital survey scanner uses a combination of advanced sensor technology and witchcraft to provide information on a planet or moons natural resources.  These images can be viewed either in flight, or in relative safety and comfort back at the KSC.  Be sure to bring an antenna capable of transmitting the information back, and sufficient power.",
+                "attachRules",
+                "1,1,0,0,0",
+                "mass",
+                0.2,
+                "dragModelType",
+                "default",
+                "maximum_drag",
+                0.2,
+                "minimum_drag",
+                0.2,
+                "angularDrag",
+                2,
+                "crashTolerance",
+                7,
+                "maxTemp",
+                2000,
+                "bulkheadProfiles",
+                "size1, srf",
+                "tags",
+                "experiment isru mine )mining (ore overlay prospect research resource science sensor"
+            ],
+            "$type": "kOS.Safe.Encapsulation.Lexicon"
+        },
+        "MODEL",
+        {
+            "items": [
+                {
+                    "entries": [
+                        "attr",
+                        {
+                            "entries": [
+                                "model",
+                                "Squad/Parts/Resources/SurveyScanner/SurveyScanner",
+                                "scale",
+                                "0.95,0.95,0.95"
+                            ],
+                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                        }
+                    ],
+                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                }
+            ],
+            "$type": "kOS.Safe.Encapsulation.ListValue"
+        },
+        "MODULE",
+        {
+            "items": [
+                {
+                    "entries": [
+                        "attr",
+                        {
+                            "entries": [
+                                "name",
+                                "ModuleOrbitalSurveyor",
+                                "ScanTime",
+                                5,
+                                "SciBonus",
+                                10
+                            ],
+                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                        }
+                    ],
+                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                },
+                {
+                    "entries": [
+                        "attr",
+                        {
+                            "entries": [
+                                "name",
+                                "ModuleOrbitalScanner",
+                                "CheckForLock",
+                                true
+                            ],
+                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                        }
+                    ],
+                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                },
+                {
+                    "entries": [
+                        "attr",
+                        {
+                            "entries": [
+                                "name",
+                                "ModuleAnimationGroup",
+                                "deployAnimationName",
+                                "deploy",
+                                "activeAnimationName",
+                                "",
+                                "moduleType",
+                                "Scanner"
+                            ],
+                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                        }
+                    ],
+                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                }
+            ],
+            "$type": "kOS.Safe.Encapsulation.ListValue"
+        }
+    ],
+    "$type": "kOS.Safe.Encapsulation.Lexicon"
+}

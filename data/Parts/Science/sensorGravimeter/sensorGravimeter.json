@@ -1,0 +1,121 @@
+{
+    "entries": [
+        "attr",
+        {
+            "entries": [
+                "name",
+                "sensorGravimeter",
+                "module",
+                "Part",
+                "author",
+                "NovaSilisko",
+                "mesh",
+                "model.mu",
+                "rescaleFactor",
+                1,
+                "node_attach",
+                "0.0, 0.0, 0.0, 0.0, 0.0, -1.0",
+                "TechRequired",
+                "advScienceTech",
+                "entryCost",
+                12200,
+                "cost",
+                8800,
+                "category",
+                "Science",
+                "subcategory",
+                0,
+                "title",
+                "GRAVMAX Negative Gravioli Detector",
+                "manufacturer",
+                "Probodobodyne Inc",
+                "description",
+                "A device for capturing and measuring the elusive Negative Gravioli Particle, used for determining the precise strength of gravitational fields. Warranty void if used to detect Positive Gravioli Particles.",
+                "attachRules",
+                "0,1,0,0,1",
+                "mass",
+                0.005,
+                "dragModelType",
+                "default",
+                "maximum_drag",
+                0.2,
+                "minimum_drag",
+                0.2,
+                "angularDrag",
+                1,
+                "crashTolerance",
+                8,
+                "maxTemp",
+                1200,
+                "PhysicsSignificance",
+                1,
+                "bulkheadProfiles",
+                "srf",
+                "tags",
+                "experiment gravity research rerun re-run reus re-us redo re-do reset re-set science sensor"
+            ],
+            "$type": "kOS.Safe.Encapsulation.Lexicon"
+        },
+        "MODULE",
+        {
+            "items": [
+                {
+                    "entries": [
+                        "attr",
+                        {
+                            "entries": [
+                                "name",
+                                "ModuleEnviroSensor",
+                                "sensorType",
+                                "GRAV"
+                            ],
+                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                        }
+                    ],
+                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                },
+                {
+                    "entries": [
+                        "attr",
+                        {
+                            "entries": [
+                                "name",
+                                "ModuleScienceExperiment",
+                                "experimentID",
+                                "gravityScan",
+                                "experimentActionName",
+                                "Log Gravity Data",
+                                "resetActionName",
+                                "Delete Data",
+                                "useStaging",
+                                false,
+                                "useActionGroups",
+                                true,
+                                "hideUIwhenUnavailable",
+                                false,
+                                "xmitDataScalar",
+                                0.4,
+                                "dataIsCollectable",
+                                true,
+                                "collectActionName",
+                                "Take Data",
+                                "interactionRange",
+                                1.5,
+                                "rerunnable",
+                                true,
+                                "usageReqMaskInternal",
+                                1,
+                                "usageReqMaskExternal",
+                                8
+                            ],
+                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                        }
+                    ],
+                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                }
+            ],
+            "$type": "kOS.Safe.Encapsulation.ListValue"
+        }
+    ],
+    "$type": "kOS.Safe.Encapsulation.Lexicon"
+}

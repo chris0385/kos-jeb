@@ -1,0 +1,147 @@
+{
+    "entries": [
+        "attr",
+        {
+            "entries": [
+                "name",
+                "PotatoRoid",
+                "module",
+                "Part",
+                "author",
+                "Squad",
+                "mesh",
+                "PotatoRoid.mu",
+                "rescaleFactor",
+                1,
+                "TechRequired",
+                "Unresearcheable",
+                "entryCost",
+                0,
+                "cost",
+                0,
+                "category",
+                "none",
+                "subcategory",
+                0,
+                "title",
+                "A potato like rock",
+                "manufacturer",
+                "The Solar system",
+                "description",
+                "Big ole, rock like thing.",
+                "attachRules",
+                "1,1,1,1,1",
+                "mass",
+                150,
+                "dragModelType",
+                "default",
+                "maximum_drag",
+                0.2,
+                "minimum_drag",
+                0.2,
+                "angularDrag",
+                1,
+                "crashTolerance",
+                80,
+                "breakingForce",
+                200,
+                "breakingTorque",
+                200,
+                "maxTemp",
+                2500,
+                "explosionPotential",
+                0.1,
+                "skipColliderIgnores",
+                true,
+                "vesselType",
+                "SpaceObject",
+                "skinInternalConductionMult",
+                100,
+                "skinMassPerArea",
+                100,
+                "bulkheadProfiles",
+                "size3",
+                "tags",
+                "asteroid roid spud"
+            ],
+            "$type": "kOS.Safe.Encapsulation.Lexicon"
+        },
+        "MODULE",
+        {
+            "items": [
+                {
+                    "entries": [
+                        "attr",
+                        {
+                            "entries": [
+                                "name",
+                                "ModuleAsteroid",
+                                "density",
+                                0.03,
+                                "secondaryRate",
+                                0.05
+                            ],
+                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                        }
+                    ],
+                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                },
+                {
+                    "entries": [
+                        "attr",
+                        {
+                            "entries": [
+                                "name",
+                                "ModuleAsteroidInfo"
+                            ],
+                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                        }
+                    ],
+                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                },
+                {
+                    "entries": [
+                        "attr",
+                        {
+                            "entries": [
+                                "name",
+                                "ModuleAsteroidResource",
+                                "highRange",
+                                95,
+                                "lowRange",
+                                50,
+                                "presenceChance",
+                                100,
+                                "resourceName",
+                                "Ore"
+                            ],
+                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                        }
+                    ],
+                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                }
+            ],
+            "$type": "kOS.Safe.Encapsulation.ListValue"
+        },
+        "DRAG_CUBE",
+        {
+            "items": [
+                {
+                    "entries": [
+                        "attr",
+                        {
+                            "entries": [
+                                "procedural",
+                                true
+                            ],
+                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                        }
+                    ],
+                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                }
+            ],
+            "$type": "kOS.Safe.Encapsulation.ListValue"
+        }
+    ],
+    "$type": "kOS.Safe.Encapsulation.Lexicon"
+}

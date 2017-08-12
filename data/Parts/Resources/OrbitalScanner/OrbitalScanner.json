@@ -1,0 +1,172 @@
+{
+    "entries": [
+        "attr",
+        {
+            "entries": [
+                "name",
+                "OrbitalScanner",
+                "module",
+                "Part",
+                "author",
+                "RoverDude",
+                "mesh",
+                "OrbitalScanner.mu",
+                "scale",
+                1,
+                "rescaleFactor",
+                1,
+                "node_stack_bottom",
+                "0.0, 0, 0.0, 0.0, -1.0, 0.0, 1",
+                "node_attach",
+                "0.0, 0, 0.0, 0.0, -1.0, 0.0, 1",
+                "TechRequired",
+                "experimentalScience",
+                "entryCost",
+                3000,
+                "cost",
+                1000,
+                "category",
+                "Science",
+                "subcategory",
+                0,
+                "title",
+                "M4435 Narrow-Band Scanner",
+                "manufacturer",
+                "Experimental Engineering Group",
+                "description",
+                "Ideal for surveying potential landing sites, this scanner provides detailed information about the planet or moon that it orbits, though this data is limited to the spot directly below the scanner.",
+                "attachRules",
+                "1,1,0,0,0",
+                "mass",
+                0.1,
+                "dragModelType",
+                "default",
+                "maximum_drag",
+                0.2,
+                "minimum_drag",
+                0.2,
+                "angularDrag",
+                2,
+                "crashTolerance",
+                7,
+                "maxTemp",
+                2000,
+                "bulkheadProfiles",
+                "size0, srf",
+                "tags",
+                "isru mine )mining (ore prospect resource sensor"
+            ],
+            "$type": "kOS.Safe.Encapsulation.Lexicon"
+        },
+        "MODULE",
+        {
+            "items": [
+                {
+                    "entries": [
+                        "attr",
+                        {
+                            "entries": [
+                                "name",
+                                "ModuleGPS"
+                            ],
+                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                        }
+                    ],
+                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                },
+                {
+                    "entries": [
+                        "attr",
+                        {
+                            "entries": [
+                                "name",
+                                "ModuleResourceScanner",
+                                "MaxAbundanceAltitude",
+                                500000,
+                                "RequiresUnlock",
+                                true,
+                                "ScannerType",
+                                0,
+                                "ResourceName",
+                                "Ore"
+                            ],
+                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                        }
+                    ],
+                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                },
+                {
+                    "entries": [
+                        "attr",
+                        {
+                            "entries": [
+                                "name",
+                                "ModuleKerbNetAccess",
+                                "EnhancedSituationMask",
+                                7,
+                                "EnhancedMinimumFoV",
+                                160,
+                                "EnhancedMaximumFoV",
+                                179.5,
+                                "MinimumFoV",
+                                5,
+                                "MaximumFoV",
+                                90,
+                                "AnomalyDetection",
+                                0,
+                                "RequiresAnimation",
+                                true
+                            ],
+                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                        },
+                        "DISPLAY_MODES",
+                        {
+                            "items": [
+                                {
+                                    "entries": [
+                                        "attr",
+                                        {
+                                            "entries": [
+                                                "Mode",
+                                                "Resources"
+                                            ],
+                                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                                        }
+                                    ],
+                                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                                }
+                            ],
+                            "$type": "kOS.Safe.Encapsulation.ListValue"
+                        }
+                    ],
+                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                },
+                {
+                    "entries": [
+                        "attr",
+                        {
+                            "entries": [
+                                "name",
+                                "ModuleAnimationGroup",
+                                "deployAnimationName",
+                                "",
+                                "activeAnimationName",
+                                "miniscanner",
+                                "deployActionName",
+                                "Activate",
+                                "retractActionName",
+                                "Deactivate",
+                                "moduleType",
+                                "Scanner"
+                            ],
+                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                        }
+                    ],
+                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                }
+            ],
+            "$type": "kOS.Safe.Encapsulation.ListValue"
+        }
+    ],
+    "$type": "kOS.Safe.Encapsulation.Lexicon"
+}

@@ -1,0 +1,146 @@
+{
+    "entries": [
+        "attr",
+        {
+            "entries": [
+                "name",
+                "airScoop",
+                "module",
+                "Part",
+                "author",
+                "NovaSilisko, Porkjet",
+                "mesh",
+                "RadialIntake.mu",
+                "rescaleFactor",
+                1,
+                "node_attach",
+                "0.0, 0.3370661, 0.0, 0.0, 1.0, 0.0",
+                "buoyancy",
+                0.1,
+                "TechRequired",
+                "aerodynamicSystems",
+                "entryCost",
+                2500,
+                "cost",
+                250,
+                "category",
+                "Aero",
+                "subcategory",
+                0,
+                "title",
+                "XM-G50 Radial Air Intake",
+                "manufacturer",
+                "Vac-Co Advanced Suction Systems",
+                "description",
+                "An intake duct version that can be mounted at the sides of a fuselage. Warranty does not cover engine flame-outs or any objects, inanimate or otherwise, sucked in by the intake. Optimized for subsonic flight.",
+                "attachRules",
+                "0,1,0,0,0",
+                "mass",
+                0.02,
+                "thermalMassModifier",
+                6,
+                "dragModelType",
+                "default",
+                "maximum_drag",
+                0.2,
+                "minimum_drag",
+                0.2,
+                "angularDrag",
+                1,
+                "crashTolerance",
+                10,
+                "breakingForce",
+                200,
+                "breakingTorque",
+                200,
+                "maxTemp",
+                2000,
+                "bulkheadProfiles",
+                "srf",
+                "tags",
+                "aero aircraft breathe fligh inlet jet oxygen plane subsonic suck"
+            ],
+            "$type": "kOS.Safe.Encapsulation.Lexicon"
+        },
+        "MODULE",
+        {
+            "items": [
+                {
+                    "entries": [
+                        "attr",
+                        {
+                            "entries": [
+                                "name",
+                                "ModuleResourceIntake",
+                                "resourceName",
+                                "IntakeAir",
+                                "checkForOxygen",
+                                true,
+                                "area",
+                                0.0031,
+                                "intakeSpeed",
+                                15,
+                                "intakeTransformName",
+                                "Intake"
+                            ],
+                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                        },
+                        "machCurve",
+                        {
+                            "items": [
+                                {
+                                    "entries": [
+                                        "attr",
+                                        {
+                                            "entries": [
+                                                "key",
+                                                {
+                                                    "items": [
+                                                        "1 1 0 0",
+                                                        "1.5 0.9 -0.4312553 -0.4312553",
+                                                        "2.5 0.45 -0.5275364 -0.5275364",
+                                                        "3.5 0.1 0 0"
+                                                    ],
+                                                    "$type": "kOS.Safe.Encapsulation.ListValue"
+                                                }
+                                            ],
+                                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                                        }
+                                    ],
+                                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                                }
+                            ],
+                            "$type": "kOS.Safe.Encapsulation.ListValue"
+                        }
+                    ],
+                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                }
+            ],
+            "$type": "kOS.Safe.Encapsulation.ListValue"
+        },
+        "RESOURCE",
+        {
+            "items": [
+                {
+                    "entries": [
+                        "attr",
+                        {
+                            "entries": [
+                                "name",
+                                "IntakeAir",
+                                "amount",
+                                2,
+                                "maxAmount",
+                                2
+                            ],
+                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                        }
+                    ],
+                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                }
+            ],
+            "$type": "kOS.Safe.Encapsulation.ListValue"
+        }
+    ],
+    "$type": "kOS.Safe.Encapsulation.Lexicon"
+}

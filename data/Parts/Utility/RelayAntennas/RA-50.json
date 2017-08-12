@@ -1,0 +1,111 @@
+{
+    "entries": [
+        "attr",
+        {
+            "entries": [
+                "name",
+                "RelayAntenna50",
+                "module",
+                "Part",
+                "author",
+                "Squad",
+                "rescaleFactor",
+                1,
+                "node_attach",
+                "0.0, 0.0, 0.0, 0.0, -1.0, 0.0, 0",
+                "node_stack_bottom",
+                "0.0, 0.0, 0.0, 0.0, -1.0, 0.0, 0",
+                "TechRequired",
+                "electronics",
+                "entryCost",
+                45000,
+                "cost",
+                2400,
+                "category",
+                "Communication",
+                "subcategory",
+                0,
+                "title",
+                "RA-15 Relay Antenna",
+                "manufacturer",
+                "Ionic Symphonic Protonic Electronics",
+                "description",
+                "A relay antenna with automatic store and forward capabilities as well as advanced pathfinding algorithms.",
+                "attachRules",
+                "1,1,0,0,0",
+                "mass",
+                0.3,
+                "dragModelType",
+                "default",
+                "maximum_drag",
+                0.2,
+                "minimum_drag",
+                0.2,
+                "angularDrag",
+                1,
+                "crashTolerance",
+                8,
+                "maxTemp",
+                2000,
+                "vesselType",
+                "Relay",
+                "bulkheadProfiles",
+                "srf"
+            ],
+            "$type": "kOS.Safe.Encapsulation.Lexicon"
+        },
+        "MODEL",
+        {
+            "items": [
+                {
+                    "entries": [
+                        "attr",
+                        {
+                            "entries": [
+                                "model",
+                                "Squad/Parts/Utility/RelayAntennas/RA-50"
+                            ],
+                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                        }
+                    ],
+                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                }
+            ],
+            "$type": "kOS.Safe.Encapsulation.ListValue"
+        },
+        "MODULE",
+        {
+            "items": [
+                {
+                    "entries": [
+                        "attr",
+                        {
+                            "entries": [
+                                "name",
+                                "ModuleDataTransmitter",
+                                "antennaType",
+                                "RELAY",
+                                "packetInterval",
+                                0.35,
+                                "packetSize",
+                                2,
+                                "packetResourceCost",
+                                24,
+                                "requiredResource",
+                                "ElectricCharge",
+                                "antennaPower",
+                                "15000000000",
+                                "antennaCombinable",
+                                true
+                            ],
+                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                        }
+                    ],
+                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                }
+            ],
+            "$type": "kOS.Safe.Encapsulation.ListValue"
+        }
+    ],
+    "$type": "kOS.Safe.Encapsulation.Lexicon"
+}

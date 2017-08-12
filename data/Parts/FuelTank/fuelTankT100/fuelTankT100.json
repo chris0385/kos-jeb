@@ -1,0 +1,107 @@
+{
+    "entries": [
+        "attr",
+        {
+            "entries": [
+                "name",
+                "fuelTankSmallFlat",
+                "module",
+                "Part",
+                "author",
+                "Squad",
+                "mesh",
+                "model.mu",
+                "rescaleFactor",
+                1,
+                "node_stack_top",
+                "0.0, 0.3125, 0.0, 0.0, 1.0, 0.0, 1",
+                "node_stack_bottom",
+                "0.0, -0.3125, 0.0, 0.0, -1.0, 0.0, 1",
+                "node_attach",
+                "0.5, 0.0, 0.0, 1.0, 0.0, 0.0",
+                "TechRequired",
+                "basicRocketry",
+                "entryCost",
+                1200,
+                "cost",
+                150,
+                "category",
+                "FuelTank",
+                "subcategory",
+                0,
+                "title",
+                "FL-T100 Fuel Tank",
+                "manufacturer",
+                "Jebediah Kerman's Junkyard and Spacecraft Parts Co",
+                "description",
+                "The T100 is a miniature fuel tank made to be even more adorable than its bigger brother, the T200. Handle stoically and with care.",
+                "attachRules",
+                "1,1,1,1,0",
+                "mass",
+                0.0625,
+                "dragModelType",
+                "default",
+                "maximum_drag",
+                0.2,
+                "minimum_drag",
+                0.2,
+                "angularDrag",
+                2,
+                "crashTolerance",
+                6,
+                "maxTemp",
+                2000,
+                "breakingForce",
+                50,
+                "breakingTorque",
+                50,
+                "bulkheadProfiles",
+                "size1, srf",
+                "tags",
+                "fueltank ?lfo liquid oxidizer propellant rocket"
+            ],
+            "$type": "kOS.Safe.Encapsulation.Lexicon"
+        },
+        "RESOURCE",
+        {
+            "items": [
+                {
+                    "entries": [
+                        "attr",
+                        {
+                            "entries": [
+                                "name",
+                                "LiquidFuel",
+                                "amount",
+                                45,
+                                "maxAmount",
+                                45
+                            ],
+                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                        }
+                    ],
+                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                },
+                {
+                    "entries": [
+                        "attr",
+                        {
+                            "entries": [
+                                "name",
+                                "Oxidizer",
+                                "amount",
+                                55,
+                                "maxAmount",
+                                55
+                            ],
+                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                        }
+                    ],
+                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                }
+            ],
+            "$type": "kOS.Safe.Encapsulation.ListValue"
+        }
+    ],
+    "$type": "kOS.Safe.Encapsulation.Lexicon"
+}

@@ -10,3 +10,6 @@ list:replace(x, index) (can only be done by remove+insert)
 list:sort({parameter a. parameter b. return a:eta < b:eta. }). // list sorting using a callback
 
 heap data structure. (priority queue)
+
+
+readjson() cannot read back lexicons which were in case insensitive mode.

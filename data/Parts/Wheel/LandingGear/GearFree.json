@@ -1,0 +1,240 @@
+{
+    "entries": [
+        "attr",
+        {
+            "entries": [
+                "name",
+                "GearFree",
+                "module",
+                "Part",
+                "author",
+                "Porkjet",
+                "mesh",
+                "model.mu",
+                "scale",
+                1,
+                "rescaleFactor",
+                1,
+                "node_attach",
+                "0.00, 0.00, 0.00, 0.0, 1.0, 0.0, 1",
+                "TechRequired",
+                "aviation",
+                "entryCost",
+                1500,
+                "cost",
+                150,
+                "category",
+                "Ground",
+                "subcategory",
+                0,
+                "title",
+                "LY-05 Steerable Landing Gear",
+                "manufacturer",
+                "LightYear Tire Company",
+                "description",
+                "Simple wheel with steering actuation. It has become evident that aerodynamic control surfaces don't offer much control while slowly taxiing on the ground. Hopefully these wheels will reduce the number of low altitude low speed collisions with buildings. And Kerbals.",
+                "attachRules",
+                "1,1,1,1,1",
+                "mass",
+                0.015,
+                "thermalMassModifier",
+                4,
+                "emissiveConstant",
+                0.95,
+                "dragModelType",
+                "default",
+                "maximum_drag",
+                0.3,
+                "minimum_drag",
+                0.2,
+                "angularDrag",
+                1,
+                "maxTemp",
+                1000,
+                "crashTolerance",
+                325,
+                "breakingForce",
+                50,
+                "breakingTorque",
+                50,
+                "PhysicsSignificance",
+                0,
+                "bulkheadProfiles",
+                "srf",
+                "tags",
+                "aero (air aircraft free ground plane roll takeoff taxi wheel"
+            ],
+            "$type": "kOS.Safe.Encapsulation.Lexicon"
+        },
+        "MODEL",
+        {
+            "items": [
+                {
+                    "entries": [
+                        "attr",
+                        {
+                            "entries": [
+                                "model",
+                                "Squad/Parts/Wheel/LandingGear/GearFree",
+                                "scale",
+                                "1, 1, 1"
+                            ],
+                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                        }
+                    ],
+                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                }
+            ],
+            "$type": "kOS.Safe.Encapsulation.ListValue"
+        },
+        "MODULE",
+        {
+            "items": [
+                {
+                    "entries": [
+                        "attr",
+                        {
+                            "entries": [
+                                "name",
+                                "ModuleWheelBase",
+                                "wheelColliderTransformName",
+                                "WheelCollider",
+                                "wheelTransformName",
+                                "wheel",
+                                "wheelType",
+                                "FREE",
+                                "FitWheelColliderToMesh",
+                                false,
+                                "radius",
+                                0.2,
+                                "center",
+                                "0,0,0",
+                                "mass",
+                                0.012,
+                                "groundHeightOffset",
+                                0,
+                                "TooltipTitle",
+                                "Landing Gear",
+                                "TooltipPrimaryField",
+                                "Steerable, No Brakes",
+                                "frictionSharpness",
+                                10
+                            ],
+                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                        }
+                    ],
+                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                },
+                {
+                    "entries": [
+                        "attr",
+                        {
+                            "entries": [
+                                "name",
+                                "ModuleWheelSuspension",
+                                "baseModuleIndex",
+                                0,
+                                "suspensionTransformName",
+                                "suspension",
+                                "suspensionOffset",
+                                "-0.08",
+                                "suspensionDistance",
+                                0.1,
+                                "targetPosition",
+                                0.9,
+                                "springRatio",
+                                25,
+                                "damperRatio",
+                                1,
+                                "boostRatio",
+                                0.75,
+                                "useAutoBoost",
+                                false,
+                                "suppressModuleInfo",
+                                true
+                            ],
+                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                        }
+                    ],
+                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                },
+                {
+                    "entries": [
+                        "attr",
+                        {
+                            "entries": [
+                                "name",
+                                "ModuleWheelSteering",
+                                "baseModuleIndex",
+                                0,
+                                "caliperTransformName",
+                                "SteeringPivot",
+                                "steeringResponse",
+                                2
+                            ],
+                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                        },
+                        "steeringCurve",
+                        {
+                            "items": [
+                                {
+                                    "entries": [
+                                        "attr",
+                                        {
+                                            "entries": [
+                                                "key",
+                                                {
+                                                    "items": [
+                                                        "0 30",
+                                                        "10 9",
+                                                        "30 2"
+                                                    ],
+                                                    "$type": "kOS.Safe.Encapsulation.ListValue"
+                                                }
+                                            ],
+                                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                                        }
+                                    ],
+                                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                                }
+                            ],
+                            "$type": "kOS.Safe.Encapsulation.ListValue"
+                        }
+                    ],
+                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                },
+                {
+                    "entries": [
+                        "attr",
+                        {
+                            "entries": [
+                                "name",
+                                "ModuleWheelDamage",
+                                "baseModuleIndex",
+                                0,
+                                "stressTolerance",
+                                2000,
+                                "impactTolerance",
+                                1000,
+                                "deflectionMagnitude",
+                                0.5,
+                                "deflectionSharpness",
+                                2,
+                                "slipMagnitude",
+                                1.5,
+                                "slipSharpness",
+                                2,
+                                "explodeMultiplier",
+                                1
+                            ],
+                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                        }
+                    ],
+                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                }
+            ],
+            "$type": "kOS.Safe.Encapsulation.ListValue"
+        }
+    ],
+    "$type": "kOS.Safe.Encapsulation.Lexicon"
+}

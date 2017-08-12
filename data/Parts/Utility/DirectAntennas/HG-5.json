@@ -1,0 +1,136 @@
+{
+    "entries": [
+        "attr",
+        {
+            "entries": [
+                "name",
+                "HighGainAntenna5",
+                "module",
+                "Part",
+                "author",
+                "Squad",
+                "rescaleFactor",
+                1,
+                "node_attach",
+                "0.0, 0.0, 0.0, 0.0, -1.0, 0.0, 0",
+                "node_stack_bottom",
+                "0.0, 0.0, 0.0, 0.0, -1.0, 0.0, 0",
+                "TechRequired",
+                "basicScience",
+                "entryCost",
+                1500,
+                "cost",
+                600,
+                "category",
+                "Communication",
+                "subcategory",
+                0,
+                "title",
+                "HG-5 High Gain Antenna",
+                "manufacturer",
+                "Ionic Symphonic Protonic Electronics",
+                "description",
+                "A short range dual purpose communications antenna that can handle either direct communications or short range relays",
+                "attachRules",
+                "1,1,0,0,0",
+                "mass",
+                0.07,
+                "dragModelType",
+                "default",
+                "maximum_drag",
+                0.2,
+                "minimum_drag",
+                0.2,
+                "angularDrag",
+                1,
+                "crashTolerance",
+                8,
+                "maxTemp",
+                2000,
+                "vesselType",
+                "Relay",
+                "bulkheadProfiles",
+                "srf"
+            ],
+            "$type": "kOS.Safe.Encapsulation.Lexicon"
+        },
+        "MODEL",
+        {
+            "items": [
+                {
+                    "entries": [
+                        "attr",
+                        {
+                            "entries": [
+                                "model",
+                                "Squad/Parts/Utility/DirectAntennas/HGAntenna"
+                            ],
+                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                        }
+                    ],
+                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                }
+            ],
+            "$type": "kOS.Safe.Encapsulation.ListValue"
+        },
+        "MODULE",
+        {
+            "items": [
+                {
+                    "entries": [
+                        "attr",
+                        {
+                            "entries": [
+                                "name",
+                                "ModuleDeployableAntenna",
+                                "showStatus",
+                                false,
+                                "isTracking",
+                                false,
+                                "pivotName",
+                                "Rod",
+                                "windResistance",
+                                1,
+                                "animationName",
+                                "Extend"
+                            ],
+                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                        }
+                    ],
+                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                },
+                {
+                    "entries": [
+                        "attr",
+                        {
+                            "entries": [
+                                "name",
+                                "ModuleDataTransmitter",
+                                "antennaType",
+                                "RELAY",
+                                "packetInterval",
+                                0.35,
+                                "packetSize",
+                                2,
+                                "packetResourceCost",
+                                18,
+                                "requiredResource",
+                                "ElectricCharge",
+                                "DeployFxModules",
+                                0,
+                                "antennaPower",
+                                5000000,
+                                "antennaCombinable",
+                                true
+                            ],
+                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                        }
+                    ],
+                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                }
+            ],
+            "$type": "kOS.Safe.Encapsulation.ListValue"
+        }
+    ],
+    "$type": "kOS.Safe.Encapsulation.Lexicon"
+}

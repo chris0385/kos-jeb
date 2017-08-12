@@ -24,7 +24,7 @@ function showModule {
 
 function showPart {
 	parameter apart.
-	parameter logFile is "engine-info.txt".
+	parameter logFile is apart:name+"-info.txt".
 	parameter gtab is "".
 	local tab is "  ".
 	

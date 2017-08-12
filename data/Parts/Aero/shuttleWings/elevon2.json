@@ -1,0 +1,125 @@
+{
+    "entries": [
+        "attr",
+        {
+            "entries": [
+                "name",
+                "wingShuttleElevon2",
+                "module",
+                "Part",
+                "author",
+                "Porkjet",
+                "rescaleFactor",
+                1,
+                "node_attach",
+                "0.0, 0.0, 0.0, 1.0, 0.0, 0.0",
+                "CoMOffset",
+                "0, -0.329694, 0",
+                "CoLOffset",
+                "0, -0.329694, 0",
+                "CoPOffset",
+                "0, -0.329694, 0",
+                "TechRequired",
+                "experimentalAerodynamics",
+                "entryCost",
+                16400,
+                "cost",
+                1300,
+                "category",
+                "Aero",
+                "subcategory",
+                0,
+                "title",
+                "Big-S Elevon 2",
+                "manufacturer",
+                "C7 Aerospace Division",
+                "description",
+                "The Big-S line of wings are C7's largest lifting surfaces to date. Not only are they Sturdy and heat resistant enough to survive reentry, but also have enough internal volume to carry optional fuel tanks.",
+                "attachRules",
+                "0,1,0,1,1",
+                "mass",
+                0.23,
+                "thermalMassModifier",
+                8,
+                "heatConductivity",
+                0.06,
+                "emissiveConstant",
+                0.95,
+                "dragModelType",
+                "none",
+                "maximum_drag",
+                0.02,
+                "minimum_drag",
+                0.02,
+                "angularDrag",
+                2,
+                "crashTolerance",
+                15,
+                "maxTemp",
+                2400,
+                "explosionPotential",
+                0.1,
+                "fuelCrossFeed",
+                true,
+                "bulkheadProfiles",
+                "srf",
+                "tags",
+                "aero aileron aircraft control (elev flap plane )rudder shuttle spoil stab"
+            ],
+            "$type": "kOS.Safe.Encapsulation.Lexicon"
+        },
+        "MODEL",
+        {
+            "items": [
+                {
+                    "entries": [
+                        "attr",
+                        {
+                            "entries": [
+                                "model",
+                                "Squad/Parts/Aero/shuttleWings/ShuttleElevonB"
+                            ],
+                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                        }
+                    ],
+                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                }
+            ],
+            "$type": "kOS.Safe.Encapsulation.ListValue"
+        },
+        "MODULE",
+        {
+            "items": [
+                {
+                    "entries": [
+                        "attr",
+                        {
+                            "entries": [
+                                "name",
+                                "ModuleControlSurface",
+                                "useInternalDragModel",
+                                true,
+                                "dragCoeff",
+                                0.5,
+                                "deflectionLiftCoeff",
+                                1.16,
+                                "ctrlSurfaceRange",
+                                25,
+                                "ctrlSurfaceArea",
+                                1,
+                                "actuatorSpeed",
+                                40,
+                                "transformName",
+                                "Elevon"
+                            ],
+                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                        }
+                    ],
+                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                }
+            ],
+            "$type": "kOS.Safe.Encapsulation.ListValue"
+        }
+    ],
+    "$type": "kOS.Safe.Encapsulation.Lexicon"
+}

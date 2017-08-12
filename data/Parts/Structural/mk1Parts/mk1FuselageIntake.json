@@ -1,0 +1,200 @@
+{
+    "entries": [
+        "attr",
+        {
+            "entries": [
+                "name",
+                "MK1IntakeFuselage",
+                "module",
+                "Part",
+                "author",
+                "Porkjet",
+                "rescaleFactor",
+                1,
+                "node_stack_top",
+                "0.0, 0.9375, 0.0, 0.0, 1.0, 0.0",
+                "node_stack_bottom",
+                "0.0, -0.9375, 0.0, 0.0, -1.0, 0.0",
+                "node_attach",
+                "0.0, 0.0, -0.625, 0.0, 0.0, 1.0, 1",
+                "TechRequired",
+                "highAltitudeFlight",
+                "entryCost",
+                4200,
+                "cost",
+                720,
+                "category",
+                "Aero",
+                "subcategory",
+                0,
+                "title",
+                "Mk1 Diverterless Supersonic Intake",
+                "manufacturer",
+                "C7 Aerospace Division",
+                "description",
+                "This version of the Mk1 Fuselage module carries only a bit of fuel, but is fitted with a streamlined air intake. It consists of a \"bump\" and a forward-swept inlet cowl. This eliminates the need for a Splitter plate, while compressing the air to slow it down from supersonic to subsonic speeds. DSIs can be used to replace the intake ramp and inlet cone, which are more complex, heavy and expensive.",
+                "attachRules",
+                "1,1,1,1,0",
+                "mass",
+                0.17,
+                "dragModelType",
+                "default",
+                "maximum_drag",
+                0.2,
+                "minimum_drag",
+                0.3,
+                "angularDrag",
+                2,
+                "crashTolerance",
+                10,
+                "breakingForce",
+                50,
+                "breakingTorque",
+                50,
+                "maxTemp",
+                2000,
+                "thermalMassModifier",
+                2,
+                "fuelCrossFeed",
+                true,
+                "bulkheadProfiles",
+                "size1, srf",
+                "tags",
+                "aero (air aircraft airplane breathe fligh fueltank inlet jet oxygen plane propellant suck tank"
+            ],
+            "$type": "kOS.Safe.Encapsulation.Lexicon"
+        },
+        "MODEL",
+        {
+            "items": [
+                {
+                    "entries": [
+                        "attr",
+                        {
+                            "entries": [
+                                "model",
+                                "Squad/Parts/Structural/mk1Parts/IntakeFuselage"
+                            ],
+                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                        }
+                    ],
+                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                }
+            ],
+            "$type": "kOS.Safe.Encapsulation.ListValue"
+        },
+        "MODULE",
+        {
+            "items": [
+                {
+                    "entries": [
+                        "attr",
+                        {
+                            "entries": [
+                                "name",
+                                "ModuleResourceIntake",
+                                "resourceName",
+                                "IntakeAir",
+                                "checkForOxygen",
+                                true,
+                                "area",
+                                0.0061,
+                                "intakeSpeed",
+                                12,
+                                "intakeTransformName",
+                                "Intake"
+                            ],
+                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                        },
+                        "machCurve",
+                        {
+                            "items": [
+                                {
+                                    "entries": [
+                                        "attr",
+                                        {
+                                            "entries": [
+                                                "key",
+                                                {
+                                                    "items": [
+                                                        "0 0.9 0 0",
+                                                        "1 1 0 0",
+                                                        "1.5 0.95 -0.1608955 -0.1608955",
+                                                        "3 0.6 -0.4034287 -0.4034287",
+                                                        "5 0.01 0 0"
+                                                    ],
+                                                    "$type": "kOS.Safe.Encapsulation.ListValue"
+                                                }
+                                            ],
+                                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                                        }
+                                    ],
+                                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                                }
+                            ],
+                            "$type": "kOS.Safe.Encapsulation.ListValue"
+                        }
+                    ],
+                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                },
+                {
+                    "entries": [
+                        "attr",
+                        {
+                            "entries": [
+                                "name",
+                                "ModuleAnimateHeat",
+                                "ThermalAnim",
+                                "IntakeFuselageHeat"
+                            ],
+                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                        }
+                    ],
+                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                }
+            ],
+            "$type": "kOS.Safe.Encapsulation.ListValue"
+        },
+        "RESOURCE",
+        {
+            "items": [
+                {
+                    "entries": [
+                        "attr",
+                        {
+                            "entries": [
+                                "name",
+                                "IntakeAir",
+                                "amount",
+                                2,
+                                "maxAmount",
+                                2
+                            ],
+                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                        }
+                    ],
+                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                },
+                {
+                    "entries": [
+                        "attr",
+                        {
+                            "entries": [
+                                "name",
+                                "LiquidFuel",
+                                "amount",
+                                200,
+                                "maxAmount",
+                                200
+                            ],
+                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                        }
+                    ],
+                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                }
+            ],
+            "$type": "kOS.Safe.Encapsulation.ListValue"
+        }
+    ],
+    "$type": "kOS.Safe.Encapsulation.Lexicon"
+}

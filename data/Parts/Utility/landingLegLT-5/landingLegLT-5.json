@@ -1,0 +1,492 @@
+{
+    "entries": [
+        "attr",
+        {
+            "entries": [
+                "name",
+                "miniLandingLeg",
+                "module",
+                "Part",
+                "author",
+                "NovaSilisko",
+                "mesh",
+                "model.mu",
+                "rescaleFactor",
+                1,
+                "node_attach",
+                "0.0256775, 0.05144107, 0.0, 1.0, 0.0, 0.0",
+                "TechRequired",
+                "survivability",
+                "entryCost",
+                820,
+                "cost",
+                200,
+                "category",
+                "Ground",
+                "subcategory",
+                0,
+                "title",
+                "LT-05 Micro Landing Strut",
+                "manufacturer",
+                "Moving Parts Experts Group",
+                "description",
+                "A small landing leg designed for space probes or lightweight landers. Basically made of toothpicks... erm, Space-grade toothpicks mind you, but be careful with them anyway.",
+                "attachRules",
+                "0,1,0,0,0",
+                "mass",
+                0.015,
+                "emissiveConstant",
+                0.8,
+                "dragModelType",
+                "default",
+                "maximum_drag",
+                0.2,
+                "minimum_drag",
+                0.2,
+                "angularDrag",
+                2,
+                "crashTolerance",
+                10,
+                "maxTemp",
+                1200,
+                "explosionPotential",
+                0,
+                "bulkheadProfiles",
+                "srf",
+                "tags",
+                "ground land leg support"
+            ],
+            "$type": "kOS.Safe.Encapsulation.Lexicon"
+        },
+        "EFFECTS",
+        {
+            "items": [
+                {
+                    "entries": [
+                        "attr",
+                        {
+                            "entries": [
+                                
+                            ],
+                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                        },
+                        "deploy",
+                        {
+                            "items": [
+                                {
+                                    "entries": [
+                                        "attr",
+                                        {
+                                            "entries": [
+                                                
+                                            ],
+                                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                                        },
+                                        "AUDIO",
+                                        {
+                                            "items": [
+                                                {
+                                                    "entries": [
+                                                        "attr",
+                                                        {
+                                                            "entries": [
+                                                                "channel",
+                                                                "Ship",
+                                                                "clip",
+                                                                "Squad/Sounds/elev_start",
+                                                                "volume",
+                                                                {
+                                                                    "items": [
+                                                                        "0 0",
+                                                                        "1 0.5"
+                                                                    ],
+                                                                    "$type": "kOS.Safe.Encapsulation.ListValue"
+                                                                },
+                                                                "pitch",
+                                                                0.95
+                                                            ],
+                                                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                                                        }
+                                                    ],
+                                                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                                                }
+                                            ],
+                                            "$type": "kOS.Safe.Encapsulation.ListValue"
+                                        },
+                                        "AUDIO_LOOP",
+                                        {
+                                            "items": [
+                                                {
+                                                    "entries": [
+                                                        "attr",
+                                                        {
+                                                            "entries": [
+                                                                "channel",
+                                                                "Ship",
+                                                                "clip",
+                                                                "Squad/Sounds/elev_loop",
+                                                                "volume",
+                                                                {
+                                                                    "items": [
+                                                                        "0 0",
+                                                                        "1 0.5"
+                                                                    ],
+                                                                    "$type": "kOS.Safe.Encapsulation.ListValue"
+                                                                },
+                                                                "pitch",
+                                                                0.95
+                                                            ],
+                                                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                                                        }
+                                                    ],
+                                                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                                                }
+                                            ],
+                                            "$type": "kOS.Safe.Encapsulation.ListValue"
+                                        }
+                                    ],
+                                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                                }
+                            ],
+                            "$type": "kOS.Safe.Encapsulation.ListValue"
+                        },
+                        "deployed",
+                        {
+                            "items": [
+                                {
+                                    "entries": [
+                                        "attr",
+                                        {
+                                            "entries": [
+                                                
+                                            ],
+                                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                                        },
+                                        "AUDIO",
+                                        {
+                                            "items": [
+                                                {
+                                                    "entries": [
+                                                        "attr",
+                                                        {
+                                                            "entries": [
+                                                                "channel",
+                                                                "Ship",
+                                                                "clip",
+                                                                "Squad/Sounds/elev_stop",
+                                                                "volume",
+                                                                {
+                                                                    "items": [
+                                                                        "0 0",
+                                                                        "1 0.5"
+                                                                    ],
+                                                                    "$type": "kOS.Safe.Encapsulation.ListValue"
+                                                                },
+                                                                "pitch",
+                                                                0.95
+                                                            ],
+                                                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                                                        }
+                                                    ],
+                                                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                                                }
+                                            ],
+                                            "$type": "kOS.Safe.Encapsulation.ListValue"
+                                        }
+                                    ],
+                                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                                }
+                            ],
+                            "$type": "kOS.Safe.Encapsulation.ListValue"
+                        },
+                        "retract",
+                        {
+                            "items": [
+                                {
+                                    "entries": [
+                                        "attr",
+                                        {
+                                            "entries": [
+                                                
+                                            ],
+                                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                                        },
+                                        "AUDIO",
+                                        {
+                                            "items": [
+                                                {
+                                                    "entries": [
+                                                        "attr",
+                                                        {
+                                                            "entries": [
+                                                                "channel",
+                                                                "Ship",
+                                                                "clip",
+                                                                "Squad/Sounds/elev_start",
+                                                                "volume",
+                                                                {
+                                                                    "items": [
+                                                                        "0 0",
+                                                                        "1 0.5"
+                                                                    ],
+                                                                    "$type": "kOS.Safe.Encapsulation.ListValue"
+                                                                },
+                                                                "pitch",
+                                                                0.95
+                                                            ],
+                                                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                                                        }
+                                                    ],
+                                                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                                                }
+                                            ],
+                                            "$type": "kOS.Safe.Encapsulation.ListValue"
+                                        },
+                                        "AUDIO_LOOP",
+                                        {
+                                            "items": [
+                                                {
+                                                    "entries": [
+                                                        "attr",
+                                                        {
+                                                            "entries": [
+                                                                "channel",
+                                                                "Ship",
+                                                                "clip",
+                                                                "Squad/Sounds/elev_loop",
+                                                                "volume",
+                                                                {
+                                                                    "items": [
+                                                                        "0 0",
+                                                                        "1 0.5"
+                                                                    ],
+                                                                    "$type": "kOS.Safe.Encapsulation.ListValue"
+                                                                },
+                                                                "pitch",
+                                                                0.95
+                                                            ],
+                                                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                                                        }
+                                                    ],
+                                                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                                                }
+                                            ],
+                                            "$type": "kOS.Safe.Encapsulation.ListValue"
+                                        }
+                                    ],
+                                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                                }
+                            ],
+                            "$type": "kOS.Safe.Encapsulation.ListValue"
+                        },
+                        "retracted",
+                        {
+                            "items": [
+                                {
+                                    "entries": [
+                                        "attr",
+                                        {
+                                            "entries": [
+                                                
+                                            ],
+                                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                                        },
+                                        "AUDIO",
+                                        {
+                                            "items": [
+                                                {
+                                                    "entries": [
+                                                        "attr",
+                                                        {
+                                                            "entries": [
+                                                                "channel",
+                                                                "Ship",
+                                                                "clip",
+                                                                "Squad/Sounds/elev_stop",
+                                                                "volume",
+                                                                {
+                                                                    "items": [
+                                                                        "0 0",
+                                                                        "1 0.5"
+                                                                    ],
+                                                                    "$type": "kOS.Safe.Encapsulation.ListValue"
+                                                                },
+                                                                "pitch",
+                                                                1.35
+                                                            ],
+                                                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                                                        }
+                                                    ],
+                                                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                                                }
+                                            ],
+                                            "$type": "kOS.Safe.Encapsulation.ListValue"
+                                        }
+                                    ],
+                                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                                }
+                            ],
+                            "$type": "kOS.Safe.Encapsulation.ListValue"
+                        }
+                    ],
+                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                }
+            ],
+            "$type": "kOS.Safe.Encapsulation.ListValue"
+        },
+        "MODULE",
+        {
+            "items": [
+                {
+                    "entries": [
+                        "attr",
+                        {
+                            "entries": [
+                                "name",
+                                "ModuleWheelBase",
+                                "wheelColliderTransformName",
+                                "wheelCollider",
+                                "wheelType",
+                                "LEG",
+                                "FitWheelColliderToMesh",
+                                false,
+                                "radius",
+                                0.1,
+                                "center",
+                                "0,0,0",
+                                "mass",
+                                0.04,
+                                "autoFrictionAvailable",
+                                false,
+                                "clipObject",
+                                "leg_collider",
+                                "TooltipTitle",
+                                "Landing Leg",
+                                "TooltipPrimaryField",
+                                "",
+                                "groundHeightOffset",
+                                1
+                            ],
+                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                        }
+                    ],
+                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                },
+                {
+                    "entries": [
+                        "attr",
+                        {
+                            "entries": [
+                                "name",
+                                "ModuleWheelSuspension",
+                                "baseModuleIndex",
+                                0,
+                                "suspensionTransformName",
+                                "leg",
+                                "suspensionDistance",
+                                0.8,
+                                "suspensionOffset",
+                                "-0.8",
+                                "targetPosition",
+                                1,
+                                "springRatio",
+                                8,
+                                "damperRatio",
+                                1,
+                                "boostRatio",
+                                0.75,
+                                "extendDurationFactor",
+                                1,
+                                "retractDuractionFactor",
+                                1
+                            ],
+                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                        }
+                    ],
+                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                },
+                {
+                    "entries": [
+                        "attr",
+                        {
+                            "entries": [
+                                "name",
+                                "ModuleWheelDeployment",
+                                "baseModuleIndex",
+                                0,
+                                "animationTrfName",
+                                "miniLeg",
+                                "animationStateName",
+                                "probeleg",
+                                "deployedPosition",
+                                1,
+                                "deployTargetTransformName",
+                                "deployTgt",
+                                "retractTransformName",
+                                "leg",
+                                "TsubSys",
+                                0.8,
+                                "fxDeploy",
+                                "deploy",
+                                "fxRetract",
+                                "retract",
+                                "fxDeployed",
+                                "deployed",
+                                "fxRetracted",
+                                "retracted"
+                            ],
+                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                        }
+                    ],
+                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                },
+                {
+                    "entries": [
+                        "attr",
+                        {
+                            "entries": [
+                                "name",
+                                "ModuleWheelLock",
+                                "maxTorque",
+                                50
+                            ],
+                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                        }
+                    ],
+                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                },
+                {
+                    "entries": [
+                        "attr",
+                        {
+                            "entries": [
+                                "name",
+                                "ModuleWheelDamage",
+                                "baseModuleIndex",
+                                0,
+                                "stressTolerance",
+                                99999999,
+                                "impactTolerance",
+                                40,
+                                "deflectionMagnitude",
+                                1,
+                                "deflectionSharpness",
+                                2,
+                                "slipMagnitude",
+                                0,
+                                "slipSharpness",
+                                2,
+                                "explodeMultiplier",
+                                1
+                            ],
+                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                        }
+                    ],
+                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                }
+            ],
+            "$type": "kOS.Safe.Encapsulation.ListValue"
+        }
+    ],
+    "$type": "kOS.Safe.Encapsulation.Lexicon"
+}

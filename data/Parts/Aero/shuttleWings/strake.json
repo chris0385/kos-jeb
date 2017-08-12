@@ -1,0 +1,142 @@
+{
+    "entries": [
+        "attr",
+        {
+            "entries": [
+                "name",
+                "wingShuttleStrake",
+                "module",
+                "Part",
+                "author",
+                "Porkjet",
+                "rescaleFactor",
+                1,
+                "node_attach",
+                "0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 1",
+                "CoMOffset",
+                "-0.37, 0.2, 0",
+                "CoLOffset",
+                "-0.37, 0.2, 0",
+                "CoPOffset",
+                "-0.37, 0.2, 0",
+                "TechRequired",
+                "experimentalAerodynamics",
+                "entryCost",
+                22000,
+                "cost",
+                1000,
+                "category",
+                "Aero",
+                "subcategory",
+                0,
+                "title",
+                "Big-S Wing Strake",
+                "manufacturer",
+                "C7 Aerospace Division",
+                "description",
+                "The Big-S line of wings are C7's largest lifting surfaces to date. Not only are they Sturdy and heat resistant enough to survive reentry, but also have enough internal volume to carry optional fuel tanks.",
+                "attachRules",
+                "0,1,0,1,1",
+                "mass",
+                0.1,
+                "thermalMassModifier",
+                8,
+                "heatConductivity",
+                0.06,
+                "emissiveConstant",
+                0.95,
+                "dragModelType",
+                "none",
+                "maximum_drag",
+                0.02,
+                "minimum_drag",
+                0.02,
+                "angularDrag",
+                2,
+                "crashTolerance",
+                15,
+                "maxTemp",
+                2400,
+                "explosionPotential",
+                0.1,
+                "fuelCrossFeed",
+                true,
+                "bulkheadProfiles",
+                "srf",
+                "tags",
+                "aero aircraft foil fuel ?lf lift liquid plane shuttle swept wet"
+            ],
+            "$type": "kOS.Safe.Encapsulation.Lexicon"
+        },
+        "MODEL",
+        {
+            "items": [
+                {
+                    "entries": [
+                        "attr",
+                        {
+                            "entries": [
+                                "model",
+                                "Squad/Parts/Aero/shuttleWings/ShuttleStrake"
+                            ],
+                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                        }
+                    ],
+                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                }
+            ],
+            "$type": "kOS.Safe.Encapsulation.ListValue"
+        },
+        "MODULE",
+        {
+            "items": [
+                {
+                    "entries": [
+                        "attr",
+                        {
+                            "entries": [
+                                "name",
+                                "ModuleLiftingSurface",
+                                "useInternalDragModel",
+                                true,
+                                "deflectionLiftCoeff",
+                                1,
+                                "dragAtMaxAoA",
+                                0.6,
+                                "dragAtMinAoA",
+                                0
+                            ],
+                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                        }
+                    ],
+                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                }
+            ],
+            "$type": "kOS.Safe.Encapsulation.ListValue"
+        },
+        "RESOURCE",
+        {
+            "items": [
+                {
+                    "entries": [
+                        "attr",
+                        {
+                            "entries": [
+                                "name",
+                                "LiquidFuel",
+                                "amount",
+                                0,
+                                "maxAmount",
+                                100
+                            ],
+                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                        }
+                    ],
+                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                }
+            ],
+            "$type": "kOS.Safe.Encapsulation.ListValue"
+        }
+    ],
+    "$type": "kOS.Safe.Encapsulation.Lexicon"
+}

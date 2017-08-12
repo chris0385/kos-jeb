@@ -12,6 +12,12 @@ HUDTEXT( string Message,
 // Also works in MAPVIEW
 VECDRAW(start, vec, color, label, scale, show, width).
 
+clearvecdraws().
+set a to VECDRAW(V(0,0,0), LATLNG(-0.096944, -74.5575):POSITION, red, "ksc", 1, true, 1).
+until false {
+	set a:vec to LATLNG(-0.096944, -74.5575):POSITION.
+}
+
 
 LOCAL gui IS GUI(200).
 // Add widgets to the GUI

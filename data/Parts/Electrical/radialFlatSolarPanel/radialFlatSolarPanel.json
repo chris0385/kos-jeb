@@ -1,0 +1,92 @@
+{
+    "entries": [
+        "attr",
+        {
+            "entries": [
+                "name",
+                "solarPanels5",
+                "module",
+                "Part",
+                "author",
+                "NovaSilisko",
+                "mesh",
+                "model.mu",
+                "rescaleFactor",
+                1,
+                "node_attach",
+                "0.0, 0.0, 0.0, 0.0, 0.0, 1.0",
+                "TechRequired",
+                "electrics",
+                "entryCost",
+                1200,
+                "cost",
+                75,
+                "category",
+                "Electrical",
+                "subcategory",
+                0,
+                "title",
+                "OX-STAT Photovoltaic Panels",
+                "manufacturer",
+                "Probodobodyne Inc",
+                "description",
+                "The OX-STAT solar panel is a simple panel with no sun-tracking or deployment mechanics. As a result, it is very light and cheap.",
+                "attachRules",
+                "0,1,0,0,1",
+                "mass",
+                0.005,
+                "dragModelType",
+                "default",
+                "maximum_drag",
+                0.2,
+                "minimum_drag",
+                0.2,
+                "angularDrag",
+                1,
+                "crashTolerance",
+                8,
+                "maxTemp",
+                1200,
+                "PhysicsSignificance",
+                1,
+                "bulkheadProfiles",
+                "srf",
+                "tags",
+                "array charge e/c elect energ fixed flat generat (light photo power solar static sun volt watt"
+            ],
+            "$type": "kOS.Safe.Encapsulation.Lexicon"
+        },
+        "MODULE",
+        {
+            "items": [
+                {
+                    "entries": [
+                        "attr",
+                        {
+                            "entries": [
+                                "name",
+                                "ModuleDeployableSolarPanel",
+                                "isTracking",
+                                false,
+                                "secondaryTransformName",
+                                "suncatcher",
+                                "pivotName",
+                                "suncatcher",
+                                "isBreakable",
+                                false,
+                                "resourceName",
+                                "ElectricCharge",
+                                "chargeRate",
+                                0.35
+                            ],
+                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                        }
+                    ],
+                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                }
+            ],
+            "$type": "kOS.Safe.Encapsulation.ListValue"
+        }
+    ],
+    "$type": "kOS.Safe.Encapsulation.Lexicon"
+}

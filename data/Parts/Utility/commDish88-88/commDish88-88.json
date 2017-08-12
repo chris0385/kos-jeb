@@ -1,0 +1,123 @@
+{
+    "entries": [
+        "attr",
+        {
+            "entries": [
+                "name",
+                "commDish",
+                "module",
+                "Part",
+                "author",
+                "NovaSilisko",
+                "mesh",
+                "model.mu",
+                "scale",
+                1,
+                "rescaleFactor",
+                1,
+                "node_stack_bottom",
+                "0.0, -0.13, 0.0, 0.0, -1.0, 0.0, 0",
+                "node_attach",
+                "0.0, -0.13, 0.0, 0.0, -1.0, 0.0, 0",
+                "TechRequired",
+                "automation",
+                "entryCost",
+                20000,
+                "cost",
+                1500,
+                "category",
+                "Communication",
+                "subcategory",
+                0,
+                "title",
+                "Communotron 88-88",
+                "manufacturer",
+                "Ionic Symphonic Protonic Electronics",
+                "description",
+                "The Communotron 88-88 directional antenna allows for far more reliable communication at longer ranges than previous models. This is thanks in part to its patented parabolic folding design, which our research team maintains was not inspired by an umbrella.",
+                "attachRules",
+                "1,1,0,0,0",
+                "mass",
+                0.1,
+                "dragModelType",
+                "default",
+                "maximum_drag",
+                0.2,
+                "minimum_drag",
+                0.2,
+                "angularDrag",
+                2,
+                "crashTolerance",
+                7,
+                "maxTemp",
+                2000,
+                "PhysicsSignificance",
+                1,
+                "bulkheadProfiles",
+                "size0, srf",
+                "tags",
+                "aerial antenna deploy direct dish extend fold radio signal transmi"
+            ],
+            "$type": "kOS.Safe.Encapsulation.Lexicon"
+        },
+        "MODULE",
+        {
+            "items": [
+                {
+                    "entries": [
+                        "attr",
+                        {
+                            "entries": [
+                                "name",
+                                "ModuleDeployableAntenna",
+                                "showStatus",
+                                false,
+                                "isTracking",
+                                false,
+                                "pivotName",
+                                "Rescalar",
+                                "windResistance",
+                                1,
+                                "animationName",
+                                "dish"
+                            ],
+                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                        }
+                    ],
+                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                },
+                {
+                    "entries": [
+                        "attr",
+                        {
+                            "entries": [
+                                "name",
+                                "ModuleDataTransmitter",
+                                "antennaType",
+                                "DIRECT",
+                                "packetInterval",
+                                0.1,
+                                "packetSize",
+                                2,
+                                "packetResourceCost",
+                                20,
+                                "requiredResource",
+                                "ElectricCharge",
+                                "DeployFxModules",
+                                0,
+                                "antennaPower",
+                                "100000000000",
+                                "antennaCombinable",
+                                true
+                            ],
+                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                        }
+                    ],
+                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                }
+            ],
+            "$type": "kOS.Safe.Encapsulation.ListValue"
+        }
+    ],
+    "$type": "kOS.Safe.Encapsulation.Lexicon"
+}

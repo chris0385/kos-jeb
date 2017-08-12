@@ -1,0 +1,140 @@
+{
+    "entries": [
+        "attr",
+        {
+            "entries": [
+                "name",
+                "airlinerTailFin",
+                "module",
+                "Part",
+                "author",
+                "Porkjet",
+                "rescaleFactor",
+                1,
+                "node_attach",
+                "0.0, 1.0, 0.0, 1.0, 0.0, 0.0, 1",
+                "CoLOffset",
+                "-2.0, 0.4, 0",
+                "CoPOffset",
+                "-2.0, 0.4, 0",
+                "CoMOffset",
+                "-2.0, 0.4, 0",
+                "TechRequired",
+                "heavyAerodynamics",
+                "entryCost",
+                4000,
+                "cost",
+                1000,
+                "category",
+                "Aero",
+                "subcategory",
+                0,
+                "title",
+                "FAT-455 Aeroplane Tail Fin",
+                "manufacturer",
+                "WinterOwl Aircraft Emporium",
+                "description",
+                "Large conventional wing with built-in control surface.",
+                "attachRules",
+                "0,1,0,1,1",
+                "mass",
+                0.36,
+                "thermalMassModifier",
+                3,
+                "heatConductivity",
+                0.12,
+                "emissiveConstant",
+                0.4,
+                "dragModelType",
+                "none",
+                "maximum_drag",
+                0.02,
+                "minimum_drag",
+                0.02,
+                "angularDrag",
+                2,
+                "crashTolerance",
+                15,
+                "maxTemp",
+                1200,
+                "explosionPotential",
+                0.1,
+                "fuelCrossFeed",
+                true,
+                "bulkheadProfiles",
+                "srf",
+                "tags",
+                "aileron aircraft control (elev fligh foil lift liner )rudder stab swept wing"
+            ],
+            "$type": "kOS.Safe.Encapsulation.Lexicon"
+        },
+        "MODEL",
+        {
+            "items": [
+                {
+                    "entries": [
+                        "attr",
+                        {
+                            "entries": [
+                                "model",
+                                "Squad/Parts/Aero/airlinerWings/TailFin"
+                            ],
+                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                        }
+                    ],
+                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                }
+            ],
+            "$type": "kOS.Safe.Encapsulation.ListValue"
+        },
+        "MODULE",
+        {
+            "items": [
+                {
+                    "entries": [
+                        "attr",
+                        {
+                            "entries": [
+                                "name",
+                                "ModuleControlSurface",
+                                "useInternalDragModel",
+                                true,
+                                "dragCoeff",
+                                0.6,
+                                "deflectionLiftCoeff",
+                                2.69,
+                                "ctrlSurfaceRange",
+                                15,
+                                "ctrlSurfaceArea",
+                                0.37,
+                                "actuatorSpeed",
+                                25,
+                                "transformName",
+                                "ctrlSrf"
+                            ],
+                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                        }
+                    ],
+                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                },
+                {
+                    "entries": [
+                        "attr",
+                        {
+                            "entries": [
+                                "name",
+                                "FlagDecal",
+                                "textureQuadName",
+                                "FLAG"
+                            ],
+                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                        }
+                    ],
+                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                }
+            ],
+            "$type": "kOS.Safe.Encapsulation.ListValue"
+        }
+    ],
+    "$type": "kOS.Safe.Encapsulation.Lexicon"
+}

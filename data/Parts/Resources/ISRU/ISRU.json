@@ -1,0 +1,777 @@
+{
+    "entries": [
+        "attr",
+        {
+            "entries": [
+                "name",
+                "ISRU",
+                "module",
+                "Part",
+                "author",
+                "RoverDude",
+                "mesh",
+                "ISRU.mu",
+                "scale",
+                1,
+                "rescaleFactor",
+                1,
+                "node_stack_top",
+                "0.0, 1.5, 0.0, 0.0, 1.0, 0.0, 2",
+                "node_stack_bottom",
+                "0.0, -1.5, 0.0, 0.0, -1.0, 0.0, 2",
+                "TechRequired",
+                "advScienceTech",
+                "entryCost",
+                24000,
+                "cost",
+                8000,
+                "category",
+                "Utility",
+                "subcategory",
+                0,
+                "title",
+                "Convert-O-Tron 250",
+                "manufacturer",
+                "Kerbodyne",
+                "description",
+                "This mobile processing plant can take raw materials containing even trace amounts of oxygen and hydrogen, and crack them into useful fuel products.  When operated by a skilled engineer, you will be able to operate with better efficiency.  These modules operate best at their ideal operating temperatures, and features auto-shutdown in the event of excessive overheating.  Radiators can be used to help manage excessive heat.",
+                "attachRules",
+                "1,1,1,0,0",
+                "mass",
+                4.25,
+                "dragModelType",
+                "default",
+                "maximum_drag",
+                0.2,
+                "minimum_drag",
+                0.2,
+                "angularDrag",
+                2,
+                "crashTolerance",
+                7,
+                "maxTemp",
+                2000,
+                "bulkheadProfiles",
+                "size2, srf",
+                "tags",
+                "conver isru mine )mining (ore process resource"
+            ],
+            "$type": "kOS.Safe.Encapsulation.Lexicon"
+        },
+        "MODULE",
+        {
+            "items": [
+                {
+                    "entries": [
+                        "attr",
+                        {
+                            "entries": [
+                                "name",
+                                "ModuleOverheatDisplay"
+                            ],
+                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                        }
+                    ],
+                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                },
+                {
+                    "entries": [
+                        "attr",
+                        {
+                            "entries": [
+                                "name",
+                                "ModuleResourceConverter",
+                                "ConverterName",
+                                "Lf+Ox",
+                                "StartActionName",
+                                "Start ISRU [Lf+Ox]",
+                                "StopActionName",
+                                "Stop ISRU [Lf+Ox]",
+                                "AutoShutdown",
+                                true,
+                                "GeneratesHeat",
+                                true,
+                                "DefaultShutoffTemp",
+                                ".8",
+                                "UseSpecialistBonus",
+                                true,
+                                "SpecialistEfficiencyFactor",
+                                0.2,
+                                "SpecialistBonusBase",
+                                0.05,
+                                "ExperienceEffect",
+                                "ConverterSkill",
+                                "EfficiencyBonus",
+                                1
+                            ],
+                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                        },
+                        "TemperatureModifier",
+                        {
+                            "items": [
+                                {
+                                    "entries": [
+                                        "attr",
+                                        {
+                                            "entries": [
+                                                "key",
+                                                {
+                                                    "items": [
+                                                        "0 100000",
+                                                        "750 50000",
+                                                        "1000 10000",
+                                                        "1250 500",
+                                                        "2000 50",
+                                                        "4000 0"
+                                                    ],
+                                                    "$type": "kOS.Safe.Encapsulation.ListValue"
+                                                }
+                                            ],
+                                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                                        }
+                                    ],
+                                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                                }
+                            ],
+                            "$type": "kOS.Safe.Encapsulation.ListValue"
+                        },
+                        "ThermalEfficiency",
+                        {
+                            "items": [
+                                {
+                                    "entries": [
+                                        "attr",
+                                        {
+                                            "entries": [
+                                                "key",
+                                                {
+                                                    "items": [
+                                                        "0 0 0 0",
+                                                        "500 0.1 0 0",
+                                                        "1000 1.0 0 0",
+                                                        "1250 0.1 0 0",
+                                                        "3000 0 0 0"
+                                                    ],
+                                                    "$type": "kOS.Safe.Encapsulation.ListValue"
+                                                }
+                                            ],
+                                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                                        }
+                                    ],
+                                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                                }
+                            ],
+                            "$type": "kOS.Safe.Encapsulation.ListValue"
+                        },
+                        "INPUT_RESOURCE",
+                        {
+                            "items": [
+                                {
+                                    "entries": [
+                                        "attr",
+                                        {
+                                            "entries": [
+                                                "ResourceName",
+                                                "Ore",
+                                                "Ratio",
+                                                0.5,
+                                                "FlowMode",
+                                                "STAGE_PRIORITY_FLOW"
+                                            ],
+                                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                                        }
+                                    ],
+                                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                                },
+                                {
+                                    "entries": [
+                                        "attr",
+                                        {
+                                            "entries": [
+                                                "ResourceName",
+                                                "ElectricCharge",
+                                                "Ratio",
+                                                30
+                                            ],
+                                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                                        }
+                                    ],
+                                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                                }
+                            ],
+                            "$type": "kOS.Safe.Encapsulation.ListValue"
+                        },
+                        "OUTPUT_RESOURCE",
+                        {
+                            "items": [
+                                {
+                                    "entries": [
+                                        "attr",
+                                        {
+                                            "entries": [
+                                                "ResourceName",
+                                                "LiquidFuel",
+                                                "Ratio",
+                                                0.45,
+                                                "DumpExcess",
+                                                false,
+                                                "FlowMode",
+                                                "STAGE_PRIORITY_FLOW"
+                                            ],
+                                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                                        }
+                                    ],
+                                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                                },
+                                {
+                                    "entries": [
+                                        "attr",
+                                        {
+                                            "entries": [
+                                                "ResourceName",
+                                                "Oxidizer",
+                                                "Ratio",
+                                                0.55,
+                                                "DumpExcess",
+                                                false,
+                                                "FlowMode",
+                                                "STAGE_PRIORITY_FLOW"
+                                            ],
+                                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                                        }
+                                    ],
+                                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                                }
+                            ],
+                            "$type": "kOS.Safe.Encapsulation.ListValue"
+                        }
+                    ],
+                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                },
+                {
+                    "entries": [
+                        "attr",
+                        {
+                            "entries": [
+                                "name",
+                                "ModuleResourceConverter",
+                                "ConverterName",
+                                "Monoprop",
+                                "StartActionName",
+                                "Start ISRU [Monoprop]",
+                                "StopActionName",
+                                "Stop ISRU [Monoprop]",
+                                "AutoShutdown",
+                                true,
+                                "GeneratesHeat",
+                                true,
+                                "DefaultShutoffTemp",
+                                ".8",
+                                "UseSpecialistBonus",
+                                true,
+                                "SpecialistEfficiencyFactor",
+                                0.2,
+                                "SpecialistBonusBase",
+                                0.05,
+                                "ExperienceEffect",
+                                "ConverterSkill",
+                                "EfficiencyBonus",
+                                1
+                            ],
+                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                        },
+                        "TemperatureModifier",
+                        {
+                            "items": [
+                                {
+                                    "entries": [
+                                        "attr",
+                                        {
+                                            "entries": [
+                                                "key",
+                                                {
+                                                    "items": [
+                                                        "0 100000",
+                                                        "750 50000",
+                                                        "1000 10000",
+                                                        "1250 500",
+                                                        "2000 50",
+                                                        "4000 0"
+                                                    ],
+                                                    "$type": "kOS.Safe.Encapsulation.ListValue"
+                                                }
+                                            ],
+                                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                                        }
+                                    ],
+                                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                                }
+                            ],
+                            "$type": "kOS.Safe.Encapsulation.ListValue"
+                        },
+                        "ThermalEfficiency",
+                        {
+                            "items": [
+                                {
+                                    "entries": [
+                                        "attr",
+                                        {
+                                            "entries": [
+                                                "key",
+                                                {
+                                                    "items": [
+                                                        "0 0 0 0",
+                                                        "500 0.1 0 0",
+                                                        "1000 1.0 0 0",
+                                                        "1250 0.1 0 0",
+                                                        "3000 0 0 0"
+                                                    ],
+                                                    "$type": "kOS.Safe.Encapsulation.ListValue"
+                                                }
+                                            ],
+                                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                                        }
+                                    ],
+                                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                                }
+                            ],
+                            "$type": "kOS.Safe.Encapsulation.ListValue"
+                        },
+                        "INPUT_RESOURCE",
+                        {
+                            "items": [
+                                {
+                                    "entries": [
+                                        "attr",
+                                        {
+                                            "entries": [
+                                                "ResourceName",
+                                                "Ore",
+                                                "Ratio",
+                                                0.5
+                                            ],
+                                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                                        }
+                                    ],
+                                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                                },
+                                {
+                                    "entries": [
+                                        "attr",
+                                        {
+                                            "entries": [
+                                                "ResourceName",
+                                                "ElectricCharge",
+                                                "Ratio",
+                                                30
+                                            ],
+                                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                                        }
+                                    ],
+                                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                                }
+                            ],
+                            "$type": "kOS.Safe.Encapsulation.ListValue"
+                        },
+                        "OUTPUT_RESOURCE",
+                        {
+                            "items": [
+                                {
+                                    "entries": [
+                                        "attr",
+                                        {
+                                            "entries": [
+                                                "ResourceName",
+                                                "MonoPropellant",
+                                                "Ratio",
+                                                1,
+                                                "DumpExcess",
+                                                false
+                                            ],
+                                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                                        }
+                                    ],
+                                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                                }
+                            ],
+                            "$type": "kOS.Safe.Encapsulation.ListValue"
+                        }
+                    ],
+                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                },
+                {
+                    "entries": [
+                        "attr",
+                        {
+                            "entries": [
+                                "name",
+                                "ModuleResourceConverter",
+                                "ConverterName",
+                                "LiquidFuel",
+                                "StartActionName",
+                                "Start ISRU [LqdFuel]",
+                                "StopActionName",
+                                "Stop ISRU [LqdFuel]",
+                                "AutoShutdown",
+                                true,
+                                "GeneratesHeat",
+                                true,
+                                "DefaultShutoffTemp",
+                                ".8",
+                                "UseSpecialistBonus",
+                                true,
+                                "SpecialistEfficiencyFactor",
+                                0.2,
+                                "SpecialistBonusBase",
+                                0.05,
+                                "ExperienceEffect",
+                                "ConverterSkill",
+                                "EfficiencyBonus",
+                                1
+                            ],
+                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                        },
+                        "TemperatureModifier",
+                        {
+                            "items": [
+                                {
+                                    "entries": [
+                                        "attr",
+                                        {
+                                            "entries": [
+                                                "key",
+                                                {
+                                                    "items": [
+                                                        "0 100000",
+                                                        "750 50000",
+                                                        "1000 10000",
+                                                        "1250 500",
+                                                        "2000 50",
+                                                        "4000 0"
+                                                    ],
+                                                    "$type": "kOS.Safe.Encapsulation.ListValue"
+                                                }
+                                            ],
+                                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                                        }
+                                    ],
+                                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                                }
+                            ],
+                            "$type": "kOS.Safe.Encapsulation.ListValue"
+                        },
+                        "ThermalEfficiency",
+                        {
+                            "items": [
+                                {
+                                    "entries": [
+                                        "attr",
+                                        {
+                                            "entries": [
+                                                "key",
+                                                {
+                                                    "items": [
+                                                        "0 0 0 0",
+                                                        "500 0.1 0 0",
+                                                        "1000 1.0 0 0",
+                                                        "1250 0.1 0 0",
+                                                        "3000 0 0 0"
+                                                    ],
+                                                    "$type": "kOS.Safe.Encapsulation.ListValue"
+                                                }
+                                            ],
+                                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                                        }
+                                    ],
+                                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                                }
+                            ],
+                            "$type": "kOS.Safe.Encapsulation.ListValue"
+                        },
+                        "INPUT_RESOURCE",
+                        {
+                            "items": [
+                                {
+                                    "entries": [
+                                        "attr",
+                                        {
+                                            "entries": [
+                                                "ResourceName",
+                                                "Ore",
+                                                "Ratio",
+                                                0.45,
+                                                "FlowMode",
+                                                "STAGE_PRIORITY_FLOW"
+                                            ],
+                                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                                        }
+                                    ],
+                                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                                },
+                                {
+                                    "entries": [
+                                        "attr",
+                                        {
+                                            "entries": [
+                                                "ResourceName",
+                                                "ElectricCharge",
+                                                "Ratio",
+                                                30
+                                            ],
+                                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                                        }
+                                    ],
+                                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                                }
+                            ],
+                            "$type": "kOS.Safe.Encapsulation.ListValue"
+                        },
+                        "OUTPUT_RESOURCE",
+                        {
+                            "items": [
+                                {
+                                    "entries": [
+                                        "attr",
+                                        {
+                                            "entries": [
+                                                "ResourceName",
+                                                "LiquidFuel",
+                                                "Ratio",
+                                                0.9,
+                                                "DumpExcess",
+                                                false,
+                                                "FlowMode",
+                                                "STAGE_PRIORITY_FLOW"
+                                            ],
+                                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                                        }
+                                    ],
+                                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                                }
+                            ],
+                            "$type": "kOS.Safe.Encapsulation.ListValue"
+                        }
+                    ],
+                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                },
+                {
+                    "entries": [
+                        "attr",
+                        {
+                            "entries": [
+                                "name",
+                                "ModuleResourceConverter",
+                                "ConverterName",
+                                "Oxidizer",
+                                "StartActionName",
+                                "Start ISRU [Ox]",
+                                "StopActionName",
+                                "Stop ISRU [Ox]",
+                                "AutoShutdown",
+                                true,
+                                "GeneratesHeat",
+                                true,
+                                "DefaultShutoffTemp",
+                                ".8",
+                                "UseSpecialistBonus",
+                                true,
+                                "SpecialistEfficiencyFactor",
+                                0.2,
+                                "SpecialistBonusBase",
+                                0.05,
+                                "ExperienceEffect",
+                                "ConverterSkill",
+                                "EfficiencyBonus",
+                                1
+                            ],
+                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                        },
+                        "TemperatureModifier",
+                        {
+                            "items": [
+                                {
+                                    "entries": [
+                                        "attr",
+                                        {
+                                            "entries": [
+                                                "key",
+                                                {
+                                                    "items": [
+                                                        "0 100000",
+                                                        "750 50000",
+                                                        "1000 10000",
+                                                        "1250 500",
+                                                        "2000 50",
+                                                        "4000 0"
+                                                    ],
+                                                    "$type": "kOS.Safe.Encapsulation.ListValue"
+                                                }
+                                            ],
+                                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                                        }
+                                    ],
+                                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                                }
+                            ],
+                            "$type": "kOS.Safe.Encapsulation.ListValue"
+                        },
+                        "ThermalEfficiency",
+                        {
+                            "items": [
+                                {
+                                    "entries": [
+                                        "attr",
+                                        {
+                                            "entries": [
+                                                "key",
+                                                {
+                                                    "items": [
+                                                        "0 0 0 0",
+                                                        "500 0.1 0 0",
+                                                        "1000 1.0 0 0",
+                                                        "1250 0.1 0 0",
+                                                        "3000 0 0 0"
+                                                    ],
+                                                    "$type": "kOS.Safe.Encapsulation.ListValue"
+                                                }
+                                            ],
+                                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                                        }
+                                    ],
+                                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                                }
+                            ],
+                            "$type": "kOS.Safe.Encapsulation.ListValue"
+                        },
+                        "INPUT_RESOURCE",
+                        {
+                            "items": [
+                                {
+                                    "entries": [
+                                        "attr",
+                                        {
+                                            "entries": [
+                                                "ResourceName",
+                                                "Ore",
+                                                "Ratio",
+                                                0.55,
+                                                "FlowMode",
+                                                "STAGE_PRIORITY_FLOW"
+                                            ],
+                                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                                        }
+                                    ],
+                                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                                },
+                                {
+                                    "entries": [
+                                        "attr",
+                                        {
+                                            "entries": [
+                                                "ResourceName",
+                                                "ElectricCharge",
+                                                "Ratio",
+                                                30
+                                            ],
+                                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                                        }
+                                    ],
+                                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                                }
+                            ],
+                            "$type": "kOS.Safe.Encapsulation.ListValue"
+                        },
+                        "OUTPUT_RESOURCE",
+                        {
+                            "items": [
+                                {
+                                    "entries": [
+                                        "attr",
+                                        {
+                                            "entries": [
+                                                "ResourceName",
+                                                "Oxidizer",
+                                                "Ratio",
+                                                1.1,
+                                                "DumpExcess",
+                                                false,
+                                                "FlowMode",
+                                                "STAGE_PRIORITY_FLOW"
+                                            ],
+                                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                                        }
+                                    ],
+                                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                                }
+                            ],
+                            "$type": "kOS.Safe.Encapsulation.ListValue"
+                        }
+                    ],
+                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                },
+                {
+                    "entries": [
+                        "attr",
+                        {
+                            "entries": [
+                                "name",
+                                "ModuleAnimationGroup",
+                                "deployAnimationName",
+                                "",
+                                "activeAnimationName",
+                                "ProcessorLarge_running",
+                                "moduleType",
+                                "Converter",
+                                "autoDeploy",
+                                true
+                            ],
+                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                        }
+                    ],
+                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                },
+                {
+                    "entries": [
+                        "attr",
+                        {
+                            "entries": [
+                                "name",
+                                "ModuleCoreHeat",
+                                "CoreTempGoal",
+                                1000,
+                                "CoreToPartRatio",
+                                0.1,
+                                "CoreTempGoalAdjustment",
+                                0,
+                                "CoreEnergyMultiplier",
+                                0.1,
+                                "HeatRadiantMultiplier",
+                                0.05,
+                                "CoolingRadiantMultiplier",
+                                0,
+                                "HeatTransferMultiplier",
+                                0,
+                                "CoolantTransferMultiplier",
+                                0.01,
+                                "radiatorCoolingFactor",
+                                1,
+                                "radiatorHeatingFactor",
+                                0.01,
+                                "MaxCalculationWarp",
+                                1000,
+                                "CoreShutdownTemp",
+                                4000,
+                                "MaxCoolant",
+                                500
+                            ],
+                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                        }
+                    ],
+                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                }
+            ],
+            "$type": "kOS.Safe.Encapsulation.ListValue"
+        }
+    ],
+    "$type": "kOS.Safe.Encapsulation.Lexicon"
+}

@@ -1,0 +1,237 @@
+{
+    "entries": [
+        "attr",
+        {
+            "entries": [
+                "name",
+                "RCSBlock",
+                "module",
+                "Part",
+                "author",
+                "NovaSilisko",
+                "mesh",
+                "model.mu",
+                "scale",
+                0.1,
+                "node_attach",
+                "0.45212, -0.0105571, -0.0059382, 1.0, 0.0, 0.0",
+                "TechRequired",
+                "advFlightControl",
+                "entryCost",
+                3400,
+                "cost",
+                620,
+                "category",
+                "Control",
+                "subcategory",
+                0,
+                "title",
+                "RV-105 RCS Thruster Block",
+                "manufacturer",
+                "STEADLER Engineering Corps",
+                "description",
+                "The recent discovery of a third law of physics made it possible for STEADLER Corps engineers to produce these small monopropellant thrusters, to help with attitude control and linear motion. Even though many Kerbal physicists still dispute the validity of this new law, studies show that the thrusters seem to work as advertised.",
+                "attachRules",
+                "0,1,0,0,0",
+                "mass",
+                0.05,
+                "dragModelType",
+                "default",
+                "maximum_drag",
+                0.001,
+                "minimum_drag",
+                0.001,
+                "angularDrag",
+                2,
+                "crashTolerance",
+                15,
+                "maxTemp",
+                1500,
+                "PhysicsSignificance",
+                1,
+                "bulkheadProfiles",
+                "srf",
+                "tags",
+                "cluster control dock maneuver manoeuvre react rendezvous rotate stab steer translate"
+            ],
+            "$type": "kOS.Safe.Encapsulation.Lexicon"
+        },
+        "EFFECTS",
+        {
+            "items": [
+                {
+                    "entries": [
+                        "attr",
+                        {
+                            "entries": [
+                                
+                            ],
+                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                        },
+                        "running",
+                        {
+                            "items": [
+                                {
+                                    "entries": [
+                                        "attr",
+                                        {
+                                            "entries": [
+                                                
+                                            ],
+                                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                                        },
+                                        "AUDIO_MULTI_POOL",
+                                        {
+                                            "items": [
+                                                {
+                                                    "entries": [
+                                                        "attr",
+                                                        {
+                                                            "entries": [
+                                                                "channel",
+                                                                "Ship",
+                                                                "transformName",
+                                                                "RCSjet",
+                                                                "clip",
+                                                                "sound_rocket_mini",
+                                                                "volume",
+                                                                {
+                                                                    "items": [
+                                                                        "0.0 0.0",
+                                                                        "0.1 0.0",
+                                                                        "0.5 0.025",
+                                                                        "1.0 0.1"
+                                                                    ],
+                                                                    "$type": "kOS.Safe.Encapsulation.ListValue"
+                                                                },
+                                                                "pitch",
+                                                                {
+                                                                    "items": [
+                                                                        "0.0 0.75",
+                                                                        "1.0 1.5"
+                                                                    ],
+                                                                    "$type": "kOS.Safe.Encapsulation.ListValue"
+                                                                },
+                                                                "loop",
+                                                                true
+                                                            ],
+                                                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                                                        }
+                                                    ],
+                                                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                                                }
+                                            ],
+                                            "$type": "kOS.Safe.Encapsulation.ListValue"
+                                        },
+                                        "MODEL_MULTI_PARTICLE",
+                                        {
+                                            "items": [
+                                                {
+                                                    "entries": [
+                                                        "attr",
+                                                        {
+                                                            "entries": [
+                                                                "modelName",
+                                                                "Squad/FX/Monoprop_small",
+                                                                "transformName",
+                                                                "RCSjet",
+                                                                "emission",
+                                                                {
+                                                                    "items": [
+                                                                        "0.0 0.0",
+                                                                        "0.1 0.0",
+                                                                        "1.0 1.0"
+                                                                    ],
+                                                                    "$type": "kOS.Safe.Encapsulation.ListValue"
+                                                                },
+                                                                "speed",
+                                                                {
+                                                                    "items": [
+                                                                        "0.0 0.8",
+                                                                        "1.0 1.0"
+                                                                    ],
+                                                                    "$type": "kOS.Safe.Encapsulation.ListValue"
+                                                                },
+                                                                "localRotation",
+                                                                "-90, 0, 0"
+                                                            ],
+                                                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                                                        }
+                                                    ],
+                                                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                                                }
+                                            ],
+                                            "$type": "kOS.Safe.Encapsulation.ListValue"
+                                        }
+                                    ],
+                                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                                }
+                            ],
+                            "$type": "kOS.Safe.Encapsulation.ListValue"
+                        }
+                    ],
+                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                }
+            ],
+            "$type": "kOS.Safe.Encapsulation.ListValue"
+        },
+        "MODULE",
+        {
+            "items": [
+                {
+                    "entries": [
+                        "attr",
+                        {
+                            "entries": [
+                                "name",
+                                "ModuleRCSFX",
+                                "stagingEnabled",
+                                false,
+                                "thrusterTransformName",
+                                "RCSthruster",
+                                "thrusterPower",
+                                1,
+                                "resourceName",
+                                "MonoPropellant",
+                                "resourceFlowMode",
+                                "STAGE_PRIORITY_FLOW",
+                                "runningEffectName",
+                                "running"
+                            ],
+                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                        },
+                        "atmosphereCurve",
+                        {
+                            "items": [
+                                {
+                                    "entries": [
+                                        "attr",
+                                        {
+                                            "entries": [
+                                                "key",
+                                                {
+                                                    "items": [
+                                                        "0 240",
+                                                        "1 100",
+                                                        "4 0.001"
+                                                    ],
+                                                    "$type": "kOS.Safe.Encapsulation.ListValue"
+                                                }
+                                            ],
+                                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                                        }
+                                    ],
+                                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                                }
+                            ],
+                            "$type": "kOS.Safe.Encapsulation.ListValue"
+                        }
+                    ],
+                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                }
+            ],
+            "$type": "kOS.Safe.Encapsulation.ListValue"
+        }
+    ],
+    "$type": "kOS.Safe.Encapsulation.Lexicon"
+}

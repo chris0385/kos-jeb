@@ -1,0 +1,55 @@
+{
+    "entries": [
+        "attr",
+        {
+            "entries": [
+                "name",
+                "flag"
+            ],
+            "$type": "kOS.Safe.Encapsulation.Lexicon"
+        },
+        "MODULE",
+        {
+            "items": [
+                {
+                    "entries": [
+                        "attr",
+                        {
+                            "entries": [
+                                "__OVERLOAD",
+                                true,
+                                "name",
+                                "FlagSite",
+                                "deployVisibilityDelay",
+                                1,
+                                "deployFailRevertThreshold",
+                                3,
+                                "unbreakablePeriodLength",
+                                3
+                            ],
+                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                        }
+                    ],
+                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                },
+                {
+                    "entries": [
+                        "attr",
+                        {
+                            "entries": [
+                                "name",
+                                "FlagDecal",
+                                "textureQuadName",
+                                "mesh_flag"
+                            ],
+                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                        }
+                    ],
+                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                }
+            ],
+            "$type": "kOS.Safe.Encapsulation.ListValue"
+        }
+    ],
+    "$type": "kOS.Safe.Encapsulation.Lexicon"
+}

@@ -1,0 +1,117 @@
+{
+    "entries": [
+        "attr",
+        {
+            "entries": [
+                "name",
+                "mediumDishAntenna",
+                "module",
+                "Part",
+                "author",
+                "Squad",
+                "mesh",
+                "model.mu",
+                "rescaleFactor",
+                1,
+                "node_attach",
+                "0.0, -0.025, 0.0, 0.0, -1.0, 0.0",
+                "TechRequired",
+                "precisionEngineering",
+                "entryCost",
+                4900,
+                "cost",
+                900,
+                "category",
+                "Communication",
+                "subcategory",
+                0,
+                "title",
+                "Communotron DTS-M1",
+                "manufacturer",
+                "Ionic Symphonic Protonic Electronics",
+                "description",
+                "The Communotron DTS-M1 is a fully deployable communications and data transmission system. It has been designed to have a minimal form factor when stowed. Occasional antenna tweaking and swift kicks to the main assembly may be required for optimal performance.",
+                "attachRules",
+                "0,1,0,0,0",
+                "mass",
+                0.05,
+                "dragModelType",
+                "default",
+                "maximum_drag",
+                0.2,
+                "minimum_drag",
+                0.2,
+                "angularDrag",
+                1,
+                "crashTolerance",
+                8,
+                "maxTemp",
+                2000,
+                "bulkheadProfiles",
+                "srf",
+                "tags",
+                "aerial antenna deploy direct extend fold radio signal transmi"
+            ],
+            "$type": "kOS.Safe.Encapsulation.Lexicon"
+        },
+        "MODULE",
+        {
+            "items": [
+                {
+                    "entries": [
+                        "attr",
+                        {
+                            "entries": [
+                                "name",
+                                "ModuleDeployableAntenna",
+                                "showStatus",
+                                false,
+                                "isTracking",
+                                false,
+                                "pivotName",
+                                "AntennaHolster",
+                                "raycastTransformName",
+                                "AntennaHolster",
+                                "animationName",
+                                "Deploy"
+                            ],
+                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                        }
+                    ],
+                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                },
+                {
+                    "entries": [
+                        "attr",
+                        {
+                            "entries": [
+                                "name",
+                                "ModuleDataTransmitter",
+                                "antennaType",
+                                "DIRECT",
+                                "packetInterval",
+                                0.35,
+                                "packetSize",
+                                2,
+                                "packetResourceCost",
+                                12,
+                                "requiredResource",
+                                "ElectricCharge",
+                                "DeployFxModules",
+                                0,
+                                "antennaPower",
+                                "2000000000",
+                                "antennaCombinable",
+                                true
+                            ],
+                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                        }
+                    ],
+                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                }
+            ],
+            "$type": "kOS.Safe.Encapsulation.ListValue"
+        }
+    ],
+    "$type": "kOS.Safe.Encapsulation.Lexicon"
+}

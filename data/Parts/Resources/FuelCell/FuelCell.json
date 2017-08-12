@@ -1,0 +1,197 @@
+{
+    "entries": [
+        "attr",
+        {
+            "entries": [
+                "name",
+                "FuelCell",
+                "module",
+                "Part",
+                "author",
+                "RoverDude",
+                "rescaleFactor",
+                1,
+                "node_attach",
+                "0, 0, 0, 1, 0, 0, 0",
+                "TechRequired",
+                "largeElectrics",
+                "entryCost",
+                2250,
+                "cost",
+                750,
+                "category",
+                "Electrical",
+                "subcategory",
+                0,
+                "title",
+                "Fuel Cell",
+                "manufacturer",
+                "Zaltonic Electronics",
+                "description",
+                "A small fuel cell that allows fuel and oxidizer to be converted into energy.  Handy for those places where a solar panel will not do.  Also handy for re-heating snacks.",
+                "attachRules",
+                "0,1,0,0,0",
+                "mass",
+                0.05,
+                "dragModelType",
+                "default",
+                "maximum_drag",
+                0.2,
+                "minimum_drag",
+                0.2,
+                "angularDrag",
+                2,
+                "crashTolerance",
+                7,
+                "maxTemp",
+                2000,
+                "bulkheadProfiles",
+                "srf",
+                "tags",
+                "array bank charge convert e/c elect energ pack power volt watt"
+            ],
+            "$type": "kOS.Safe.Encapsulation.Lexicon"
+        },
+        "MODEL",
+        {
+            "items": [
+                {
+                    "entries": [
+                        "attr",
+                        {
+                            "entries": [
+                                "model",
+                                "Squad/Parts/Resources/FuelCell/FuelCell"
+                            ],
+                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                        }
+                    ],
+                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                }
+            ],
+            "$type": "kOS.Safe.Encapsulation.ListValue"
+        },
+        "MODULE",
+        {
+            "items": [
+                {
+                    "entries": [
+                        "attr",
+                        {
+                            "entries": [
+                                "name",
+                                "ModuleResourceConverter",
+                                "ConverterName",
+                                "Fuel Cell",
+                                "StartActionName",
+                                "Start Fuel Cell",
+                                "StopActionName",
+                                "Stop Fuel Cell",
+                                "ToggleActionName",
+                                "Toggle Fuel Cell",
+                                "FillAmount",
+                                0.95,
+                                "AutoShutdown",
+                                false,
+                                "GeneratesHeat",
+                                false,
+                                "UseSpecialistBonus",
+                                false
+                            ],
+                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                        },
+                        "INPUT_RESOURCE",
+                        {
+                            "items": [
+                                {
+                                    "entries": [
+                                        "attr",
+                                        {
+                                            "entries": [
+                                                "ResourceName",
+                                                "LiquidFuel",
+                                                "Ratio",
+                                                0.0016875,
+                                                "FlowMode",
+                                                "STAGE_PRIORITY_FLOW"
+                                            ],
+                                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                                        }
+                                    ],
+                                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                                },
+                                {
+                                    "entries": [
+                                        "attr",
+                                        {
+                                            "entries": [
+                                                "ResourceName",
+                                                "Oxidizer",
+                                                "Ratio",
+                                                0.0020625,
+                                                "FlowMode",
+                                                "STAGE_PRIORITY_FLOW"
+                                            ],
+                                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                                        }
+                                    ],
+                                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                                }
+                            ],
+                            "$type": "kOS.Safe.Encapsulation.ListValue"
+                        },
+                        "OUTPUT_RESOURCE",
+                        {
+                            "items": [
+                                {
+                                    "entries": [
+                                        "attr",
+                                        {
+                                            "entries": [
+                                                "ResourceName",
+                                                "ElectricCharge",
+                                                "Ratio",
+                                                1.5,
+                                                "DumpExcess",
+                                                false
+                                            ],
+                                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                                        }
+                                    ],
+                                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                                }
+                            ],
+                            "$type": "kOS.Safe.Encapsulation.ListValue"
+                        }
+                    ],
+                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                }
+            ],
+            "$type": "kOS.Safe.Encapsulation.ListValue"
+        },
+        "RESOURCE",
+        {
+            "items": [
+                {
+                    "entries": [
+                        "attr",
+                        {
+                            "entries": [
+                                "name",
+                                "ElectricCharge",
+                                "amount",
+                                50,
+                                "maxAmount",
+                                50
+                            ],
+                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                        }
+                    ],
+                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                }
+            ],
+            "$type": "kOS.Safe.Encapsulation.ListValue"
+        }
+    ],
+    "$type": "kOS.Safe.Encapsulation.Lexicon"
+}

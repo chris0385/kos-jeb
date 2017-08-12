@@ -1,0 +1,172 @@
+{
+    "entries": [
+        "attr",
+        {
+            "entries": [
+                "name",
+                "shockConeIntake",
+                "module",
+                "Part",
+                "author",
+                "Porkjet",
+                "rescaleFactor",
+                1,
+                "node_stack_bottom",
+                "0.0, -0.625, 0.0, 0.0, -1.0, 0.0",
+                "buoyancy",
+                0.5,
+                "TechRequired",
+                "hypersonicFlight",
+                "entryCost",
+                21000,
+                "cost",
+                3050,
+                "category",
+                "Aero",
+                "subcategory",
+                0,
+                "title",
+                "Shock Cone Intake",
+                "manufacturer",
+                "C7 Aerospace Division",
+                "description",
+                "A shocking new intake from the C7 Aerospace Division that brought you much adored parts such as the Delta Wing and the Standard Nosecone! Offers exceptional performance at all speeds and has some heat shielding of its own.",
+                "attachRules",
+                "1,0,1,0,0",
+                "mass",
+                0.12,
+                "thermalMassModifier",
+                8,
+                "heatConvectiveConstant",
+                0.75,
+                "emissiveConstant",
+                0.95,
+                "dragModelType",
+                "default",
+                "maximum_drag",
+                0.3,
+                "minimum_drag",
+                0.3,
+                "angularDrag",
+                1.2,
+                "crashTolerance",
+                7,
+                "maxTemp",
+                2400,
+                "fuelCrossFeed",
+                true,
+                "bulkheadProfiles",
+                "size1",
+                "tags",
+                "aero (air breathe fligh inlet jet oxygen plane suck supersonic"
+            ],
+            "$type": "kOS.Safe.Encapsulation.Lexicon"
+        },
+        "MODEL",
+        {
+            "items": [
+                {
+                    "entries": [
+                        "attr",
+                        {
+                            "entries": [
+                                "model",
+                                "Squad/Parts/Aero/circularIntake/ConeIntake"
+                            ],
+                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                        }
+                    ],
+                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                }
+            ],
+            "$type": "kOS.Safe.Encapsulation.ListValue"
+        },
+        "DRAG_CUBE",
+        {
+            "items": [
+                {
+                    "entries": [
+                        "attr",
+                        {
+                            "entries": [
+                                "cube",
+                                "Default, 0.7486105,0.6887614,0.7221569, 0.7486105,0.6887677,0.7221569, 1.213026,0.3,1.183155, 1.213026,1,0.100694, 0.7486105,0.6903304,0.7221569, 0.7486105,0.6871722,0.7221569, 0,-0.08307549,0, 1.25,1.083849,1.25"
+                            ],
+                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                        }
+                    ],
+                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                }
+            ],
+            "$type": "kOS.Safe.Encapsulation.ListValue"
+        },
+        "MODULE",
+        {
+            "items": [
+                {
+                    "entries": [
+                        "attr",
+                        {
+                            "entries": [
+                                "name",
+                                "ModuleResourceIntake",
+                                "resourceName",
+                                "IntakeAir",
+                                "checkForOxygen",
+                                true,
+                                "area",
+                                0.0075,
+                                "intakeSpeed",
+                                5,
+                                "intakeTransformName",
+                                "Intake"
+                            ],
+                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                        }
+                    ],
+                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                },
+                {
+                    "entries": [
+                        "attr",
+                        {
+                            "entries": [
+                                "name",
+                                "ModuleAnimateHeat",
+                                "ThermalAnim",
+                                "IntakeConeHeat"
+                            ],
+                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                        }
+                    ],
+                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                }
+            ],
+            "$type": "kOS.Safe.Encapsulation.ListValue"
+        },
+        "RESOURCE",
+        {
+            "items": [
+                {
+                    "entries": [
+                        "attr",
+                        {
+                            "entries": [
+                                "name",
+                                "IntakeAir",
+                                "amount",
+                                2,
+                                "maxAmount",
+                                2
+                            ],
+                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                        }
+                    ],
+                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                }
+            ],
+            "$type": "kOS.Safe.Encapsulation.ListValue"
+        }
+    ],
+    "$type": "kOS.Safe.Encapsulation.Lexicon"
+}

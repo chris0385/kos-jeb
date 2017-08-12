@@ -1,0 +1,92 @@
+{
+    "entries": [
+        "attr",
+        {
+            "entries": [
+                "name",
+                "largeSolarPanel",
+                "module",
+                "Part",
+                "author",
+                "NovaSilisko",
+                "mesh",
+                "model.mu",
+                "rescaleFactor",
+                1,
+                "node_attach",
+                "0.0, 0.0, 0.0, 1.0, 0.0, 0.0",
+                "TechRequired",
+                "largeElectrics",
+                "entryCost",
+                14500,
+                "cost",
+                3000,
+                "category",
+                "Electrical",
+                "subcategory",
+                0,
+                "title",
+                "Gigantor XL Solar Array",
+                "manufacturer",
+                "Probodobodyne Inc",
+                "description",
+                "The single largest solar array available for purchase, the Gigantor XL offers tremendous generation potential from a compact initial package.  Includes passive radiators on the reverse side for better heat dissipation.",
+                "attachRules",
+                "0,1,0,0,1",
+                "mass",
+                0.3,
+                "dragModelType",
+                "default",
+                "maximum_drag",
+                0.2,
+                "minimum_drag",
+                0.2,
+                "angularDrag",
+                1,
+                "crashTolerance",
+                8,
+                "maxTemp",
+                1200,
+                "bulkheadProfiles",
+                "srf",
+                "thermalMassModifier",
+                2,
+                "emissiveConstant",
+                0.95,
+                "heatConductivity",
+                0.04,
+                "tags",
+                "charge deploy e/c elect energ extend fold generat (light panel photo power retract sun track unfold volt watt"
+            ],
+            "$type": "kOS.Safe.Encapsulation.Lexicon"
+        },
+        "MODULE",
+        {
+            "items": [
+                {
+                    "entries": [
+                        "attr",
+                        {
+                            "entries": [
+                                "name",
+                                "ModuleDeployableSolarPanel",
+                                "secondaryTransformName",
+                                "suncatcher",
+                                "resourceName",
+                                "ElectricCharge",
+                                "chargeRate",
+                                24.4,
+                                "animationName",
+                                "bigsolarpanel"
+                            ],
+                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                        }
+                    ],
+                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                }
+            ],
+            "$type": "kOS.Safe.Encapsulation.ListValue"
+        }
+    ],
+    "$type": "kOS.Safe.Encapsulation.Lexicon"
+}

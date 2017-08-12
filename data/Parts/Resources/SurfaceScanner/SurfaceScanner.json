@@ -1,0 +1,142 @@
+{
+    "entries": [
+        "attr",
+        {
+            "entries": [
+                "name",
+                "SurfaceScanner",
+                "module",
+                "Part",
+                "author",
+                "RoverDude",
+                "mesh",
+                "SampleKit.mu",
+                "scale",
+                1,
+                "rescaleFactor",
+                1,
+                "node_attach",
+                "0.0, 0.0, 0.1, 0.0, 0.0, -1, 0",
+                "TechRequired",
+                "scienceTech",
+                "entryCost",
+                2400,
+                "cost",
+                800,
+                "category",
+                "Science",
+                "subcategory",
+                0,
+                "title",
+                "Surface Scanning Module",
+                "manufacturer",
+                "Experimental Engineering Group",
+                "description",
+                "A small module that includes soil, atmospheric, and oceanic sampling tools.  When used while landed on a planet or moon, the sample data gathered can be used to increase the accuracy of orbital survey scanners.",
+                "attachRules",
+                "0,1,0,0,0",
+                "mass",
+                0.005,
+                "dragModelType",
+                "default",
+                "maximum_drag",
+                0.2,
+                "minimum_drag",
+                0.2,
+                "angularDrag",
+                2,
+                "crashTolerance",
+                7,
+                "maxTemp",
+                2000,
+                "bulkheadProfiles",
+                "srf",
+                "tags",
+                "isru mine )mining (ore prospect resource scanner sensor"
+            ],
+            "$type": "kOS.Safe.Encapsulation.Lexicon"
+        },
+        "MODULE",
+        {
+            "items": [
+                {
+                    "entries": [
+                        "attr",
+                        {
+                            "entries": [
+                                "name",
+                                "ModuleGPS"
+                            ],
+                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                        }
+                    ],
+                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                },
+                {
+                    "entries": [
+                        "attr",
+                        {
+                            "entries": [
+                                "name",
+                                "ModuleResourceScanner",
+                                "ScannerType",
+                                0,
+                                "ResourceName",
+                                "Ore",
+                                "MaxAbundanceAltitude",
+                                1000,
+                                "RequiresUnlock",
+                                false
+                            ],
+                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                        }
+                    ],
+                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                },
+                {
+                    "entries": [
+                        "attr",
+                        {
+                            "entries": [
+                                "name",
+                                "ModuleBiomeScanner"
+                            ],
+                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                        }
+                    ],
+                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                },
+                {
+                    "entries": [
+                        "attr",
+                        {
+                            "entries": [
+                                "name",
+                                "ModuleAsteroidAnalysis"
+                            ],
+                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                        }
+                    ],
+                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                },
+                {
+                    "entries": [
+                        "attr",
+                        {
+                            "entries": [
+                                "name",
+                                "ModuleAnalysisResource",
+                                "resourceName",
+                                "Ore"
+                            ],
+                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                        }
+                    ],
+                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                }
+            ],
+            "$type": "kOS.Safe.Encapsulation.ListValue"
+        }
+    ],
+    "$type": "kOS.Safe.Encapsulation.Lexicon"
+}

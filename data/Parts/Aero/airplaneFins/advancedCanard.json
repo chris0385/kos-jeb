@@ -1,0 +1,123 @@
+{
+    "entries": [
+        "attr",
+        {
+            "entries": [
+                "name",
+                "AdvancedCanard",
+                "module",
+                "Part",
+                "author",
+                "C. Jenkins, Porkjet",
+                "rescaleFactor",
+                1,
+                "node_attach",
+                "0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 1",
+                "CoMOffset",
+                "-0.4, -0.05, 0",
+                "CoLOffset",
+                "-0.4, -0.05, 0",
+                "CoPOffset",
+                "-0.4, -0.05, 0",
+                "TechRequired",
+                "hypersonicFlight",
+                "entryCost",
+                9200,
+                "cost",
+                800,
+                "category",
+                "Aero",
+                "subcategory",
+                0,
+                "title",
+                "Advanced Canard",
+                "manufacturer",
+                "C7 Aerospace Division",
+                "description",
+                "Our engineers thought this design looked \"high tech\" and therefore must be clear improvement on earlier models.",
+                "attachRules",
+                "0,1,0,1,0",
+                "mass",
+                0.08,
+                "thermalMassModifier",
+                8,
+                "emissiveConstant",
+                0.95,
+                "dragModelType",
+                "none",
+                "maximum_drag",
+                0.02,
+                "minimum_drag",
+                0.02,
+                "angularDrag",
+                3,
+                "crashTolerance",
+                12,
+                "maxTemp",
+                2400,
+                "explosionPotential",
+                0.1,
+                "fuelCrossFeed",
+                true,
+                "bulkheadProfiles",
+                "srf",
+                "tags",
+                "aero (air control (elev fighter fligh (fore lift plane )rudder stab swept tail"
+            ],
+            "$type": "kOS.Safe.Encapsulation.Lexicon"
+        },
+        "MODEL",
+        {
+            "items": [
+                {
+                    "entries": [
+                        "attr",
+                        {
+                            "entries": [
+                                "model",
+                                "Squad/Parts/Aero/airplaneFins/AdvCanard"
+                            ],
+                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                        }
+                    ],
+                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                }
+            ],
+            "$type": "kOS.Safe.Encapsulation.ListValue"
+        },
+        "MODULE",
+        {
+            "items": [
+                {
+                    "entries": [
+                        "attr",
+                        {
+                            "entries": [
+                                "name",
+                                "ModuleControlSurface",
+                                "useInternalDragModel",
+                                true,
+                                "dragCoeff",
+                                0.5,
+                                "deflectionLiftCoeff",
+                                0.4,
+                                "ctrlSurfaceRange",
+                                10,
+                                "ctrlSurfaceArea",
+                                1,
+                                "actuatorSpeed",
+                                35,
+                                "transformName",
+                                "ctrlSrf"
+                            ],
+                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                        }
+                    ],
+                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                }
+            ],
+            "$type": "kOS.Safe.Encapsulation.ListValue"
+        }
+    ],
+    "$type": "kOS.Safe.Encapsulation.Lexicon"
+}

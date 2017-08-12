@@ -1,0 +1,92 @@
+{
+    "entries": [
+        "attr",
+        {
+            "entries": [
+                "name",
+                "solarPanels2",
+                "module",
+                "Part",
+                "author",
+                "NovaSilisko",
+                "mesh",
+                "model.mu",
+                "rescaleFactor",
+                1,
+                "node_attach",
+                "0.0, 0.0, 0.0, 1.0, 0.0, 0.0",
+                "TechRequired",
+                "advElectrics",
+                "entryCost",
+                4400,
+                "cost",
+                440,
+                "category",
+                "Electrical",
+                "subcategory",
+                0,
+                "title",
+                "SP-L 1x6 Photovoltaic Panels",
+                "manufacturer",
+                "Probodobodyne Inc",
+                "description",
+                "The alternate configuration of the SP Model Photovoltaic Panels.  Includes passive radiators on the reverse side for better heat dissipation.",
+                "attachRules",
+                "0,1,0,0,1",
+                "mass",
+                0.025,
+                "dragModelType",
+                "default",
+                "maximum_drag",
+                0.2,
+                "minimum_drag",
+                0.2,
+                "angularDrag",
+                1,
+                "crashTolerance",
+                8,
+                "maxTemp",
+                2000,
+                "bulkheadProfiles",
+                "srf",
+                "thermalMassModifier",
+                2,
+                "emissiveConstant",
+                0.95,
+                "heatConductivity",
+                0.04,
+                "tags",
+                "array charge deploy e/c elect energ extend fold generat (light photo power retract solar sun track unfold volt watt"
+            ],
+            "$type": "kOS.Safe.Encapsulation.Lexicon"
+        },
+        "MODULE",
+        {
+            "items": [
+                {
+                    "entries": [
+                        "attr",
+                        {
+                            "entries": [
+                                "name",
+                                "ModuleDeployableSolarPanel",
+                                "resourceName",
+                                "ElectricCharge",
+                                "chargeRate",
+                                1.64,
+                                "animationName",
+                                "solarpanels2",
+                                "secondaryTransformName",
+                                "panel06"
+                            ],
+                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                        }
+                    ],
+                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                }
+            ],
+            "$type": "kOS.Safe.Encapsulation.ListValue"
+        }
+    ],
+    "$type": "kOS.Safe.Encapsulation.Lexicon"
+}

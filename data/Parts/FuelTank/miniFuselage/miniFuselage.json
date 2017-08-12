@@ -1,0 +1,94 @@
+{
+    "entries": [
+        "attr",
+        {
+            "entries": [
+                "name",
+                "miniFuselage",
+                "module",
+                "Part",
+                "author",
+                "Porkjet",
+                "mesh",
+                "Fuselage.mu",
+                "rescaleFactor",
+                1,
+                "node_stack_top",
+                "0.0, 0.46875, 0.0, 0.0, 1.0, 0.0, 0",
+                "node_stack_bottom",
+                "0.0, -0.46875, 0.0, 0.0, -1.0, 0.0, 0",
+                "node_attach",
+                "0.313, 0.0, 0.0, 1.0, 0.0, 0.0",
+                "TechRequired",
+                "aviation",
+                "entryCost",
+                3000,
+                "cost",
+                200,
+                "category",
+                "Propulsion",
+                "subcategory",
+                0,
+                "title",
+                "Mk0 Liquid Fuel Fuselage",
+                "manufacturer",
+                "C7 Aerospace Division",
+                "description",
+                "A small container for jet fuel.",
+                "attachRules",
+                "1,1,1,1,0",
+                "mass",
+                0.025,
+                "dragModelType",
+                "default",
+                "maximum_drag",
+                0.2,
+                "minimum_drag",
+                0.3,
+                "angularDrag",
+                1,
+                "crashTolerance",
+                10,
+                "breakingForce",
+                50,
+                "breakingTorque",
+                50,
+                "maxTemp",
+                2000,
+                "emissiveConstant",
+                0.8,
+                "fuelCrossFeed",
+                true,
+                "bulkheadProfiles",
+                "srf, size0",
+                "tags",
+                "fueltank jet ?lf only propellant tank"
+            ],
+            "$type": "kOS.Safe.Encapsulation.Lexicon"
+        },
+        "RESOURCE",
+        {
+            "items": [
+                {
+                    "entries": [
+                        "attr",
+                        {
+                            "entries": [
+                                "name",
+                                "LiquidFuel",
+                                "amount",
+                                50,
+                                "maxAmount",
+                                50
+                            ],
+                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                        }
+                    ],
+                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                }
+            ],
+            "$type": "kOS.Safe.Encapsulation.ListValue"
+        }
+    ],
+    "$type": "kOS.Safe.Encapsulation.Lexicon"
+}

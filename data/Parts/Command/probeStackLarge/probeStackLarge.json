@@ -1,0 +1,308 @@
+{
+    "entries": [
+        "attr",
+        {
+            "entries": [
+                "name",
+                "probeStackLarge",
+                "module",
+                "Part",
+                "author",
+                "Squad",
+                "mesh",
+                "model.mu",
+                "rescaleFactor",
+                1,
+                "CrewCapacity",
+                0,
+                "node_stack_bottom",
+                "0.0, -0.19, 0.0, 0.0, -1.0, 0.0, 2",
+                "node_stack_top",
+                "0.0, 0.19, 0.0, 0.0, 1.0, 0.0, 2",
+                "TechRequired",
+                "largeUnmanned",
+                "entryCost",
+                24800,
+                "cost",
+                3400,
+                "category",
+                "Pods",
+                "subcategory",
+                0,
+                "title",
+                "RC-L01 Remote Guidance Unit",
+                "manufacturer",
+                "STEADLER Engineering Corps",
+                "description",
+                "A larger version of the popular RGU system, developed in partnership with the Rockomax conglomerate.",
+                "attachRules",
+                "1,0,1,1,0",
+                "mass",
+                0.5,
+                "dragModelType",
+                "default",
+                "maximum_drag",
+                0.2,
+                "minimum_drag",
+                0.2,
+                "angularDrag",
+                2,
+                "crashTolerance",
+                9,
+                "maxTemp",
+                2000,
+                "explosionPotential",
+                0,
+                "vesselType",
+                "Probe",
+                "bulkheadProfiles",
+                "size2",
+                "tags",
+                "cmg command control (core fly gyro kerbnet moment probe react sas satellite space stab steer torque"
+            ],
+            "$type": "kOS.Safe.Encapsulation.Lexicon"
+        },
+        "MODULE",
+        {
+            "items": [
+                {
+                    "entries": [
+                        "attr",
+                        {
+                            "entries": [
+                                "name",
+                                "ModuleProbeControlPoint",
+                                "minimumCrew",
+                                1,
+                                "multiHop",
+                                true
+                            ],
+                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                        }
+                    ],
+                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                },
+                {
+                    "entries": [
+                        "attr",
+                        {
+                            "entries": [
+                                "name",
+                                "ModuleCommand",
+                                "minimumCrew",
+                                0,
+                                "hasHibernation",
+                                true,
+                                "hibernationMultiplier",
+                                0.00125
+                            ],
+                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                        },
+                        "RESOURCE",
+                        {
+                            "items": [
+                                {
+                                    "entries": [
+                                        "attr",
+                                        {
+                                            "entries": [
+                                                "name",
+                                                "ElectricCharge",
+                                                "rate",
+                                                0.08
+                                            ],
+                                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                                        }
+                                    ],
+                                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                                }
+                            ],
+                            "$type": "kOS.Safe.Encapsulation.ListValue"
+                        }
+                    ],
+                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                },
+                {
+                    "entries": [
+                        "attr",
+                        {
+                            "entries": [
+                                "name",
+                                "ModuleReactionWheel",
+                                "PitchTorque",
+                                1.5,
+                                "YawTorque",
+                                1.5,
+                                "RollTorque",
+                                1.5
+                            ],
+                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                        },
+                        "RESOURCE",
+                        {
+                            "items": [
+                                {
+                                    "entries": [
+                                        "attr",
+                                        {
+                                            "entries": [
+                                                "name",
+                                                "ElectricCharge",
+                                                "rate",
+                                                0.15
+                                            ],
+                                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                                        }
+                                    ],
+                                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                                }
+                            ],
+                            "$type": "kOS.Safe.Encapsulation.ListValue"
+                        }
+                    ],
+                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                },
+                {
+                    "entries": [
+                        "attr",
+                        {
+                            "entries": [
+                                "name",
+                                "ModuleSAS",
+                                "SASServiceLevel",
+                                3
+                            ],
+                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                        }
+                    ],
+                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                },
+                {
+                    "entries": [
+                        "attr",
+                        {
+                            "entries": [
+                                "name",
+                                "ModuleKerbNetAccess",
+                                "MinimumFoV",
+                                5,
+                                "MaximumFoV",
+                                90,
+                                "AnomalyDetection",
+                                0.3
+                            ],
+                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                        },
+                        "DISPLAY_MODES",
+                        {
+                            "items": [
+                                {
+                                    "entries": [
+                                        "attr",
+                                        {
+                                            "entries": [
+                                                "Mode",
+                                                {
+                                                    "items": [
+                                                        "Biome",
+                                                        "Terrain"
+                                                    ],
+                                                    "$type": "kOS.Safe.Encapsulation.ListValue"
+                                                }
+                                            ],
+                                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                                        }
+                                    ],
+                                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                                }
+                            ],
+                            "$type": "kOS.Safe.Encapsulation.ListValue"
+                        }
+                    ],
+                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                },
+                {
+                    "entries": [
+                        "attr",
+                        {
+                            "entries": [
+                                "name",
+                                "ModuleDataTransmitter",
+                                "antennaType",
+                                "INTERNAL",
+                                "packetInterval",
+                                1,
+                                "packetSize",
+                                2,
+                                "packetResourceCost",
+                                12,
+                                "requiredResource",
+                                "ElectricCharge",
+                                "antennaPower",
+                                5000,
+                                "optimumRange",
+                                2500,
+                                "packetFloor",
+                                ".1",
+                                "packetCeiling",
+                                5
+                            ],
+                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                        }
+                    ],
+                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                },
+                {
+                    "entries": [
+                        "attr",
+                        {
+                            "entries": [
+                                "name",
+                                "ModuleScienceContainer",
+                                "reviewActionName",
+                                "Review Stored Data",
+                                "storeActionName",
+                                "Store Experiments",
+                                "evaOnlyStorage",
+                                true,
+                                "storageRange",
+                                1.3,
+                                "canBeTransferredToInVessel",
+                                true,
+                                "canTransferInVessel",
+                                true
+                            ],
+                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                        }
+                    ],
+                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                }
+            ],
+            "$type": "kOS.Safe.Encapsulation.ListValue"
+        },
+        "RESOURCE",
+        {
+            "items": [
+                {
+                    "entries": [
+                        "attr",
+                        {
+                            "entries": [
+                                "name",
+                                "ElectricCharge",
+                                "amount",
+                                30,
+                                "maxAmount",
+                                30
+                            ],
+                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                        }
+                    ],
+                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                }
+            ],
+            "$type": "kOS.Safe.Encapsulation.ListValue"
+        }
+    ],
+    "$type": "kOS.Safe.Encapsulation.Lexicon"
+}

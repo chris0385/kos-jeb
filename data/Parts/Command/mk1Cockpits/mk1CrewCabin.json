@@ -1,0 +1,221 @@
+{
+    "entries": [
+        "attr",
+        {
+            "entries": [
+                "name",
+                "MK1CrewCabin",
+                "module",
+                "Part",
+                "author",
+                "Porkjet",
+                "rescaleFactor",
+                1,
+                "node_stack_top",
+                "0.0, 0.9375, 0.0, 0.0, 1.0, 0.0",
+                "node_stack_bottom",
+                "0.0, -0.9375, 0.0, 0.0, -1.0, 0.0",
+                "TechRequired",
+                "generalConstruction",
+                "entryCost",
+                2600,
+                "cost",
+                550,
+                "category",
+                "Utility",
+                "subcategory",
+                0,
+                "title",
+                "Mk1 Crew Cabin",
+                "manufacturer",
+                "C7 Aerospace Division",
+                "description",
+                "A cozy passenger cabin derived from a business jet and upgraded for use in spacecraft.",
+                "attachRules",
+                "1,0,1,1,0",
+                "mass",
+                1,
+                "dragModelType",
+                "default",
+                "maximum_drag",
+                0.1,
+                "minimum_drag",
+                0.1,
+                "angularDrag",
+                2,
+                "crashTolerance",
+                40,
+                "maxTemp",
+                1000,
+                "skinMaxTemp",
+                2000,
+                "vesselType",
+                "Ship",
+                "CrewCapacity",
+                2,
+                "bulkheadProfiles",
+                "size1",
+                "noAutoEVAMulti",
+                true,
+                "tags",
+                "base contain outpost passenger statio (stor tour"
+            ],
+            "$type": "kOS.Safe.Encapsulation.Lexicon"
+        },
+        "MODEL",
+        {
+            "items": [
+                {
+                    "entries": [
+                        "attr",
+                        {
+                            "entries": [
+                                "model",
+                                "Squad/Parts/Command/mk1Cockpits/Cabin"
+                            ],
+                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                        }
+                    ],
+                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                }
+            ],
+            "$type": "kOS.Safe.Encapsulation.ListValue"
+        },
+        "INTERNAL",
+        {
+            "items": [
+                {
+                    "entries": [
+                        "attr",
+                        {
+                            "entries": [
+                                "name",
+                                "mk1CabinInternal"
+                            ],
+                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                        }
+                    ],
+                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                }
+            ],
+            "$type": "kOS.Safe.Encapsulation.ListValue"
+        },
+        "MODULE",
+        {
+            "items": [
+                {
+                    "entries": [
+                        "attr",
+                        {
+                            "entries": [
+                                "name",
+                                "ModuleScienceExperiment",
+                                "experimentID",
+                                "crewReport",
+                                "experimentActionName",
+                                "Crew Report",
+                                "resetActionName",
+                                "Discard Crew Report",
+                                "reviewActionName",
+                                "Review Report",
+                                "useStaging",
+                                false,
+                                "useActionGroups",
+                                true,
+                                "hideUIwhenUnavailable",
+                                true,
+                                "rerunnable",
+                                true,
+                                "xmitDataScalar",
+                                1,
+                                "usageReqMaskInternal",
+                                5,
+                                "usageReqMaskExternal",
+                                -1
+                            ],
+                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                        }
+                    ],
+                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                },
+                {
+                    "entries": [
+                        "attr",
+                        {
+                            "entries": [
+                                "name",
+                                "ModuleScienceContainer",
+                                "reviewActionName",
+                                "Review Stored Data",
+                                "storeActionName",
+                                "Store Experiments",
+                                "evaOnlyStorage",
+                                true,
+                                "storageRange",
+                                1.5
+                            ],
+                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                        }
+                    ],
+                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                },
+                {
+                    "entries": [
+                        "attr",
+                        {
+                            "entries": [
+                                "name",
+                                "ModuleAnimateGeneric",
+                                "animationName",
+                                "Mk1Lights",
+                                "defaultActionGroup",
+                                "Light",
+                                "actionGUIName",
+                                "Toggle Lights",
+                                "startEventGUIName",
+                                "Lights On",
+                                "endEventGUIName",
+                                "Lights Off"
+                            ],
+                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                        }
+                    ],
+                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                },
+                {
+                    "entries": [
+                        "attr",
+                        {
+                            "entries": [
+                                "name",
+                                "ModuleDataTransmitter",
+                                "antennaType",
+                                "INTERNAL",
+                                "packetInterval",
+                                1,
+                                "packetSize",
+                                2,
+                                "packetResourceCost",
+                                12,
+                                "requiredResource",
+                                "ElectricCharge",
+                                "antennaPower",
+                                5000,
+                                "optimumRange",
+                                2500,
+                                "packetFloor",
+                                ".1",
+                                "packetCeiling",
+                                5
+                            ],
+                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                        }
+                    ],
+                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                }
+            ],
+            "$type": "kOS.Safe.Encapsulation.ListValue"
+        }
+    ],
+    "$type": "kOS.Safe.Encapsulation.Lexicon"
+}

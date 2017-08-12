@@ -1,0 +1,94 @@
+{
+    "entries": [
+        "attr",
+        {
+            "entries": [
+                "name",
+                "solarPanels4",
+                "module",
+                "Part",
+                "author",
+                "NovaSilisko",
+                "mesh",
+                "model.mu",
+                "rescaleFactor",
+                1,
+                "node_attach",
+                "0.0, 0.0, 0.0, 1.0, 0.0, 0.0",
+                "TechRequired",
+                "advElectrics",
+                "entryCost",
+                3800,
+                "cost",
+                380,
+                "category",
+                "Electrical",
+                "subcategory",
+                0,
+                "title",
+                "OX-4L 1x6 Photovoltaic Panels",
+                "manufacturer",
+                "Probodobodyne Inc",
+                "description",
+                "The OX-4 is similar in design to the SP series solar panels, but without the heavy casing.  Includes passive radiators on the reverse side for better heat dissipation. WARNING: Not retractable once deployed!",
+                "attachRules",
+                "0,1,0,0,1",
+                "mass",
+                0.0175,
+                "dragModelType",
+                "default",
+                "maximum_drag",
+                0.2,
+                "minimum_drag",
+                0.2,
+                "angularDrag",
+                1,
+                "crashTolerance",
+                8,
+                "maxTemp",
+                1200,
+                "bulkheadProfiles",
+                "srf",
+                "thermalMassModifier",
+                2,
+                "emissiveConstant",
+                0.95,
+                "heatConductivity",
+                0.04,
+                "tags",
+                "array charge deploy e/c elect energ extend generat (light photo power solar sun track unfold volt watt"
+            ],
+            "$type": "kOS.Safe.Encapsulation.Lexicon"
+        },
+        "MODULE",
+        {
+            "items": [
+                {
+                    "entries": [
+                        "attr",
+                        {
+                            "entries": [
+                                "name",
+                                "ModuleDeployableSolarPanel",
+                                "resourceName",
+                                "ElectricCharge",
+                                "chargeRate",
+                                1.64,
+                                "retractable",
+                                false,
+                                "animationName",
+                                "solarpanels4",
+                                "secondaryTransformName",
+                                "panel3"
+                            ],
+                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                        }
+                    ],
+                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                }
+            ],
+            "$type": "kOS.Safe.Encapsulation.ListValue"
+        }
+    ],
+    "$type": "kOS.Safe.Encapsulation.Lexicon"
+}

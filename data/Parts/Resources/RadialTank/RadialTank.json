@@ -1,0 +1,103 @@
+{
+    "entries": [
+        "attr",
+        {
+            "entries": [
+                "name",
+                "RadialOreTank",
+                "module",
+                "Part",
+                "author",
+                "RoverDude",
+                "mesh",
+                "RadialOreTank.mu",
+                "scale",
+                1,
+                "rescaleFactor",
+                1,
+                "node_attach",
+                "0,0,0.0,0,0,1,1",
+                "TechRequired",
+                "advScienceTech",
+                "entryCost",
+                1000,
+                "cost",
+                300,
+                "category",
+                "FuelTank",
+                "subcategory",
+                0,
+                "title",
+                "Radial Holding Tank",
+                "manufacturer",
+                "Jebediah Kerman's Junkyard and Spacecraft Parts Co",
+                "description",
+                "A small radial tank for storing raw materials, or possibly spare snacks.",
+                "attachRules",
+                "0,1,0,1,0",
+                "mass",
+                0.125,
+                "dragModelType",
+                "default",
+                "maximum_drag",
+                0.2,
+                "minimum_drag",
+                0.2,
+                "angularDrag",
+                2,
+                "crashTolerance",
+                7,
+                "maxTemp",
+                2000,
+                "bulkheadProfiles",
+                "srf",
+                "tags",
+                "black isru mine )mining (ore resource store"
+            ],
+            "$type": "kOS.Safe.Encapsulation.Lexicon"
+        },
+        "RESOURCE",
+        {
+            "items": [
+                {
+                    "entries": [
+                        "attr",
+                        {
+                            "entries": [
+                                "name",
+                                "Ore",
+                                "amount",
+                                0,
+                                "maxAmount",
+                                75
+                            ],
+                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                        }
+                    ],
+                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                }
+            ],
+            "$type": "kOS.Safe.Encapsulation.ListValue"
+        },
+        "MODULE",
+        {
+            "items": [
+                {
+                    "entries": [
+                        "attr",
+                        {
+                            "entries": [
+                                "name",
+                                "ModuleFuelJettison"
+                            ],
+                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                        }
+                    ],
+                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                }
+            ],
+            "$type": "kOS.Safe.Encapsulation.ListValue"
+        }
+    ],
+    "$type": "kOS.Safe.Encapsulation.Lexicon"
+}

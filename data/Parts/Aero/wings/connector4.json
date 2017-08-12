@@ -1,0 +1,117 @@
+{
+    "entries": [
+        "attr",
+        {
+            "entries": [
+                "name",
+                "wingConnector4",
+                "module",
+                "Part",
+                "author",
+                "Porkjet",
+                "rescaleFactor",
+                1,
+                "node_attach",
+                "0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 1",
+                "CoMOffset",
+                "-0.469, 0, 0",
+                "CoLOffset",
+                "-0.469, 0, 0",
+                "CoPOffset",
+                "-0.469, 0, 0",
+                "TechRequired",
+                "advAerodynamics",
+                "entryCost",
+                2400,
+                "cost",
+                100,
+                "category",
+                "Aero",
+                "subcategory",
+                0,
+                "title",
+                "Wing Connector Type D",
+                "manufacturer",
+                "C7 Aerospace Division",
+                "description",
+                "Found in a trash bin next to a wing factory.",
+                "attachRules",
+                "0,1,0,1,1",
+                "mass",
+                0.05,
+                "thermalMassModifier",
+                8,
+                "emissiveConstant",
+                0.95,
+                "dragModelType",
+                "none",
+                "maximum_drag",
+                0.02,
+                "minimum_drag",
+                0.02,
+                "angularDrag",
+                2,
+                "crashTolerance",
+                15,
+                "maxTemp",
+                2400,
+                "explosionPotential",
+                0.1,
+                "fuelCrossFeed",
+                true,
+                "bulkheadProfiles",
+                "srf",
+                "tags",
+                "aero aircraft fligh foil lift plane"
+            ],
+            "$type": "kOS.Safe.Encapsulation.Lexicon"
+        },
+        "MODEL",
+        {
+            "items": [
+                {
+                    "entries": [
+                        "attr",
+                        {
+                            "entries": [
+                                "model",
+                                "Squad/Parts/Aero/wings/connector4"
+                            ],
+                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                        }
+                    ],
+                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                }
+            ],
+            "$type": "kOS.Safe.Encapsulation.ListValue"
+        },
+        "MODULE",
+        {
+            "items": [
+                {
+                    "entries": [
+                        "attr",
+                        {
+                            "entries": [
+                                "name",
+                                "ModuleLiftingSurface",
+                                "useInternalDragModel",
+                                true,
+                                "deflectionLiftCoeff",
+                                0.5,
+                                "dragAtMaxAoA",
+                                0.12,
+                                "dragAtMinAoA",
+                                0
+                            ],
+                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                        }
+                    ],
+                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                }
+            ],
+            "$type": "kOS.Safe.Encapsulation.ListValue"
+        }
+    ],
+    "$type": "kOS.Safe.Encapsulation.Lexicon"
+}

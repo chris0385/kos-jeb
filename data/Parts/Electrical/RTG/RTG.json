@@ -1,0 +1,176 @@
+{
+    "entries": [
+        "attr",
+        {
+            "entries": [
+                "name",
+                "rtg",
+                "module",
+                "Part",
+                "author",
+                "NovaSilisko",
+                "mesh",
+                "model.mu",
+                "scale",
+                1,
+                "rescaleFactor",
+                1,
+                "node_stack_top",
+                "0.0, 0.3268025, 0.0, 0.0, 1.0, 0.0, 0",
+                "node_stack_bottom",
+                "0.0, -0.3268025, 0.0, 0.0, -1.0, 0.0, 0",
+                "node_attach",
+                "0.0, -0.3268025, 0.0, 0.0, -1.0, 0.0, 0",
+                "TechRequired",
+                "experimentalElectrics",
+                "entryCost",
+                58000,
+                "cost",
+                23300,
+                "category",
+                "Electrical",
+                "subcategory",
+                0,
+                "title",
+                "PB-NUK Radioisotope Thermoelectric Generator",
+                "manufacturer",
+                "Ionic Symphonic Protonic Electronics",
+                "description",
+                "Through exploitation of the natural decay of Blutonium-238, this elegantly simple power generator can provide consistent, stable power for decades. Not to be used for providing heating during emergency rover excursions.",
+                "attachRules",
+                "1,1,1,0,0",
+                "mass",
+                0.08,
+                "dragModelType",
+                "default",
+                "maximum_drag",
+                0.2,
+                "minimum_drag",
+                0.2,
+                "angularDrag",
+                2,
+                "crashTolerance",
+                7,
+                "maxTemp",
+                1200,
+                "bulkheadProfiles",
+                "size0, srf",
+                "radiatorMax",
+                1.5,
+                "tags",
+                "active atom charge e/c elect energ generat isotope nuclear nuke power radio rtg thermo volt watt"
+            ],
+            "$type": "kOS.Safe.Encapsulation.Lexicon"
+        },
+        "MODULE",
+        {
+            "items": [
+                {
+                    "entries": [
+                        "attr",
+                        {
+                            "entries": [
+                                "name",
+                                "ModuleGenerator",
+                                "isAlwaysActive",
+                                true
+                            ],
+                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                        },
+                        "OUTPUT_RESOURCE",
+                        {
+                            "items": [
+                                {
+                                    "entries": [
+                                        "attr",
+                                        {
+                                            "entries": [
+                                                "name",
+                                                "ElectricCharge",
+                                                "rate",
+                                                0.75
+                                            ],
+                                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                                        }
+                                    ],
+                                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                                }
+                            ],
+                            "$type": "kOS.Safe.Encapsulation.ListValue"
+                        }
+                    ],
+                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                },
+                {
+                    "entries": [
+                        "attr",
+                        {
+                            "entries": [
+                                "name",
+                                "ModuleCoreHeat",
+                                "CoreTempGoal",
+                                350,
+                                "CoreToPartRatio",
+                                0.1,
+                                "CoreTempGoalAdjustment",
+                                0,
+                                "CoreEnergyMultiplier",
+                                0.01,
+                                "HeatRadiantMultiplier",
+                                0.01,
+                                "CoolingRadiantMultiplier",
+                                0,
+                                "HeatTransferMultiplier",
+                                0,
+                                "CoolantTransferMultiplier",
+                                0,
+                                "radiatorCoolingFactor",
+                                0,
+                                "radiatorHeatingFactor",
+                                0,
+                                "MaxCalculationWarp",
+                                1000,
+                                "CoreShutdownTemp",
+                                10000,
+                                "MaxCoolant",
+                                0
+                            ],
+                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                        },
+                        "PassiveEnergy",
+                        {
+                            "items": [
+                                {
+                                    "entries": [
+                                        "attr",
+                                        {
+                                            "entries": [
+                                                "key",
+                                                {
+                                                    "items": [
+                                                        "0 \t25000",
+                                                        "200 \t10000",
+                                                        "250 \t50",
+                                                        "300\t25",
+                                                        "350\t0"
+                                                    ],
+                                                    "$type": "kOS.Safe.Encapsulation.ListValue"
+                                                }
+                                            ],
+                                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                                        }
+                                    ],
+                                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                                }
+                            ],
+                            "$type": "kOS.Safe.Encapsulation.ListValue"
+                        }
+                    ],
+                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                }
+            ],
+            "$type": "kOS.Safe.Encapsulation.ListValue"
+        }
+    ],
+    "$type": "kOS.Safe.Encapsulation.Lexicon"
+}

@@ -1,0 +1,498 @@
+{
+    "entries": [
+        "attr",
+        {
+            "entries": [
+                "name",
+                "mk1pod",
+                "module",
+                "Part",
+                "author",
+                "NovaSilisko",
+                "mesh",
+                "model.mu",
+                "scale",
+                1,
+                "rescaleFactor",
+                1,
+                "node_stack_bottom",
+                "0.0, -0.4050379, 0.0, 0.0, -1.0, 0.0, 1",
+                "node_stack_top",
+                "0.0, 0.6423756, 0.0, 0.0, 1.0, 0.0, 0",
+                "bulkheadProfiles",
+                "size1, size0",
+                "CoPOffset",
+                "0.0, 0.5, 0.0",
+                "CoLOffset",
+                "0.0, -0.35, 0.0",
+                "CenterOfBuoyancy",
+                "0.0, 0.5, 0.0",
+                "CenterOfDisplacement",
+                "0.0, -0.3, 0.0",
+                "buoyancy",
+                1.5,
+                "buoyancyUseSine",
+                false,
+                "TechRequired",
+                "start",
+                "entryCost",
+                0,
+                "cost",
+                600,
+                "category",
+                "Pods",
+                "subcategory",
+                0,
+                "title",
+                "Mk1 Command Pod",
+                "manufacturer",
+                "Kerlington Model Rockets and Paper Products Inc",
+                "description",
+                "Originally built as a placeholder for a demonstration mock-up of a rocket, the Mk1 Command Pod was heralded as a far safer and more reliable option than its predecessors by rocket scientists throughout the world. It is now commonly seen in active service.",
+                "attachRules",
+                "1,0,1,1,0",
+                "bodyLiftOnlyUnattachedLift",
+                true,
+                "bodyLiftOnlyAttachName",
+                "bottom",
+                "mass",
+                0.8,
+                "dragModelType",
+                "default",
+                "maximum_drag",
+                0.2,
+                "minimum_drag",
+                0.15,
+                "angularDrag",
+                2,
+                "crashTolerance",
+                14,
+                "maxTemp",
+                1200,
+                "skinMaxTemp",
+                2200,
+                "skinInternalConductionMult",
+                0.625,
+                "heatConductivity",
+                0.1,
+                "vesselType",
+                "Ship",
+                "CrewCapacity",
+                1,
+                "tags",
+                "capsule cmg control ?eva fly gyro ?iva moment pilot react rocket space stab steer torque"
+            ],
+            "$type": "kOS.Safe.Encapsulation.Lexicon"
+        },
+        "INTERNAL",
+        {
+            "items": [
+                {
+                    "entries": [
+                        "attr",
+                        {
+                            "entries": [
+                                "name",
+                                "mk1PodCockpit"
+                            ],
+                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                        }
+                    ],
+                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                }
+            ],
+            "$type": "kOS.Safe.Encapsulation.ListValue"
+        },
+        "MODULE",
+        {
+            "items": [
+                {
+                    "entries": [
+                        "attr",
+                        {
+                            "entries": [
+                                "name",
+                                "ModuleCommand",
+                                "minimumCrew",
+                                1
+                            ],
+                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                        }
+                    ],
+                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                },
+                {
+                    "entries": [
+                        "attr",
+                        {
+                            "entries": [
+                                "name",
+                                "ModuleReactionWheel",
+                                "PitchTorque",
+                                5,
+                                "YawTorque",
+                                5,
+                                "RollTorque",
+                                5
+                            ],
+                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                        },
+                        "RESOURCE",
+                        {
+                            "items": [
+                                {
+                                    "entries": [
+                                        "attr",
+                                        {
+                                            "entries": [
+                                                "name",
+                                                "ElectricCharge",
+                                                "rate",
+                                                0.24
+                                            ],
+                                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                                        }
+                                    ],
+                                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                                }
+                            ],
+                            "$type": "kOS.Safe.Encapsulation.ListValue"
+                        }
+                    ],
+                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                },
+                {
+                    "entries": [
+                        "attr",
+                        {
+                            "entries": [
+                                "name",
+                                "ModuleColorChanger",
+                                "shaderProperty",
+                                "_EmissiveColor",
+                                "animRate",
+                                0.8,
+                                "animState",
+                                false,
+                                "useRate",
+                                true,
+                                "toggleInEditor",
+                                true,
+                                "toggleInFlight",
+                                {
+                                    "items": [
+                                        true,
+                                        true
+                                    ],
+                                    "$type": "kOS.Safe.Encapsulation.ListValue"
+                                },
+                                "unfocusedRange",
+                                5,
+                                "toggleName",
+                                "Toggle Lights",
+                                "eventOnName",
+                                "Lights On",
+                                "eventOffName",
+                                "Lights Off",
+                                "toggleAction",
+                                true,
+                                "defaultActionGroup",
+                                "Light"
+                            ],
+                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                        },
+                        "redCurve",
+                        {
+                            "items": [
+                                {
+                                    "entries": [
+                                        "attr",
+                                        {
+                                            "entries": [
+                                                "key",
+                                                {
+                                                    "items": [
+                                                        "0 0 0 3",
+                                                        "1 1 0 0"
+                                                    ],
+                                                    "$type": "kOS.Safe.Encapsulation.ListValue"
+                                                }
+                                            ],
+                                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                                        }
+                                    ],
+                                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                                }
+                            ],
+                            "$type": "kOS.Safe.Encapsulation.ListValue"
+                        },
+                        "greenCurve",
+                        {
+                            "items": [
+                                {
+                                    "entries": [
+                                        "attr",
+                                        {
+                                            "entries": [
+                                                "key",
+                                                {
+                                                    "items": [
+                                                        "0 0 0 1",
+                                                        "1 1 1 0"
+                                                    ],
+                                                    "$type": "kOS.Safe.Encapsulation.ListValue"
+                                                }
+                                            ],
+                                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                                        }
+                                    ],
+                                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                                }
+                            ],
+                            "$type": "kOS.Safe.Encapsulation.ListValue"
+                        },
+                        "blueCurve",
+                        {
+                            "items": [
+                                {
+                                    "entries": [
+                                        "attr",
+                                        {
+                                            "entries": [
+                                                "key",
+                                                {
+                                                    "items": [
+                                                        "0 0 0 0",
+                                                        "1 0.7 1.5 0"
+                                                    ],
+                                                    "$type": "kOS.Safe.Encapsulation.ListValue"
+                                                }
+                                            ],
+                                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                                        }
+                                    ],
+                                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                                }
+                            ],
+                            "$type": "kOS.Safe.Encapsulation.ListValue"
+                        },
+                        "alphaCurve",
+                        {
+                            "items": [
+                                {
+                                    "entries": [
+                                        "attr",
+                                        {
+                                            "entries": [
+                                                "key",
+                                                "0 1"
+                                            ],
+                                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                                        }
+                                    ],
+                                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                                }
+                            ],
+                            "$type": "kOS.Safe.Encapsulation.ListValue"
+                        }
+                    ],
+                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                },
+                {
+                    "entries": [
+                        "attr",
+                        {
+                            "entries": [
+                                "name",
+                                "ModuleScienceExperiment",
+                                "experimentID",
+                                "crewReport",
+                                "experimentActionName",
+                                "Crew Report",
+                                "resetActionName",
+                                "Discard Crew Report",
+                                "reviewActionName",
+                                "Review Report",
+                                "useStaging",
+                                false,
+                                "useActionGroups",
+                                true,
+                                "hideUIwhenUnavailable",
+                                true,
+                                "rerunnable",
+                                true,
+                                "xmitDataScalar",
+                                1,
+                                "usageReqMaskInternal",
+                                5,
+                                "usageReqMaskExternal",
+                                -1
+                            ],
+                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                        }
+                    ],
+                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                },
+                {
+                    "entries": [
+                        "attr",
+                        {
+                            "entries": [
+                                "name",
+                                "ModuleScienceContainer",
+                                "reviewActionName",
+                                "Review Stored Data",
+                                "storeActionName",
+                                "Store Experiments",
+                                "evaOnlyStorage",
+                                true,
+                                "storageRange",
+                                1.3
+                            ],
+                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                        }
+                    ],
+                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                },
+                {
+                    "entries": [
+                        "attr",
+                        {
+                            "entries": [
+                                "name",
+                                "FlagDecal",
+                                "textureQuadName",
+                                "flagTransform"
+                            ],
+                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                        }
+                    ],
+                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                },
+                {
+                    "entries": [
+                        "attr",
+                        {
+                            "entries": [
+                                "name",
+                                "ModuleConductionMultiplier",
+                                "modifiedConductionFactor",
+                                0.003,
+                                "convectionFluxThreshold",
+                                3000
+                            ],
+                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                        }
+                    ],
+                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                },
+                {
+                    "entries": [
+                        "attr",
+                        {
+                            "entries": [
+                                "name",
+                                "ModuleDataTransmitter",
+                                "antennaType",
+                                "INTERNAL",
+                                "packetInterval",
+                                1,
+                                "packetSize",
+                                2,
+                                "packetResourceCost",
+                                12,
+                                "requiredResource",
+                                "ElectricCharge",
+                                "antennaPower",
+                                5000,
+                                "optimumRange",
+                                2500,
+                                "packetFloor",
+                                ".1",
+                                "packetCeiling",
+                                5
+                            ],
+                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                        }
+                    ],
+                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                },
+                {
+                    "entries": [
+                        "attr",
+                        {
+                            "entries": [
+                                "name",
+                                "ModuleLiftingSurface",
+                                "useInternalDragModel",
+                                false,
+                                "deflectionLiftCoeff",
+                                0.35,
+                                "liftingSurfaceCurve",
+                                "CapsuleBottom",
+                                "disableBodyLift",
+                                false,
+                                "omnidirectional",
+                                false,
+                                "perpendicularOnly",
+                                true,
+                                "transformDir",
+                                "Y",
+                                "transformSign",
+                                -1,
+                                "nodeEnabled",
+                                true,
+                                "attachNodeName",
+                                "bottom"
+                            ],
+                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                        }
+                    ],
+                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                }
+            ],
+            "$type": "kOS.Safe.Encapsulation.ListValue"
+        },
+        "RESOURCE",
+        {
+            "items": [
+                {
+                    "entries": [
+                        "attr",
+                        {
+                            "entries": [
+                                "name",
+                                "ElectricCharge",
+                                "amount",
+                                50,
+                                "maxAmount",
+                                50
+                            ],
+                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                        }
+                    ],
+                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                },
+                {
+                    "entries": [
+                        "attr",
+                        {
+                            "entries": [
+                                "name",
+                                "MonoPropellant",
+                                "amount",
+                                10,
+                                "maxAmount",
+                                10
+                            ],
+                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                        }
+                    ],
+                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                }
+            ],
+            "$type": "kOS.Safe.Encapsulation.ListValue"
+        }
+    ],
+    "$type": "kOS.Safe.Encapsulation.Lexicon"
+}

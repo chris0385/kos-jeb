@@ -1,0 +1,419 @@
+{
+    "entries": [
+        "attr",
+        {
+            "entries": [
+                "name",
+                "roverWheel1",
+                "module",
+                "Part",
+                "author",
+                "Squad",
+                "mesh",
+                "model.mu",
+                "scale",
+                1,
+                "node_attach",
+                "0.3093255, 0.322, 0.00, 1.0, 0.0, 0.0, 1",
+                "TechRequired",
+                "fieldScience",
+                "entryCost",
+                5200,
+                "cost",
+                450,
+                "category",
+                "Ground",
+                "subcategory",
+                0,
+                "title",
+                "RoveMax Model M1",
+                "manufacturer",
+                "Kerbal Motion LLC",
+                "description",
+                "After years of outcry against the lack of proper powered wheels, a small startup company named Kerbal Motion was founded and delivered just what the public wanted - the RoveMax Model 1 powered rover wheel.",
+                "attachRules",
+                "0,1,0,1,0",
+                "mass",
+                0.075,
+                "dragModelType",
+                "default",
+                "maximum_drag",
+                0.3,
+                "minimum_drag",
+                0.2,
+                "angularDrag",
+                1,
+                "maxTemp",
+                1200,
+                "crashTolerance",
+                50,
+                "breakingForce",
+                50,
+                "breakingTorque",
+                50,
+                "bulkheadProfiles",
+                "srf",
+                "tags",
+                ")car drive ground roll rover wheel"
+            ],
+            "$type": "kOS.Safe.Encapsulation.Lexicon"
+        },
+        "MODULE",
+        {
+            "items": [
+                {
+                    "entries": [
+                        "attr",
+                        {
+                            "entries": [
+                                "name",
+                                "ModuleWheelBase",
+                                "wheelColliderTransformName",
+                                "WheelCollider",
+                                "wheelTransformName",
+                                "WheelPivot",
+                                "wheelType",
+                                "MOTORIZED",
+                                "FitWheelColliderToMesh",
+                                false,
+                                "radius",
+                                0.378,
+                                "center",
+                                "0,0,0",
+                                "mass",
+                                0.04,
+                                "groundHeightOffset",
+                                0,
+                                "TooltipTitle",
+                                "Rover Wheel",
+                                "TooltipPrimaryField",
+                                "Motorized"
+                            ],
+                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                        }
+                    ],
+                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                },
+                {
+                    "entries": [
+                        "attr",
+                        {
+                            "entries": [
+                                "name",
+                                "ModuleWheelSuspension",
+                                "baseModuleIndex",
+                                0,
+                                "suspensionTransformName",
+                                "suspensionPivot",
+                                "suspensionDistance",
+                                0.2,
+                                "targetPosition",
+                                0.5,
+                                "springRatio",
+                                7,
+                                "damperRatio",
+                                1
+                            ],
+                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                        }
+                    ],
+                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                },
+                {
+                    "entries": [
+                        "attr",
+                        {
+                            "entries": [
+                                "name",
+                                "ModuleWheelSteering",
+                                "baseModuleIndex",
+                                0,
+                                "caliperTransformName",
+                                "SteeringPivot",
+                                "steeringResponse",
+                                2
+                            ],
+                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                        },
+                        "steeringCurve",
+                        {
+                            "items": [
+                                {
+                                    "entries": [
+                                        "attr",
+                                        {
+                                            "entries": [
+                                                "key",
+                                                {
+                                                    "items": [
+                                                        "0 20",
+                                                        "10 9",
+                                                        "30 3.0"
+                                                    ],
+                                                    "$type": "kOS.Safe.Encapsulation.ListValue"
+                                                }
+                                            ],
+                                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                                        }
+                                    ],
+                                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                                }
+                            ],
+                            "$type": "kOS.Safe.Encapsulation.ListValue"
+                        }
+                    ],
+                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                },
+                {
+                    "entries": [
+                        "attr",
+                        {
+                            "entries": [
+                                "name",
+                                "ModuleWheelMotor",
+                                "baseModuleIndex",
+                                0,
+                                "maxRpm",
+                                42,
+                                "driveResponse",
+                                2,
+                                "idleDrain",
+                                0
+                            ],
+                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                        },
+                        "torqueCurve",
+                        {
+                            "items": [
+                                {
+                                    "entries": [
+                                        "attr",
+                                        {
+                                            "entries": [
+                                                "key",
+                                                {
+                                                    "items": [
+                                                        "0 1.0 0 0",
+                                                        "10  0.66 0",
+                                                        "30 0.14 0 0",
+                                                        "34 0 0 0"
+                                                    ],
+                                                    "$type": "kOS.Safe.Encapsulation.ListValue"
+                                                }
+                                            ],
+                                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                                        }
+                                    ],
+                                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                                }
+                            ],
+                            "$type": "kOS.Safe.Encapsulation.ListValue"
+                        },
+                        "RESOURCE",
+                        {
+                            "items": [
+                                {
+                                    "entries": [
+                                        "attr",
+                                        {
+                                            "entries": [
+                                                "name",
+                                                "ElectricCharge",
+                                                "rate",
+                                                2.5
+                                            ],
+                                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                                        }
+                                    ],
+                                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                                }
+                            ],
+                            "$type": "kOS.Safe.Encapsulation.ListValue"
+                        }
+                    ],
+                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                },
+                {
+                    "entries": [
+                        "attr",
+                        {
+                            "entries": [
+                                "name",
+                                "ModuleWheelBrakes",
+                                "baseModuleIndex",
+                                0,
+                                "maxBrakeTorque",
+                                2,
+                                "brakeResponse",
+                                1
+                            ],
+                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                        }
+                    ],
+                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                },
+                {
+                    "entries": [
+                        "attr",
+                        {
+                            "entries": [
+                                "name",
+                                "ModuleWheelDamage",
+                                "baseModuleIndex",
+                                0,
+                                "damagedTransformName",
+                                "wheelDamaged",
+                                "undamagedTransformName",
+                                "wheel",
+                                "stressTolerance",
+                                560,
+                                "impactTolerance",
+                                200,
+                                "deflectionMagnitude",
+                                1,
+                                "deflectionSharpness",
+                                2,
+                                "slipMagnitude",
+                                15,
+                                "slipSharpness",
+                                2
+                            ],
+                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                        }
+                    ],
+                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                },
+                {
+                    "entries": [
+                        "attr",
+                        {
+                            "entries": [
+                                "name",
+                                "FXModuleLookAtConstraint"
+                            ],
+                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                        },
+                        "CONSTRAINLOOKFX",
+                        {
+                            "items": [
+                                {
+                                    "entries": [
+                                        "attr",
+                                        {
+                                            "entries": [
+                                                "targetName",
+                                                "susp2-1",
+                                                "rotatorsName",
+                                                "susp2-2"
+                                            ],
+                                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                                        }
+                                    ],
+                                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                                },
+                                {
+                                    "entries": [
+                                        "attr",
+                                        {
+                                            "entries": [
+                                                "targetName",
+                                                "susp2-2",
+                                                "rotatorsName",
+                                                "susp2-1"
+                                            ],
+                                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                                        }
+                                    ],
+                                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                                },
+                                {
+                                    "entries": [
+                                        "attr",
+                                        {
+                                            "entries": [
+                                                "targetName",
+                                                "susp1-2",
+                                                "rotatorsName",
+                                                "susp1-1"
+                                            ],
+                                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                                        }
+                                    ],
+                                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                                },
+                                {
+                                    "entries": [
+                                        "attr",
+                                        {
+                                            "entries": [
+                                                "targetName",
+                                                "susp1-1",
+                                                "rotatorsName",
+                                                "susp1-2"
+                                            ],
+                                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                                        }
+                                    ],
+                                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                                },
+                                {
+                                    "entries": [
+                                        "attr",
+                                        {
+                                            "entries": [
+                                                "targetName",
+                                                "susp3-1",
+                                                "rotatorsName",
+                                                "susp3-2"
+                                            ],
+                                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                                        }
+                                    ],
+                                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                                },
+                                {
+                                    "entries": [
+                                        "attr",
+                                        {
+                                            "entries": [
+                                                "targetName",
+                                                "susp3-2",
+                                                "rotatorsName",
+                                                "susp3-1"
+                                            ],
+                                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                                        }
+                                    ],
+                                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                                }
+                            ],
+                            "$type": "kOS.Safe.Encapsulation.ListValue"
+                        }
+                    ],
+                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                },
+                {
+                    "entries": [
+                        "attr",
+                        {
+                            "entries": [
+                                "name",
+                                "ModuleTestSubject",
+                                "environments",
+                                15,
+                                "useStaging",
+                                false,
+                                "useEvent",
+                                true
+                            ],
+                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                        }
+                    ],
+                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                }
+            ],
+            "$type": "kOS.Safe.Encapsulation.ListValue"
+        }
+    ],
+    "$type": "kOS.Safe.Encapsulation.Lexicon"
+}

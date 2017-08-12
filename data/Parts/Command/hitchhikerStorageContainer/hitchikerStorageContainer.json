@@ -1,0 +1,304 @@
+{
+    "entries": [
+        "attr",
+        {
+            "entries": [
+                "name",
+                "crewCabin",
+                "module",
+                "Part",
+                "author",
+                "NovaSilisko",
+                "mesh",
+                "model.mu",
+                "rescaleFactor",
+                1,
+                "node_stack_top",
+                "0.0, 0.986899, 0.0, 0.0, 1.0, 0.0, 2",
+                "node_stack_bottom",
+                "0.0, -0.986899, 0.0, 0.0, -1.0, 0.0, 2",
+                "CrewCapacity",
+                4,
+                "TechRequired",
+                "spaceExploration",
+                "entryCost",
+                12400,
+                "cost",
+                4000,
+                "category",
+                "Utility",
+                "subcategory",
+                0,
+                "title",
+                "PPD-10 Hitchhiker Storage Container",
+                "manufacturer",
+                "Jebediah Kerman's Junkyard and Spacecraft Parts Co",
+                "description",
+                "The HSC was an invention of necessity - how do we store 4 Kerbals on-orbit without any real provisions for return? Who needed this remains a mystery, as do his motivations.",
+                "attachRules",
+                "1,0,1,1,0",
+                "mass",
+                2.5,
+                "dragModelType",
+                "default",
+                "maximum_drag",
+                0.2,
+                "minimum_drag",
+                0.3,
+                "angularDrag",
+                2,
+                "crashTolerance",
+                6,
+                "breakingForce",
+                200,
+                "breakingTorque",
+                200,
+                "maxTemp",
+                1000,
+                "skinMaxTemp",
+                2000,
+                "vesselType",
+                "Ship",
+                "bulkheadProfiles",
+                "size2",
+                "tags",
+                "base cabin (can outpost passenger statio tour tuna"
+            ],
+            "$type": "kOS.Safe.Encapsulation.Lexicon"
+        },
+        "INTERNAL",
+        {
+            "items": [
+                {
+                    "entries": [
+                        "attr",
+                        {
+                            "entries": [
+                                "name",
+                                "crewCabinInternals"
+                            ],
+                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                        }
+                    ],
+                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                }
+            ],
+            "$type": "kOS.Safe.Encapsulation.ListValue"
+        },
+        "MODULE",
+        {
+            "items": [
+                {
+                    "entries": [
+                        "attr",
+                        {
+                            "entries": [
+                                "name",
+                                "ModuleColorChanger",
+                                "shaderProperty",
+                                "_EmissiveColor",
+                                "animRate",
+                                0.8,
+                                "animState",
+                                false,
+                                "useRate",
+                                true,
+                                "toggleInEditor",
+                                true,
+                                "toggleInFlight",
+                                {
+                                    "items": [
+                                        true,
+                                        true
+                                    ],
+                                    "$type": "kOS.Safe.Encapsulation.ListValue"
+                                },
+                                "unfocusedRange",
+                                5,
+                                "toggleName",
+                                "Toggle Lights",
+                                "eventOnName",
+                                "Lights On",
+                                "eventOffName",
+                                "Lights Off",
+                                "toggleAction",
+                                true,
+                                "defaultActionGroup",
+                                "Light"
+                            ],
+                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                        },
+                        "redCurve",
+                        {
+                            "items": [
+                                {
+                                    "entries": [
+                                        "attr",
+                                        {
+                                            "entries": [
+                                                "key",
+                                                {
+                                                    "items": [
+                                                        "0 0 0 3",
+                                                        "1 1 0 0"
+                                                    ],
+                                                    "$type": "kOS.Safe.Encapsulation.ListValue"
+                                                }
+                                            ],
+                                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                                        }
+                                    ],
+                                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                                }
+                            ],
+                            "$type": "kOS.Safe.Encapsulation.ListValue"
+                        },
+                        "greenCurve",
+                        {
+                            "items": [
+                                {
+                                    "entries": [
+                                        "attr",
+                                        {
+                                            "entries": [
+                                                "key",
+                                                {
+                                                    "items": [
+                                                        "0 0 0 1",
+                                                        "1 1 1 0"
+                                                    ],
+                                                    "$type": "kOS.Safe.Encapsulation.ListValue"
+                                                }
+                                            ],
+                                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                                        }
+                                    ],
+                                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                                }
+                            ],
+                            "$type": "kOS.Safe.Encapsulation.ListValue"
+                        },
+                        "blueCurve",
+                        {
+                            "items": [
+                                {
+                                    "entries": [
+                                        "attr",
+                                        {
+                                            "entries": [
+                                                "key",
+                                                {
+                                                    "items": [
+                                                        "0 0 0 0",
+                                                        "1 0.7 1.5 0"
+                                                    ],
+                                                    "$type": "kOS.Safe.Encapsulation.ListValue"
+                                                }
+                                            ],
+                                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                                        }
+                                    ],
+                                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                                }
+                            ],
+                            "$type": "kOS.Safe.Encapsulation.ListValue"
+                        },
+                        "alphaCurve",
+                        {
+                            "items": [
+                                {
+                                    "entries": [
+                                        "attr",
+                                        {
+                                            "entries": [
+                                                "key",
+                                                "0 1"
+                                            ],
+                                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                                        }
+                                    ],
+                                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                                }
+                            ],
+                            "$type": "kOS.Safe.Encapsulation.ListValue"
+                        }
+                    ],
+                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                },
+                {
+                    "entries": [
+                        "attr",
+                        {
+                            "entries": [
+                                "name",
+                                "ModuleScienceExperiment",
+                                "experimentID",
+                                "crewReport",
+                                "experimentActionName",
+                                "Crew Report",
+                                "resetActionName",
+                                "Discard Crew Report",
+                                "reviewActionName",
+                                "Review Report",
+                                "useStaging",
+                                false,
+                                "useActionGroups",
+                                true,
+                                "hideUIwhenUnavailable",
+                                true,
+                                "rerunnable",
+                                true,
+                                "xmitDataScalar",
+                                1,
+                                "usageReqMaskInternal",
+                                5,
+                                "usageReqMaskExternal",
+                                -1
+                            ],
+                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                        }
+                    ],
+                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                },
+                {
+                    "entries": [
+                        "attr",
+                        {
+                            "entries": [
+                                "name",
+                                "ModuleScienceContainer",
+                                "reviewActionName",
+                                "Review Stored Data",
+                                "storeActionName",
+                                "Store Experiments",
+                                "evaOnlyStorage",
+                                true,
+                                "storageRange",
+                                2
+                            ],
+                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                        }
+                    ],
+                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                },
+                {
+                    "entries": [
+                        "attr",
+                        {
+                            "entries": [
+                                "name",
+                                "FlagDecal",
+                                "textureQuadName",
+                                "flagTransform"
+                            ],
+                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                        }
+                    ],
+                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                }
+            ],
+            "$type": "kOS.Safe.Encapsulation.ListValue"
+        }
+    ],
+    "$type": "kOS.Safe.Encapsulation.Lexicon"
+}

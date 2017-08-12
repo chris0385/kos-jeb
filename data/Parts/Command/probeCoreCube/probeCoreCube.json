@@ -1,0 +1,216 @@
+{
+    "entries": [
+        "attr",
+        {
+            "entries": [
+                "name",
+                "probeCoreCube",
+                "module",
+                "Part",
+                "author",
+                "NovaSilisko",
+                "mesh",
+                "model.mu",
+                "rescaleFactor",
+                1,
+                "CrewCapacity",
+                0,
+                "node_stack_bottom",
+                "0.0, -0.2845967, 0.0, 0.0, -1.0, 0.0, 0",
+                "node_stack_top",
+                "0.0, 0.2845967, 0.0, 0.0, 1.0, 0.0, 0",
+                "TechRequired",
+                "unmannedTech",
+                "entryCost",
+                3800,
+                "cost",
+                360,
+                "category",
+                "Pods",
+                "subcategory",
+                0,
+                "title",
+                "Probodobodyne QBE",
+                "manufacturer",
+                "Probodobodyne Inc",
+                "description",
+                "QBE is Probodobodyne's latest development in probe miniaturization. Despite it's diminutive size, the QBE is a fully-functional and incredibly lightweight command unit. All this goodness comes at a price however: The QBE's tiny enclosure means there is no room for internal reaction wheels, and battery capacity is pitiful at best. Despite all this, or perhaps because of it, many engineers have found it to be ideally suited for those 'optional return' missions.",
+                "attachRules",
+                "1,0,1,1,0",
+                "mass",
+                0.07,
+                "dragModelType",
+                "default",
+                "maximum_drag",
+                0.2,
+                "minimum_drag",
+                0.15,
+                "angularDrag",
+                1.5,
+                "crashTolerance",
+                15,
+                "maxTemp",
+                1200,
+                "explosionPotential",
+                0,
+                "vesselType",
+                "Probe",
+                "bulkheadProfiles",
+                "size0",
+                "tags",
+                "command control (core cube kerbnet probe sas satellite space steer"
+            ],
+            "$type": "kOS.Safe.Encapsulation.Lexicon"
+        },
+        "MODULE",
+        {
+            "items": [
+                {
+                    "entries": [
+                        "attr",
+                        {
+                            "entries": [
+                                "name",
+                                "ModuleCommand",
+                                "minimumCrew",
+                                0,
+                                "hasHibernation",
+                                true
+                            ],
+                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                        },
+                        "RESOURCE",
+                        {
+                            "items": [
+                                {
+                                    "entries": [
+                                        "attr",
+                                        {
+                                            "entries": [
+                                                "name",
+                                                "ElectricCharge",
+                                                "rate",
+                                                0.025
+                                            ],
+                                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                                        }
+                                    ],
+                                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                                }
+                            ],
+                            "$type": "kOS.Safe.Encapsulation.ListValue"
+                        }
+                    ],
+                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                },
+                {
+                    "entries": [
+                        "attr",
+                        {
+                            "entries": [
+                                "name",
+                                "ModuleSAS"
+                            ],
+                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                        }
+                    ],
+                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                },
+                {
+                    "entries": [
+                        "attr",
+                        {
+                            "entries": [
+                                "name",
+                                "ModuleKerbNetAccess",
+                                "MinimumFoV",
+                                13,
+                                "MaximumFoV",
+                                72,
+                                "AnomalyDetection",
+                                0.18
+                            ],
+                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                        },
+                        "DISPLAY_MODES",
+                        {
+                            "items": [
+                                {
+                                    "entries": [
+                                        "attr",
+                                        {
+                                            "entries": [
+                                                "Mode",
+                                                "Terrain"
+                                            ],
+                                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                                        }
+                                    ],
+                                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                                }
+                            ],
+                            "$type": "kOS.Safe.Encapsulation.ListValue"
+                        }
+                    ],
+                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                },
+                {
+                    "entries": [
+                        "attr",
+                        {
+                            "entries": [
+                                "name",
+                                "ModuleDataTransmitter",
+                                "antennaType",
+                                "INTERNAL",
+                                "packetInterval",
+                                1,
+                                "packetSize",
+                                2,
+                                "packetResourceCost",
+                                12,
+                                "requiredResource",
+                                "ElectricCharge",
+                                "antennaPower",
+                                5000,
+                                "optimumRange",
+                                2500,
+                                "packetFloor",
+                                ".1",
+                                "packetCeiling",
+                                5
+                            ],
+                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                        }
+                    ],
+                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                }
+            ],
+            "$type": "kOS.Safe.Encapsulation.ListValue"
+        },
+        "RESOURCE",
+        {
+            "items": [
+                {
+                    "entries": [
+                        "attr",
+                        {
+                            "entries": [
+                                "name",
+                                "ElectricCharge",
+                                "amount",
+                                5,
+                                "maxAmount",
+                                5
+                            ],
+                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                        }
+                    ],
+                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                }
+            ],
+            "$type": "kOS.Safe.Encapsulation.ListValue"
+        }
+    ],
+    "$type": "kOS.Safe.Encapsulation.Lexicon"
+}

@@ -1,0 +1,365 @@
+{
+    "entries": [
+        "attr",
+        {
+            "entries": [
+                "name",
+                "RadialDrill",
+                "module",
+                "Part",
+                "author",
+                "RoverDude",
+                "mesh",
+                "TriBitDrill.mu",
+                "scale",
+                1,
+                "rescaleFactor",
+                1,
+                "node_attach",
+                ".1, 0, 0, 1, 0, 0, 1",
+                "TechRequired",
+                "advScienceTech",
+                "entryCost",
+                18000,
+                "cost",
+                6000,
+                "category",
+                "Utility",
+                "subcategory",
+                0,
+                "title",
+                "'Drill-O-Matic' Mining Excavator",
+                "manufacturer",
+                "Kerbodyne",
+                "description",
+                "Designed to help extract valuable resources from the crust of planets and asteroids, the Drill-O-Matic uses a rotary drill combined with an internal transfer auger to pull crushed regolith into holding tanks for later processing.  When operated by a skilled engineer, you will be able to operate with better efficiency.  These modules operate best at their ideal operating temperatures, and features auto-shutdown in the event of excessive overheating.  Radiators can be used to help manage excessive heat.",
+                "attachRules",
+                "0,1,0,0,0",
+                "mass",
+                1.25,
+                "dragModelType",
+                "default",
+                "maximum_drag",
+                0.2,
+                "minimum_drag",
+                0.2,
+                "angularDrag",
+                2,
+                "crashTolerance",
+                7,
+                "maxTemp",
+                2000,
+                "bulkheadProfiles",
+                "srf",
+                "tags",
+                "drill extractor harvest isru mine )mining (ore resource"
+            ],
+            "$type": "kOS.Safe.Encapsulation.Lexicon"
+        },
+        "MODULE",
+        {
+            "items": [
+                {
+                    "entries": [
+                        "attr",
+                        {
+                            "entries": [
+                                "name",
+                                "ModuleOverheatDisplay"
+                            ],
+                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                        }
+                    ],
+                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                },
+                {
+                    "entries": [
+                        "attr",
+                        {
+                            "entries": [
+                                "name",
+                                "ModuleResourceHarvester",
+                                "HarvesterType",
+                                0,
+                                "Efficiency",
+                                1.5,
+                                "ResourceName",
+                                "Ore",
+                                "ConverterName",
+                                "Surface Harvester",
+                                "StartActionName",
+                                "Start Surface Harvester",
+                                "StopActionName",
+                                "Stop Surface Harvester",
+                                "ToggleActionName",
+                                "Toggle Surface Harvester",
+                                "ImpactTransform",
+                                "ImpactTransform",
+                                "ImpactRange",
+                                6,
+                                "AutoShutdown",
+                                true,
+                                "GeneratesHeat",
+                                true,
+                                "UseSpecialistBonus",
+                                true,
+                                "SpecialistEfficiencyFactor",
+                                0.2,
+                                "SpecialistBonusBase",
+                                0.05,
+                                "ExperienceEffect",
+                                "DrillSkill",
+                                "EfficiencyBonus",
+                                1
+                            ],
+                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                        },
+                        "INPUT_RESOURCE",
+                        {
+                            "items": [
+                                {
+                                    "entries": [
+                                        "attr",
+                                        {
+                                            "entries": [
+                                                "ResourceName",
+                                                "ElectricCharge",
+                                                "Ratio",
+                                                15
+                                            ],
+                                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                                        }
+                                    ],
+                                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                                }
+                            ],
+                            "$type": "kOS.Safe.Encapsulation.ListValue"
+                        },
+                        "TemperatureModifier",
+                        {
+                            "items": [
+                                {
+                                    "entries": [
+                                        "attr",
+                                        {
+                                            "entries": [
+                                                "key",
+                                                {
+                                                    "items": [
+                                                        "0 10000",
+                                                        "250 7500",
+                                                        "500 5000",
+                                                        "750 500",
+                                                        "1000 0"
+                                                    ],
+                                                    "$type": "kOS.Safe.Encapsulation.ListValue"
+                                                }
+                                            ],
+                                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                                        }
+                                    ],
+                                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                                }
+                            ],
+                            "$type": "kOS.Safe.Encapsulation.ListValue"
+                        },
+                        "ThermalEfficiency",
+                        {
+                            "items": [
+                                {
+                                    "entries": [
+                                        "attr",
+                                        {
+                                            "entries": [
+                                                "key",
+                                                {
+                                                    "items": [
+                                                        "0 0.1",
+                                                        "250 .1",
+                                                        "500 1",
+                                                        "750 .1",
+                                                        "1000 0"
+                                                    ],
+                                                    "$type": "kOS.Safe.Encapsulation.ListValue"
+                                                }
+                                            ],
+                                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                                        }
+                                    ],
+                                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                                }
+                            ],
+                            "$type": "kOS.Safe.Encapsulation.ListValue"
+                        }
+                    ],
+                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                },
+                {
+                    "entries": [
+                        "attr",
+                        {
+                            "entries": [
+                                "name",
+                                "ModuleAsteroidDrill",
+                                "DirectAttach",
+                                false,
+                                "StartActionName",
+                                "Start Asteroid Harvester",
+                                "StopActionName",
+                                "Stop Asteroid Harvester",
+                                "ToggleActionName",
+                                "Toggle Asteroid Harvester",
+                                "PowerConsumption",
+                                1.5,
+                                "Efficiency",
+                                5,
+                                "ImpactRange",
+                                5,
+                                "ImpactTransform",
+                                "ImpactTransform",
+                                "UseSpecialistBonus",
+                                {
+                                    "items": [
+                                        true,
+                                        true
+                                    ],
+                                    "$type": "kOS.Safe.Encapsulation.ListValue"
+                                },
+                                "AutoShutdown",
+                                true,
+                                "GeneratesHeat",
+                                true,
+                                "SpecialistEfficiencyFactor",
+                                0.2,
+                                "SpecialistBonusBase",
+                                0.05,
+                                "ExperienceEffect",
+                                "DrillSkill",
+                                "EfficiencyBonus",
+                                1
+                            ],
+                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                        },
+                        "TemperatureModifier",
+                        {
+                            "items": [
+                                {
+                                    "entries": [
+                                        "attr",
+                                        {
+                                            "entries": [
+                                                "key",
+                                                {
+                                                    "items": [
+                                                        "0 10000",
+                                                        "250 5000",
+                                                        "500 2500",
+                                                        "750 500",
+                                                        "1000 0"
+                                                    ],
+                                                    "$type": "kOS.Safe.Encapsulation.ListValue"
+                                                }
+                                            ],
+                                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                                        }
+                                    ],
+                                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                                }
+                            ],
+                            "$type": "kOS.Safe.Encapsulation.ListValue"
+                        },
+                        "ThermalEfficiency",
+                        {
+                            "items": [
+                                {
+                                    "entries": [
+                                        "attr",
+                                        {
+                                            "entries": [
+                                                "key",
+                                                {
+                                                    "items": [
+                                                        "0 0.1",
+                                                        "250 .1",
+                                                        "500 1",
+                                                        "750 .1",
+                                                        "1000 0"
+                                                    ],
+                                                    "$type": "kOS.Safe.Encapsulation.ListValue"
+                                                }
+                                            ],
+                                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                                        }
+                                    ],
+                                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                                }
+                            ],
+                            "$type": "kOS.Safe.Encapsulation.ListValue"
+                        }
+                    ],
+                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                },
+                {
+                    "entries": [
+                        "attr",
+                        {
+                            "entries": [
+                                "name",
+                                "ModuleAnimationGroup",
+                                "deployAnimationName",
+                                "Drill_Deploy",
+                                "activeAnimationName",
+                                "Drill_Running",
+                                "moduleType",
+                                "Drill"
+                            ],
+                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                        }
+                    ],
+                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                },
+                {
+                    "entries": [
+                        "attr",
+                        {
+                            "entries": [
+                                "name",
+                                "ModuleCoreHeat",
+                                "CoreTempGoal",
+                                500,
+                                "CoreToPartRatio",
+                                0.1,
+                                "CoreTempGoalAdjustment",
+                                0,
+                                "CoreEnergyMultiplier",
+                                0.1,
+                                "HeatRadiantMultiplier",
+                                0.25,
+                                "CoolingRadiantMultiplier",
+                                0,
+                                "HeatTransferMultiplier",
+                                0,
+                                "CoolantTransferMultiplier",
+                                0.01,
+                                "radiatorCoolingFactor",
+                                1,
+                                "radiatorHeatingFactor",
+                                0.05,
+                                "MaxCalculationWarp",
+                                1000,
+                                "CoreShutdownTemp",
+                                1000,
+                                "MaxCoolant",
+                                100
+                            ],
+                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                        }
+                    ],
+                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                }
+            ],
+            "$type": "kOS.Safe.Encapsulation.ListValue"
+        }
+    ],
+    "$type": "kOS.Safe.Encapsulation.Lexicon"
+}

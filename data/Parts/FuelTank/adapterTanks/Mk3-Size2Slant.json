@@ -1,0 +1,128 @@
+{
+    "entries": [
+        "attr",
+        {
+            "entries": [
+                "name",
+                "adapterMk3-Size2Slant",
+                "module",
+                "Part",
+                "author",
+                "Porkjet",
+                "rescaleFactor",
+                1,
+                "node_stack_top",
+                "0.0, 1.875, -0.625, 0.0, 1.0, 0.0, 2",
+                "node_stack_bottom",
+                "0.0, -1.875, 0.0, 0.0, -1.0, 0.0, 3",
+                "node_attach",
+                "0.0, 0.0, -1.88, 0.0, 0.0, 1.0, 1",
+                "TechRequired",
+                "heavyAerodynamics",
+                "entryCost",
+                42000,
+                "cost",
+                2500,
+                "category",
+                "FuelTank",
+                "subcategory",
+                0,
+                "title",
+                "Mk3 to 2.5m Adapter Slanted",
+                "manufacturer",
+                "C7 Aerospace Division",
+                "description",
+                "Makes your craft hang in the air like bricks don't!",
+                "attachRules",
+                "1,1,1,1,0",
+                "mass",
+                1.79,
+                "dragModelType",
+                "default",
+                "maximum_drag",
+                0.2,
+                "minimum_drag",
+                0.3,
+                "angularDrag",
+                1,
+                "crashTolerance",
+                50,
+                "maxTemp",
+                2600,
+                "emissiveConstant",
+                0.87,
+                "fuelCrossFeed",
+                true,
+                "bulkheadProfiles",
+                "size2, srf, mk3",
+                "breakingForce",
+                300,
+                "breakingTorque",
+                300,
+                "tags",
+                "fuel fueltank ?lfo liquid oxidizer propellant rocket tank"
+            ],
+            "$type": "kOS.Safe.Encapsulation.Lexicon"
+        },
+        "MODEL",
+        {
+            "items": [
+                {
+                    "entries": [
+                        "attr",
+                        {
+                            "entries": [
+                                "model",
+                                "Squad/Parts/FuelTank/adapterTanks/Mk3-Size2Slant"
+                            ],
+                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                        }
+                    ],
+                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                }
+            ],
+            "$type": "kOS.Safe.Encapsulation.ListValue"
+        },
+        "RESOURCE",
+        {
+            "items": [
+                {
+                    "entries": [
+                        "attr",
+                        {
+                            "entries": [
+                                "name",
+                                "LiquidFuel",
+                                "amount",
+                                1125,
+                                "maxAmount",
+                                1125
+                            ],
+                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                        }
+                    ],
+                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                },
+                {
+                    "entries": [
+                        "attr",
+                        {
+                            "entries": [
+                                "name",
+                                "Oxidizer",
+                                "amount",
+                                1375,
+                                "maxAmount",
+                                1375
+                            ],
+                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                        }
+                    ],
+                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                }
+            ],
+            "$type": "kOS.Safe.Encapsulation.ListValue"
+        }
+    ],
+    "$type": "kOS.Safe.Encapsulation.Lexicon"
+}

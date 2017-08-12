@@ -1,0 +1,121 @@
+{
+    "entries": [
+        "attr",
+        {
+            "entries": [
+                "name",
+                "smallCtrlSrf",
+                "module",
+                "Part",
+                "author",
+                "Porkjet",
+                "rescaleFactor",
+                1,
+                "node_attach",
+                "0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 1",
+                "CoMOffset",
+                "0, -0.329694, 0",
+                "CoLOffset",
+                "0, -0.329694, 0",
+                "CoPOffset",
+                "0, -0.329694, 0",
+                "TechRequired",
+                "advAerodynamics",
+                "entryCost",
+                3200,
+                "cost",
+                400,
+                "category",
+                "Aero",
+                "subcategory",
+                0,
+                "title",
+                "Elevon 4",
+                "manufacturer",
+                "C7 Aerospace Division",
+                "description",
+                "Feel the need to attach an elevator, rudder or aileron to just about any surface you can get your mitts on? Well this small elevon is for you. Made of mostly new factory parts, it will fit just about anywhere. Just don't expect a huge performance out of such a small part.",
+                "attachRules",
+                "0,1,0,0,0",
+                "mass",
+                0.04,
+                "thermalMassModifier",
+                8,
+                "emissiveConstant",
+                0.95,
+                "dragModelType",
+                "none",
+                "maximum_drag",
+                0.02,
+                "minimum_drag",
+                0.02,
+                "angularDrag",
+                2,
+                "crashTolerance",
+                15,
+                "maxTemp",
+                2400,
+                "explosionPotential",
+                0.1,
+                "bulkheadProfiles",
+                "srf",
+                "tags",
+                "aero aileron aircraft control (elev plane )rudder"
+            ],
+            "$type": "kOS.Safe.Encapsulation.Lexicon"
+        },
+        "MODEL",
+        {
+            "items": [
+                {
+                    "entries": [
+                        "attr",
+                        {
+                            "entries": [
+                                "model",
+                                "Squad/Parts/Aero/wings/elevon4"
+                            ],
+                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                        }
+                    ],
+                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                }
+            ],
+            "$type": "kOS.Safe.Encapsulation.ListValue"
+        },
+        "MODULE",
+        {
+            "items": [
+                {
+                    "entries": [
+                        "attr",
+                        {
+                            "entries": [
+                                "name",
+                                "ModuleControlSurface",
+                                "useInternalDragModel",
+                                true,
+                                "dragCoeff",
+                                0.25,
+                                "deflectionLiftCoeff",
+                                0.18,
+                                "ctrlSurfaceRange",
+                                20,
+                                "ctrlSurfaceArea",
+                                1,
+                                "actuatorSpeed",
+                                30,
+                                "transformName",
+                                "Elevon4"
+                            ],
+                            "$type": "kOS.Safe.Encapsulation.Lexicon"
+                        }
+                    ],
+                    "$type": "kOS.Safe.Encapsulation.Lexicon"
+                }
+            ],
+            "$type": "kOS.Safe.Encapsulation.ListValue"
+        }
+    ],
+    "$type": "kOS.Safe.Encapsulation.Lexicon"
+}
