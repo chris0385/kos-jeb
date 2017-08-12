@@ -1,4 +1,6 @@
 
+//https://github.com/neuoy/KSPTrajectories/blob/master/Plugin/StockAeroUtil.cs
+
 print ship:termvelocity.
 print body:atm:ALTITUDEPRESSURE(meter).
 

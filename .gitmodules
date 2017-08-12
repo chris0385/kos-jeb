@@ -1,3 +1,6 @@
 [submodule "kos-examples"]
 	path = kos-examples
 	url = git@bitbucket.org:Gobannitio/kos-examples.git
+[submodule "KSLib"]
+	path = KSLib
+	url = https://github.com/KSP-KOS/KSLib.git
