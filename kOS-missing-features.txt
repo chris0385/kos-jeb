@@ -13,3 +13,8 @@ heap data structure. (priority queue)
 
 
 readjson() cannot read back lexicons which were in case insensitive mode.
+
+
+list:map(callback).
+list:filter(callback).
+  -> streaming interface.
