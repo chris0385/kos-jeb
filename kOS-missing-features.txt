@@ -9,7 +9,7 @@ list:replace(x, index) (can only be done by remove+insert)
 
 list:sort({parameter a. parameter b. return a:eta < b:eta. }). // list sorting using a callback
 
-heap data structure. (priority queue)
+readjson() cannot read back lexicons which were in case insensitive mode.
 
 
 readjson() cannot read back lexicons which were in case insensitive mode.
@@ -18,3 +18,20 @@ readjson() cannot read back lexicons which were in case insensitive mode.
 list:map(callback).
 list:filter(callback).
   -> streaming interface.
+############################################################################################################
+##### DEV #############
+shared.Cpu.InstructionsThisUpdate -> current instruction count.
+
+Slower than 1 physics warp.
+
+Heap data structure. (priority queue)
+
+
+Terminal multiplexer: Split
+
+
+Xpath-style query: https://stackoverflow.com/questions/2324432/using-an-xpath-style-query-with-reflection
+      ?? https://msdn.microsoft.com/en-us/library/ms950764.aspx
+
+######### DEBUG HOWTO:
+http://forum.kerbalspaceprogram.com/index.php?/topic/102909-ksp-plugin-debugging-and-profiling-for-visual-studio-and-monodevelop-on-all-os/

@@ -16,3 +16,4 @@ function stager {
 // TODO: auto chutes
 // TODO: auto gears
 // TODO: auto lights
+// TODO: auto solar panels
