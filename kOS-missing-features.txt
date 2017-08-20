@@ -18,6 +18,9 @@ readjson() cannot read back lexicons which were in case insensitive mode.
 list:map(callback).
 list:filter(callback).
   -> streaming interface.
+
+
+STRUCTURE:SUFFIX(name) -> full reflexion
 ############################################################################################################
 ##### DEV #############
 shared.Cpu.InstructionsThisUpdate -> current instruction count.

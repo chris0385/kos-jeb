@@ -199,15 +199,15 @@ function calcThrottle_pid {
 	local pid is pidloop(0.5, 0.4, 0.1, MINOUTPUT, 1).
 	
 	local maxAcceleration is SHIP:MAXTHRUST/SHIP:MASS-body:mu/body:radius^2.
-	local AC_CONSTANT is 2*0.9*maxAcceleration.
+	local AC_CONSTANT is 2*0.8*maxAcceleration.
 	
-	local calcSetPoint is { return round(-max(1, sqrt(AC_CONSTANT*ALT:RADAR))). }.
+	local calcSetPoint is { return round(-max(3, sqrt(AC_CONSTANT*max(0,ALT:RADAR-5*body:mu/body:radius^2)))). }.
 	set pid:setpoint to calcSetPoint().
 	
 	return {
 		local wantedSetPoint is calcSetPoint().
 		if pid:setpoint <> wantedSetPoint {
-			print "Changing setpoint to "+wantedSetPoint.
+			print "Changing setpoint at "+round(ALT:RADAR)+" to "+wantedSetPoint.
 			set pid:setpoint to wantedSetPoint.
 		}
 		local actualV is vdot(SHIP:VELOCITY:SURFACE, Up:VECTOR).
@@ -227,7 +227,7 @@ wait until kuniverse:timewarp:rate = 1.
 
 print "Enabling breaking burn controller..".
 // TODO: minoutput
-set burnController to buildBurnController(0.01).
+set burnController to buildBurnController(0).
 lock steering to (-1) * SHIP:VELOCITY:SURFACE.
 lock throttle to burnController().
 
@@ -284,6 +284,6 @@ CLEARVECDRAWS().
 //run suicide_burn3.
 if false {
 switch to 0.
-run suicide_burn3.
+runpath("pilot/suicide_burn3").
 
 }

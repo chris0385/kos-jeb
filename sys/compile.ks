@@ -3,6 +3,11 @@
 
 runoncepath("sys/fileutils.ks").
 
+parameter task is "-".
+parameter p1 is "-".
+parameter p2 is "-".
+parameter p3 is "-".
+
 global DOUBLE_QUOTE is 0.
 for line in open("sys/compile.ks"):readall() {
 	set DOUBLE_QUOTE to line:substring(2,1).
@@ -12,6 +17,7 @@ for line in open("sys/compile.ks"):readall() {
 
 function parseImport {
 	parameter line.
+	print "parseImport/"+line.
 	local start is line:find(DOUBLE_QUOTE).
 	local end is line:findat(DOUBLE_QUOTE, start+1).
 	local fname is line:substring(start+1, end-start-1).
@@ -52,7 +58,7 @@ function import {
 	done:add(path).
 	local fileD is open(path).
 	
-	print fileD:typename.
+	//print fileD:typename.
 	if fileD:typename = "Boolean" {
 		print "ERROR:"+ fileD.
 	}
@@ -64,7 +70,7 @@ function import {
 				//print "skip "+line.
 			} else {
 				local imported is parseImport(line).
-				//print pos+line+"##"+imported.
+				print pos+line+"##"+imported.
 				if not done:contains(imported) {
 					import(imported, targetDevice, done).
 				}
@@ -188,5 +194,13 @@ function lexiconToSource {
 }
 
 
+if task = "import" {
+	if p2 = "-" {
+		import(p1).
+	} else {
+		import(p1, p2).
+	}
+}
+
 //import("tmp.ks").
-// runpath("lib/compile.ks").
+// runpath("sys/compile.ks", "import", "pilot/suicide_burn3.ks").
