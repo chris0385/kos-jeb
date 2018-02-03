@@ -17,3 +17,7 @@ writejson(stage:resources, "log/stage-resources.json").
 
 list engines in _e.
 writejson(_e, "log/"+SHIP:NAME+"-engines.json"). 
+
+
+set brakes to true.
+//wait 0. set throttle to 1. wait 0. unlock throttle. // unlock fails

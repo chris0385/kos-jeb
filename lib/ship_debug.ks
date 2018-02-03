@@ -12,7 +12,9 @@ function showModule {
 	
 	log gtab+"module("+module:name+")" to logFile.
 	for field in module:allfieldnames {
-		log gtab+tab+"(F) "+field+" = "+module:getfield(field) to logFile.
+		//if module:name = "ModuleTargetingCamera" {
+			log gtab+tab+"(F) "+field+" = "+module:getfield(field) to logFile.
+		//}
 	}
 	for event in module:allevents {
 		log gtab+tab+"(E) "+event to logFile.
@@ -56,16 +58,18 @@ function showEngine {
 	showPart(engine, logFile, gtab+tab).
 }
 
-list engines in engs.
-local a is 0.
-for e in engs {
-	showEngine(e).
-	if e:stage >= stage:number {
-		print e.
-		print e:suffixnames.
-		//if e:getmodule("ModuleEnginesRF"):getfield("status") = "Nominal" and a:getmodule("ModuleEnginesRF"):getfield("ignitions remaining")>0 {
-		// a:getmodule("ModuleEnginesRF"):getfield("propellant") = "Very Stable"
-		//}
+if 0 {
+	list engines in engs.
+	local a is 0.
+	for e in engs {
+		showEngine(e).
+		if e:stage >= stage:number {
+			print e.
+			print e:suffixnames.
+			//if e:getmodule("ModuleEnginesRF"):getfield("status") = "Nominal" and a:getmodule("ModuleEnginesRF"):getfield("ignitions remaining")>0 {
+			// a:getmodule("ModuleEnginesRF"):getfield("propellant") = "Very Stable"
+			//}
+		}
 	}
 }
 //run "lib/ship_debug".
